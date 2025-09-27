@@ -1,9 +1,0 @@
-<sulfurai> <drl/prl/lrl [drl = developer release, prl = public release, lrl = limited edition/ limited release]> <version [eg 1-03-32c]> <stable/notstable>
-															      #1 #2 #3
-
-#1 - big release number, eg v1, v2
-#2 - general release - usually a new version eg v1.2, v2.5
-#3 - smaller updates - basically bug fixes or additions to the general release, can be big on their own. eg v1.23, v.253
-
-eg:
-SulfurAI-DRL 1-03-32c STABLE

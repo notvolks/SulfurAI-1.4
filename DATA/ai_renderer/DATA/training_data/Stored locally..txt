@@ -1,1 +1,0 @@
-This version of SULFURAI stores its training data locally. This could result in a higher file size.
