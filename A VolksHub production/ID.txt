@@ -1,4 +1,0 @@
- ID: #002
-plot: 02
-name: SulfurAI(.PY)
-public release: UNKNOWN
