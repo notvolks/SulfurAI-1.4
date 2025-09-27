@@ -1,4 +1,0 @@
-This file is used to test Sulfur before releasing. You may delete them if you wish or decide to keep it if (not limited to):
--You are modifying the code
--You are creating your own Sulfur Integrations
--You are creating a separate framework.
