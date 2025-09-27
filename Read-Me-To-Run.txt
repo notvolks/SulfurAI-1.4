@@ -1,1 +1,0 @@
-Run the batch files instead of the python files. This is due to the fact the python terminal does not hold errors.
