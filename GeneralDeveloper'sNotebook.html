@@ -72,7 +72,7 @@
     <header>
       <h1>SulfurAI Developer Kit</h1>
       <p>Everything you need to integrate, modify and extend SulfurAI</p>
-      <p>Last updated: 8 Aug 2025, accurate as of: [Build 10393d]</p>
+      <p>Last updated: 15 Nov 2025, accurate as of: [Build 10399d-patch6]</p>
     </header>
 
     <nav>
@@ -97,25 +97,46 @@
 
     <section id="api">
       <h2>API Reference</h2>
-      <p>(This is not the full API reference, you can locate the full documentation in the API folder.)</p>
       <br>
       <p>|      Python              |</p>
       <br>
-      <p>To integrate SulfurAI into your python application, import the full SulfurAI folder into your root folder.</p>
+      <p>To verify that your script has been added to sys.path (if you installed without PIP), run SulfurAI.py once.</p>
        <p>Then import Sulfur into your script via:</p>
        <pre><code class="language-python">import SulfurAI</code></pre>
         <br>
       <p>Every API script will have documentation inside the IDE, so here is a list of every api function:</p>
       <p>(Assuming you imported SulfurAI as SulfurAI)</p>
        <p>|--------SulfurAI Client------|</p>
+        <p>This is a general class of functions:</p>
       <pre><code class="language-python">
       SulfurAI.run_locally
       SulfurAI.get_output_data
       SulfurAI.get_output_data_ui
+      SulfurAI.retrieve_current_models
+      SulfurAI.retrieve_active_model
+      SulfurAI.retrieve_active_model_history
+
+
+      </code></pre>
+
+        <br>
+
+
+        <p>|--------SulfurAI DataProfiles------|</p>
+        <p>SulfurAI DataProfiles produce a comprehensive user profile:</p>
+      <pre><code class="language-python">
+      SulfurAI.render_dataprofile
+      SulfurAI.return_dataprofiles
+      SulfurAI.return_offline_dataprofiles (Does not work with online models, check documentation)
+      SulfurAI.return_annotations_dataprofiles (Does not work with online models, check documentation)
+
+
+
       </code></pre>
 
       <br>
         <p>|--------SulfurAI Console------|</p>
+        <p>The console controls terminal level operations related to SulfurAI:</p>
          <p>Importing the console + setting it up:</p>
        <pre><code class="language-python">
       import SulfurConsole
@@ -152,14 +173,12 @@
     <section id="model-info">
       <h2>Model Info + Creating / Identifying models.</h2>
       <p>SulfurAI uses multiple pre-trained transformer/classification models optimized for conversational tasks. Default model: <code>sulfur_drl_[build]</code>.</p>
-        <p>Creating models isn't supported in build 10392d, but you can find current ones with the SulfurAI API.</p>
+        <p>Creating models isn't supported in build 10399d-patch6, but you can find current ones with the SulfurAI API.</p>
         <br>
            <p>(Assuming you imported SulfurAI as SulfurAI)</p>
-             <pre><code class="language-python">
-      print(SulfurAI.retrieve_current_models())
-
-
-      </code></pre>
+             <pre><code class="language-python">print(SulfurAI.retrieve_current_models())</code></pre>
+             <pre><code class="language-python">print(SulfurAI.retrieve_active_model())</code></pre>
+             <pre><code class="language-python">print(SulfurAI.retrieve_active_model_history())</code></pre>
 
     </section>
 
