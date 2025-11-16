@@ -1,0 +1,136 @@
+--------------USER INSIGHT---------------
+|--------------------------------------------|
+|              Day Changes             |
+|  Changes to your userbase over the past 5 days:
+  Changes from 2025-11-05 to 2025-11-15:
+  Type Changes: exclamation: 0.00%
+  Intent Changes: expressing: 0.00%
+|  Average Changes over the past 5 days:
+  
+
+
+ Average Type Change:
+  exclamation: -5.49%
+
+ Average Intent Change:
+  commanding: 0.00%
+  expressing: 0.00%
+|   *Only includes changes at least 5 days apart.
+|--------------------------------------------|
+
+|--------------------------------------------|
+|              Week Changes             |
+|  Changes to your userbase over the past 5 weeks:
+  Changes from 2025-11-03 to 2025-11-10:
+  Type Changes: exclamation: 0.00%
+  Intent Changes: expressing: 0.00%
+|  Average Changes over the past 5 weeks:
+  
+
+
+ Average Type Change:
+  question: -1.86%
+  exclamation: +1.83%
+  command: -0.39%
+  statement: -0.66%
+
+ Average Intent Change:
+  commanding: -3.85%
+  expressing: +3.60%
+  informing: -0.31%
+  comparing: -0.52%
+  asking: -0.21%
+|   *Only includes changes at least 5 weeks apart.
+|--------------------------------------------|
+
+|--------------------------------------------|
+|              Month Changes             |
+|  Changes to your userbase over the past 5 months:
+  Changes from 2025-10-01 to 2025-11-01:
+  Type Changes: exclamation: 0.00%
+  Intent Changes: expressing: 0.00%
+|  Average Changes over the past 5 months:
+  
+
+
+ Average Type Change:
+  question: -6.22%
+  exclamation: +6.80%
+  command: -0.95%
+  statement: -0.28%
+
+ Average Intent Change:
+  commanding: -14.29%
+  expressing: +12.06%
+  informing: -0.18%
+  comparing: -0.16%
+  asking: -0.10%
+|   *Only includes changes at least 5 months apart.
+|--------------------------------------------|
+
+|--------------------------------------------|
+|              Year Changes             |
+|  Changes to your userbase over the past 5 years:
+  None_Found
+|  Average Changes over the past 5 years:
+  None_Found
+|   *Only includes changes at least 3 years apart.
+|--------------------------------------------|
+
+|--------------------------------------------------------------|
+|                                                               |
+|   Top Countries Trends Based on Userbase: ['England', 'United States', 'United Kingdom']    |
+|                                                               |
+|--------------------------------------------------------------|
+|   🌍 Country: England (GB)
+|--------------------------------------------------------------|
+|                                                               |
+|   📈 Trend Direction: flat
+|   🔍 Top Related Searches:
+|      speed test (100)
+|      driving test (66)
+|      blood test (55)
+|      theory test (35)
+|      internet test (28)
+|   🚀 Rising Related Searches:
+|      book a driving test uk (130)
+|      dvsa change driving test (120)
+|      book driving test uk (110)
+|      driving test booking change (80)
+|      change driving test date (70)
+|--------------------------------------------------------------|
+|   🌍 Country: United States (US)
+|--------------------------------------------------------------|
+|                                                               |
+|   📈 Trend Direction: flat
+|   🔍 Top Related Searches:
+|      speed test (100)
+|      internet test (32)
+|      speed test internet (31)
+|      pregnancy test (30)
+|      permit test (16)
+|   🚀 Rising Related Searches:
+|      race purity test (1900)
+|      how long does weed stay in your system urine test (50)
+|--------------------------------------------------------------|
+|   🌍 Country: United Kingdom (GB)
+|--------------------------------------------------------------|
+|                                                               |
+|   📈 Trend Direction: flat
+|   🔍 Top Related Searches:
+|      speed test (100)
+|      driving test (66)
+|      blood test (55)
+|      theory test (35)
+|      internet test (28)
+|   🚀 Rising Related Searches:
+|      book a driving test uk (130)
+|      dvsa change driving test (120)
+|      book driving test uk (110)
+|      driving test booking change (80)
+|      change driving test date (70)
+
+|                                                               |
+
+|--------------------------------------------------------------|
+

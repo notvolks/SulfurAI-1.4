@@ -1,0 +1,16 @@
+ ###########Day Changes###########:
+ Changes to your userbase over the past 5 days:
+  Changes from 2025-11-05 to 2025-11-15:
+  Type Changes: exclamation: 0.00%
+  Intent Changes: expressing: 0.00%
+ Average Changes to your userbase over the past 5 days:
+  
+
+
+ Average Type Change:
+  exclamation: -5.49%
+
+ Average Intent Change:
+  commanding: 0.00%
+  expressing: 0.00%
+ *Only includes userbase changes at least 5 days apart.

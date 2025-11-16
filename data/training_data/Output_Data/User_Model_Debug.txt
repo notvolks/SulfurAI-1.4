@@ -1,0 +1,30 @@
+Tokens:  ['test_endpoint'] 
+Frequency of keywords : {'test_endpoint': 1}
+Percent of Uppercase letters : 0.0%
+Average word length : 13.0 characters.
+Flesch Reading Ease : 36.62000000000003
+Flesch-Kincaid Grade : 8.400000000000002
+SMOG Index : 3.1291
+Gunning Fog : 0.4
+Sentences: 1 | Words: 1
+Lemmas : ['test_endpoint']
+Position counts: : Counter({'NN': 1})
+List of bi-grams : 3.1291
+Gunning Fog : []
+Keyframes: []
+General sentiment : Neutral
+General sentiment score : 0.0
+General toxicity flags : False
+General toxicity score : 0.0
+(Count) words : 1 
+(Count) characters : 13 
+(Count) exclamations : 0 
+(Count) questions : 0 
+(Count) periods : 0 
+(Count) current sessions : 395 
+(String Count) hashtags : [] 
+(String Count) emojis : [] 
+(String Count) casing : all lowercase 
+(String Count) matched_keywords : [] 
+Recent user actions : ['event_SetupServerAPI', 'event_SetupAPILocal']
+Percentage of user actions to sulfur runs: 100.0%

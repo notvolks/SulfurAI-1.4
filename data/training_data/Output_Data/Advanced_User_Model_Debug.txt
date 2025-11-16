@@ -1,0 +1,21 @@
+Advanced speech actions:  Statement 
+Advanced speech action type:  Statement 
+Advanced speech tense:  Present 
+Advanced mood:  Neutral 
+Advanced mood II (further processed with a different model):  Neutral 
+Advanced tense:  Present 
+Advanced sentence types:  Declarative 
+Advanced clause counts:  1 
+Advanced token count:  ['test_endpoint'] 
+Advanced formality:  Neutral 
+Advanced formality [positive] : informality [negative] score:  0 
+Advanced slang that was found:  None 
+User's tone:  ['neutral'] 
+User's primary intent:  Statement 
+User's audience:  General 
+User's polarity:  Neutral 
+Final anomaly score:  0.0 
+Final mood score:  0.0 
+Final change score:  0.0 
+Final detected anomalies:  ["[DEBUG] Failed to read file: [Errno 2] No such file or directory: 'D:\\\\VolksHub 21.1.2025 005\\\\[VH] AI production line (DEVSET)\\\\SulfurAI\\\\SulfurAI (not consumer ready)\\\\SulfurAI-DRL 001-03\\\\api\\\\Python\\\\SulfurServerSystem\\\\cache\\\\id_3\\\\output.txt'"] 
+Final detected anomalies (block) :   

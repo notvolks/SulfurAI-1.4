@@ -1,0 +1,2177 @@
+Started from 30/1/2025 and will update every update.
+
+-3/2/2025:
+
+445 lines of code (SulfurAI.py)
+75 lines of code (SulfurSettings.py)
+
+-4/2/2025:
+
+487 lines of code (SulfurAI.py)
+75 lines of code (SulfurSettings.py)
+
+-7/2/2025:
+
+535 lines of code (SulfurAI.py)
+75 lines of code (SulfurSettings.py)
+
+-9/2/2025:
+
+572 lines of code (SulfurAI.py)
+75 lines of code (SulfurSettings.py)
+
+-11/2/2025:
+
+593 lines of code (SulfurAI.py)
+75 lines of code (SulfurSettings.py)
+
+-16/2/2025:
+
+689 lines of code (SulfurAI.py)
+75 lines of code (SulfurSettings.py)
+
+-17/2/2025:
+
+693 lines of code (SulfurAI.py)
+75 lines of code (SulfurSettings.py)
+
+-18/2/2025:
+
+822 lines of code (SulfurAI.py)
+75 lines of code (SulfurSettings.py)
+
+-19/2/2025:
+
+839 lines of code (SulfurAI.py)
+75 lines of code (SulfurSettings.py)
+
+-20/2/2025:
+
+902 lines of code (SulfurAI.py)
+75 lines of code (SulfurSettings.py)
+
+-21/2/2025:
+
+949 lines of code (SulfurAI.py)
+75 lines of code (SulfurSettings.py)
+
+-22/2/2025:
+
+951 lines of code (SulfurAI.py)
+75 lines of code (SulfurSettings.py)
+
+-23/2/2025:
+
+417 lines of code (SulfurAI.py)
+638 lines of code (check_device_s.py)
+78 lines of code (call_file_path.py)
+75 lines of code (SulfurSettings.py)
+
+-26/2/2025:
+
+263 lines of code (SulfurAI.py)
+624 lines of code (check_device_s.py)
+78 lines of code (call_file_path.py)
+75 lines of code (SulfurSettings.py)
+
+-2/3/2025:
+
+264 lines of code (SulfurAI.py)
+657 lines of code (check_device_s.py)
+78 lines of code (call_file_path.py)
+75 lines of code (SulfurSettings.py)
+
+-5/3/2025:
+
+264 lines of code (SulfurAI.py)
+661 lines of code (check_device_s.py)
+78 lines of code (call_file_path.py)
+75 lines of code (SulfurSettings.py)
+
+-10/3/2025:
+
+268 lines of code (SulfurAI.py)
+661 lines of code (check_device_s.py)
+25 lines of code (Mean_device_s.py)
+78 lines of code (call_file_path.py)
+75 lines of code (SulfurSettings.py)
+
+-11/3/2025:
+
+268 lines of code (SulfurAI.py)
+664 lines of code (check_device_s.py)
+25 lines of code (Mean_device_s.py)
+78 lines of code (call_file_path.py)
+75 lines of code (SulfurSettings.py)
+
+-13/3/2025:
+
+274 lines of code (SulfurAI.py)
+664 lines of code (check_device_s.py)
+54 lines of code (Mean_device_s.py)
+99 lines of code (call_file_path.py)
+75 lines of code (SulfurSettings.py)
+
+-17/3/2025:
+
+274 lines of code (SulfurAI.py)
+664 lines of code (check_device_s.py)
+83 lines of code (Mean_device_s.py)
+99 lines of code (call_file_path.py)
+75 lines of code (SulfurSettings.py)
+
+-18/3/2025:
+
+274 lines of code (SulfurAI.py)
+664 lines of code (check_device_s.py)
+83 lines of code (Mean_device_s.py)
+99 lines of code (call_file_path.py)
+75 lines of code (SulfurSettings.py)
+
+
+-20/3/2025:
+
+290 lines of code (SulfurAI.py)
+688 lines of code (check_device_s.py)
+83 lines of code (Mean_device_s.py)
+99 lines of code (call_file_path.py)
+75 lines of code (SulfurSettings.py)
+
+-21/3/2025:
+
+290 lines of code (SulfurAI.py)
+688 lines of code (check_device_s.py)
+86 lines of code (Mean_device_s.py)
+99 lines of code (call_file_path.py)
+75 lines of code (SulfurSettings.py)
+
+-22/3/2025:
+
+299 lines of code (SulfurAI.py)
+716 lines of code (check_device_s.py)
+86 lines of code (Mean_device_s.py)
+99 lines of code (call_file_path.py)
+190 lines of code (SulfurSettings.py)
+
+-23/3/2025:
+
+299 lines of code (SulfurAI.py)
+800 lines of code (check_device_s.py)
+86 lines of code (Mean_device_s.py)
+127 lines of code (call_file_path.py)
+190 lines of code (SulfurSettings.py)
+
+-25/3/2025:
+
+301 lines of code (SulfurAI.py)
+813 lines of code (check_device_s.py)
+86 lines of code (Mean_device_s.py)
+127 lines of code (call_file_path.py)
+190 lines of code (SulfurSettings.py)
+76 lines of code (module_restore_trainingData.py)
+
+-26/3/2025:
+
+301 lines of code (SulfurAI.py)
+815 lines of code (check_device_s.py)
+83 lines of code (Mean_device_s.py)
+135 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+
+-27/3/2025:
+
+323 lines of code (SulfurAI.py)
+815 lines of code (check_device_s.py)
+83 lines of code (Mean_device_s.py)
+135 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+80 lines of code (preferences_basic_compare_s.py)
+
+-28/3/2025:
+
+332 lines of code (SulfurAI.py)
+815 lines of code (check_device_s.py)
+83 lines of code (Mean_device_s.py)
+151 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+168 lines of code (preferences_basic_compare_s.py)
+
+-29/3/2025:
+
+357 lines of code (SulfurAI.py)
+815 lines of code (check_device_s.py)
+83 lines of code (Mean_device_s.py)
+167 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+238 lines of code (preferences_basic_compare_s.py)
+
+-30/3/2025:
+
+370 lines of code (SulfurAI.py)
+815 lines of code (check_device_s.py)
+83 lines of code (Mean_device_s.py)
+183 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+291 lines of code (preferences_basic_compare_s.py)
+
+-1/4/2025:
+ITS JUST SIX - SEVEN
+
+375 lines of code (SulfurAI.py)
+815 lines of code (check_device_s.py)
+83 lines of code (Mean_device_s.py)
+199 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+336 lines of code (preferences_basic_compare_s.py)
+
+-3/4/2025:
+ITS MASSIVE
+
+375 lines of code (SulfurAI.py)
+836 lines of code (check_device_s.py)
+83 lines of code (Mean_device_s.py)
+199 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+366 lines of code (preferences_basic_compare_s.py)
+
+-4/4/2025:
+404 day
+
+377 lines of code (SulfurAI.py)
+839 lines of code (check_device_s.py)
+87 lines of code (Mean_device_s.py)
+207 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+399 lines of code (preferences_basic_compare_s.py)
+
+-5/4/2025:
+me happy no bug yes lets go!!!
+
+378 lines of code (SulfurAI.py)
+839 lines of code (check_device_s.py)
+87 lines of code (Mean_device_s.py)
+215 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+445 lines of code (preferences_basic_compare_s.py)
+
+
+UPDATE B)
+378 lines of code (SulfurAI.py)
+839 lines of code (check_device_s.py)
+87 lines of code (Mean_device_s.py)
+215 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+418 lines of code (preferences_basic_compare_s.py)
+
+-6/4/2025:
+bugs ;-;
+
+379 lines of code (SulfurAI.py)
+839 lines of code (check_device_s.py)
+87 lines of code (Mean_device_s.py)
+223 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+442 lines of code (preferences_basic_compare_s.py)
+
+-7/4/2025:
+chatgpt helped moment
+
+381 lines of code (SulfurAI.py)
+839 lines of code (check_device_s.py)
+87 lines of code (Mean_device_s.py)
+231 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+471 lines of code (preferences_basic_compare_s.py)
+
+-8/4/2025:
+50th version of sulfur!! ALSO 500 LINES OF PREFERENCES CODE LOOL
+
+381 lines of code (SulfurAI.py)
+839 lines of code (check_device_s.py)
+87 lines of code (Mean_device_s.py)
+231 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+500 lines of code (preferences_basic_compare_s.py)
+
+-9/4/2025:
+NO BUGS YIPPER (at least no exceptions)
+
+381 lines of code (SulfurAI.py)
+839 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+231 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+507 lines of code (preferences_basic_compare_s.py)
+
+-10/4/2025:
+money
+
+382 lines of code (SulfurAI.py)
+839 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+231 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+517 lines of code (preferences_basic_compare_s.py)
+
+-11/4/2025:
+panik
+
+372 lines of code (SulfurAI.py)
+839 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+239 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+
+-12-13/4/2025:
+bruh my brain
+
+377 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+239 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+
+-14/4/2025:
+kewl no bugs yey
+
+377 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+239 lines of code (call_file_path.py)
+252 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+
+-15/4/2025:
+kewl no bugs yey x2
+
+377 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+257 lines of code (call_file_path.py)
+310 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+
+-16/4/2025:
+it was a hassle installing pygame gui
+
+398 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+257 lines of code (call_file_path.py)
+369 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+
+-18/4/2025:
+p a I n
+
+411 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+281 lines of code (call_file_path.py)
+369 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+220 lines of code (sentence_detectAndInfer.py)
+
+ version 1-3-59:
+
+ 364 lines of code (SulfurAI.py)
+ 840 lines of code (check_device_s.py)
+ 111 lines of code (Mean_device_s.py)
+ 281 lines of code (call_file_path.py)
+ 369 lines of code (SulfurSettings.py)
+ 84 lines of code (module_restore_trainingData.py)
+ 77 lines of code (error.py)
+ 492 lines of code (preferences_basic_compare_s.py)
+ 220 lines of code (sentence_detectAndInfer.py)
+
+-20/4/2025:
+epicness
+
+364 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+283 lines of code (call_file_path.py)
+369 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+220 lines of code (sentence_detectAndInfer.py)
+
+ version 1-3-61:
+ 377 lines of code (SulfurAI.py)
+ 840 lines of code (check_device_s.py)
+ 111 lines of code (Mean_device_s.py)
+ 283 lines of code (call_file_path.py)
+ 369 lines of code (SulfurSettings.py)
+ 84 lines of code (module_restore_trainingData.py)
+ 77 lines of code (error.py)
+ 492 lines of code (preferences_basic_compare_s.py)
+ 306 lines of code (sentence_detectAndInfer.py)
+
+
+-21/4/2025:
+cool
+
+375 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+324 lines of code (call_file_path.py)
+369 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+
+-22/4/2025:
+my body aches
+
+381 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+324 lines of code (call_file_path.py)
+369 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+163 lines of code (sentence_detectAndCompare.py)
+
+-23/4/2025:
+my body aches x2
+
+404 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+324 lines of code (call_file_path.py)
+369 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+122 lines of code (sentence_detectAndCompare.py)
+
+-24/4/2025:
+working for the money
+
+412 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+324 lines of code (call_file_path.py)
+369 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+158 lines of code (sentence_detectAndCompare.py)
+
+-24/4/2025:
+lifes shit
+
+412 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+324 lines of code (call_file_path.py)
+369 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+
+-25/4/2025:
+lifes ok
+
+433 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+382 lines of code (call_file_path.py)
+521 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+
+-25/4/2025:
+not rich yet
+
+433 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+382 lines of code (call_file_path.py)
+309 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+
+-1/5/2025:
+pain in the ahh
+
+434 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+347 lines of code (call_file_path.py)
+309 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+85 lines of code (trainer.py)
+
+-2/5/2025:
+less of a pain
+
+434 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+347 lines of code (call_file_path.py)
+309 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+126 lines of code (trainer.py)
+
+-3/5/2025:
+E
+
+434 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+347 lines of code (call_file_path.py)
+309 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+213 lines of code (trainer.py)
+
+-5/5/2025:
+pluh
+
+454 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+371 lines of code (call_file_path.py)
+309 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+213 lines of code (trainer.py)
+
+-6/5/2025:
+pluhHHHHHHH
+
+439 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+371 lines of code (call_file_path.py)
+309 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+213 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+
+-8/5/2025:
+gah
+
+439 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+388 lines of code (call_file_path.py)
+332 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+492 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+219 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+
+-9/5/2025:
+I LIKE MOLEAH
+
+481 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+388 lines of code (call_file_path.py)
+332 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+262 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+
+-10/5/2025:
+too many bugs
+
+484 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+394 lines of code (call_file_path.py)
+381 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+264 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+
+-14/5/2025:
+ashfdh
+
+484 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+400 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+269 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+
+-14/5/2025:
+tired pfft
+
+477 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+412 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+269 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+
+-16/5/2025:
+skibiti toilet
+
+477 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+412 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+269 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+
+-19/5/2025:
+rahhh
+
+534 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+424 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+269 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+130 lines of code (location_detect_s.py)
+
+-20/5/2025:
+rahhh 2
+
+534 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+430 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+269 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+254 lines of code (location_detect_s.py)
+
+-22/5/2025:
+pretty w cl
+
+554 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+430 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+297 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+-23/5/2025:
+eh.. its w
+
+554 lines of code (SulfurAI.py)
+840 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+430 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+-25/5/2025:
+eh.. its meh
+
+678 lines of code (SulfurAI.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+430 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+-29/5/2025:
+vex
+
+796 lines of code (SulfurAI.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+436 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+-29/5/2025:
+holly :D
+
+833 lines of code (SulfurAI.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+436 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+-3/6/2025:
+pluhh
+
+860 lines of code (SulfurAI.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+442 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+326 lines of code (sentence_detectAndInfer.py)
+144 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+
+-4/6/2025:
+pluhh x2
+
+898 lines of code (SulfurAI.py)
+850 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+442 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+
+
+-6/6/2025:
+idk mann
+
+905 lines of code (SulfurAI.py)
+850 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+448 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+87 lines of code (SulfurConsole.py)
+
+
+-7/6/2025:
+rah
+
+910 lines of code (SulfurAI.py)
+850 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+454 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-15/6/2025:
+rah
+
+910 lines of code (SulfurAI.py)
+444 lines of code (SulfurDashboard.py)
+850 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+454 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-19/6/2025:
+hello holly
+
+910 lines of code (SulfurAI.py)
+492 lines of code (SulfurDashboard.py)
+850 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+454 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-20/6/2025:
+pleh
+
+910 lines of code (SulfurAI.py)
+556 lines of code (SulfurDashboard.py)
+850 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+454 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-22/6/2025:
+...
+
+910 lines of code (SulfurAI.py)
+479 lines of code (SulfurDashboard.py)
+850 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+454 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-24/6/2025:
+drag
+
+910 lines of code (SulfurAI.py)
+541 lines of code (SulfurDashboard.py)
+850 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+472 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-25/6/2025:
+drag x2
+
+910 lines of code (SulfurAI.py)
+546 lines of code (SulfurDashboard.py)
+850 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+472 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-27/6/2025:
+im finished
+
+910 lines of code (SulfurAI.py)
+555 lines of code (SulfurDashboard.py)
+850 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+472 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-29/6/2025:
+my birth day :) :(
+
+910 lines of code (SulfurAI.py)
+603 lines of code (SulfurDashboard.py)
+850 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+472 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+1/7/2025:
+drag
+
+772 lines of code (SulfurAI.py)
+603 lines of code (SulfurDashboard.py)
+850 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+472 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+191 lines of code (pipdependancyinstaller.py)
+
+
+3/7/2025:
+drag x2 (feelin betta)
+
+780 lines of code (SulfurAI.py)
+603 lines of code (SulfurDashboard.py)
+850 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+472 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+203 lines of code (pipdependancyinstaller.py)
+
+17/7/2025:
+pluh
+
+780 lines of code (SulfurAI.py)
+603 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+472 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+203 lines of code (pipdependancyinstaller.py)
+
+19/7/2025:
+ive accepted it lads
+
+804 lines of code (SulfurAI.py)
+603 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+472 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+203 lines of code (pipdependancyinstaller.py)
+
+20/7/2025:
+moved on
+
+794 lines of code (SulfurAI.py)
+603 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+203 lines of code (pipdependancyinstaller.py)
+
+21/7/2025:
+we both moved on
+
+794 lines of code (SulfurAI.py)
+711 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+203 lines of code (pipdependancyinstaller.py)
+
+24/7/2025:
+life is peace
+
+794 lines of code (SulfurAI.py)
+910 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+203 lines of code (pipdependancyinstaller.py)
+
+27/7/2025:
+life is peace
+
+794 lines of code (SulfurAI.py)
+953 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+203 lines of code (pipdependancyinstaller.py)
+
+28/7/2025:
+life is peace
+
+881 lines of code (SulfurAI.py)
+1029 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+278 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+203 lines of code (pipdependancyinstaller.py)
+
+30/7/2025:
+life is peace
+
+948 lines of code (SulfurAI.py)
+1029 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+303 lines of code (location_detect_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+203 lines of code (pipdependancyinstaller.py)
+
+30/7/2025:
+life is peace x2
+
+954 lines of code (SulfurAI.py)
+1029 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+303 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+203 lines of code (pipdependancyinstaller.py)
+
+31/7/2025:
+7 hours
+
+954 lines of code (SulfurAI.py)
+1029 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+303 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+203 lines of code (pipdependancyinstaller.py)
+
+3/8/2025:
+2 days 💀
+
+501 lines of code (SulfurAI.py)
+1029 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+303 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+400 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+302 lines of code (pipdependancyinstaller.py)
+
+5/8/2025:
+lock in. mentality.
+
+951 lines of code (SulfurAI.py)
+1029 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+303 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+400 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+302 lines of code (pipdependancyinstaller.py)
+
+6/8/2025:
+lock in. mentality.
+
+1010 lines of code (SulfurAI.py)
+1029 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+303 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+400 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+302 lines of code (pipdependancyinstaller.py)
+
+7/8/2025:
+lock in. mentality.
+
+1050 lines of code (SulfurAI.py)
+1029 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+303 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+400 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+302 lines of code (pipdependancyinstaller.py)
+
+-----------MODEL CODE---------
+52 lines of code (find_models.py)
+
+8/8/2025:
+lock in. mentality.
+
+1050 lines of code (SulfurAI.py)
+1029 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+308 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+400 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+302 lines of code (pipdependancyinstaller.py)
+
+-----------MODEL CODE---------
+52 lines of code (find_models.py)
+
+-----------SDK CODE---------
+225 lines of code (GeneralDeveloper'sNotebook.html)
+
+14/8/2025:
+lock in. mentality.
+
+1050 lines of code (SulfurAI.py)
+1301 lines of code (SulfurDashboard.py)
+849 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+308 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+400 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+302 lines of code (pipdependancyinstaller.py)
+
+-----------MODEL CODE---------
+52 lines of code (find_models.py)
+
+-----------SDK CODE---------
+225 lines of code (GeneralDeveloper'sNotebook.html)
+
+15/8/2025:
+lock in. mentality.
+
+1054 lines of code (SulfurAI.py)
+1301 lines of code (SulfurDashboard.py)
+878 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+308 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+400 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+302 lines of code (pipdependancyinstaller.py)
+
+-----------MODEL CODE---------
+52 lines of code (find_models.py)
+
+-----------SDK CODE---------
+225 lines of code (GeneralDeveloper'sNotebook.html)
+
+16/8/2025:
+lock in. mentality.
+
+1054 lines of code (SulfurAI.py)
+1301 lines of code (SulfurDashboard.py)
+878 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+308 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+458 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+302 lines of code (pipdependancyinstaller.py)
+
+-----------MODEL CODE---------
+52 lines of code (find_models.py)
+
+-----------SDK CODE---------
+225 lines of code (GeneralDeveloper'sNotebook.html)
+
+19/8/2025:
+lock in. mentality.
+
+1054 lines of code (SulfurAI.py)
+1301 lines of code (SulfurDashboard.py)
+878 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+308 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+458 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+302 lines of code (pipdependancyinstaller.py)
+
+-----------MODEL CODE---------
+52 lines of code (find_models.py)
+
+-----------SDK CODE---------
+225 lines of code (GeneralDeveloper'sNotebook.html)
+
+-----------DATAPROFILE CODE---------
+140 lines of code (run_profile_builder.py)
+25 lines of code (delete_profiles_manual.py)
+
+27/8/2025:
+lock in. mentality.
+
+1054 lines of code (SulfurAI.py)
+1301 lines of code (SulfurDashboard.py)
+878 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+308 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+651 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+302 lines of code (pipdependancyinstaller.py)
+
+-----------MODEL CODE---------
+52 lines of code (find_models.py)
+
+-----------SDK CODE---------
+225 lines of code (GeneralDeveloper'sNotebook.html)
+
+-----------DATAPROFILE CODE---------
+140 lines of code (run_profile_builder.py)
+636 lines of code (general_model_debug.py)
+25 lines of code (delete_profiles_manual.py)
+
+28/8/2025:
+lock in. mentality.
+
+1054 lines of code (SulfurAI.py)
+1301 lines of code (SulfurDashboard.py)
+878 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+308 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+908 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+302 lines of code (pipdependancyinstaller.py)
+
+-----------MODEL CODE---------
+52 lines of code (find_models.py)
+
+-----------SDK CODE---------
+225 lines of code (GeneralDeveloper'sNotebook.html)
+
+-----------DATAPROFILE CODE---------
+271 lines of code (run_profile_builder.py)
+636 lines of code (general_model_debug.py)
+25 lines of code (delete_profiles_manual.py)
+
+30/8/2025:
+lock in. mentality.
+
+1054 lines of code (SulfurAI.py)
+1301 lines of code (SulfurDashboard.py)
+878 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+308 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+953 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+302 lines of code (pipdependancyinstaller.py)
+
+-----------MODEL CODE---------
+52 lines of code (find_models.py)
+
+-----------SDK CODE---------
+225 lines of code (GeneralDeveloper'sNotebook.html)
+
+-----------DATAPROFILE CODE---------
+488 lines of code (run_profile_builder.py)
+636 lines of code (general_model_debug.py)
+25 lines of code (delete_profiles_manual.py)
+
+2/9/2025:
+lock in. mentality.
+
+1082 lines of code (SulfurAI.py)
+1301 lines of code (SulfurDashboard.py)
+878 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+308 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+1019 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+302 lines of code (pipdependancyinstaller.py)
+
+-----------MODEL CODE---------
+52 lines of code (find_models.py)
+
+-----------SDK CODE---------
+225 lines of code (GeneralDeveloper'sNotebook.html)
+
+-----------DATAPROFILE CODE---------
+1539 lines of code (run_profile_builder.py)
+636 lines of code (general_model_debug.py)
+25 lines of code (delete_profiles_manual.py)
+
+24/9/2025:
+lock in. mentality.
+
+1082 lines of code (SulfurAI.py)
+1301 lines of code (SulfurDashboard.py)
+878 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+308 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+1019 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+2094 lines of code (pipdependancyinstaller.py)
+
+-----------MODEL CODE---------
+52 lines of code (find_models.py)
+
+-----------SDK CODE---------
+225 lines of code (GeneralDeveloper'sNotebook.html)
+
+-----------DATAPROFILE CODE---------
+1539 lines of code (run_profile_builder.py)
+636 lines of code (general_model_debug.py)
+25 lines of code (delete_profiles_manual.py)
+
+27/9/2025:
+lockd in. mentality.
+
+1082 lines of code (SulfurAI.py)
+1301 lines of code (SulfurDashboard.py)
+878 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+308 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+1019 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+2795 lines of code (pipdependancyinstaller.py)
+
+-----------MODEL CODE---------
+52 lines of code (find_models.py)
+
+-----------SDK CODE---------
+225 lines of code (GeneralDeveloper'sNotebook.html)
+
+-----------DATAPROFILE CODE---------
+1539 lines of code (run_profile_builder.py)
+636 lines of code (general_model_debug.py)
+25 lines of code (delete_profiles_manual.py)
+
+25/10/2025:
+been a while huh
+
+1082 lines of code (SulfurAI.py)
+1301 lines of code (SulfurDashboard.py)
+878 lines of code (check_device_s.py)
+111 lines of code (Mean_device_s.py)
+485 lines of code (call_file_path.py)
+413 lines of code (SulfurSettings.py)
+84 lines of code (module_restore_trainingData.py)
+77 lines of code (error.py)
+501 lines of code (preferences_basic_compare_s.py)
+327 lines of code (sentence_detectAndInfer.py)
+145 lines of code (sentence_detectAndCompare.py)
+307 lines of code (trainer.py)
+58 lines of code (arch_runner.py)
+308 lines of code (location_detect_s.py)
+303 lines of code (location_trends_s.py)
+
+
+-----------RENDER CODE---------
+1019 lines of code (render_scripts_general.py)
+38 lines of code (call_ai.py)
+49 lines of code (finish_render.py)
+
+-----------API CODE---------
+54 lines of code (except_host.py)
+88 lines of code (SulfurConsole.py)
+
+-----------CACHE CODE---------
+59 lines of code (clear_cache.py)
+
+-----------DEPENDANCY CODE---------
+2795 lines of code (pipdependancyinstaller.py)
+
+-----------MODEL CODE---------
+52 lines of code (find_models.py)
+
+-----------SDK CODE---------
+225 lines of code (GeneralDeveloper'sNotebook.html)
+
+-----------DATAPROFILE CODE---------
+6180 lines of code (run_profile_builder.py)
+636 lines of code (general_model_debug.py)
+25 lines of code (delete_profiles_manual.py)
+
+
+16/11/2025+ :
+
+- This file is now deprecated as of build-1.3.99d-patch8
+
+
+
+
+
+
