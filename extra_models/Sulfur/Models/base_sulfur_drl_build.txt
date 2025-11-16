@@ -1,0 +1,8 @@
+default====True
+name====SulfurAI
+main_model====SulfurAI.py
+data====DATA\ai_renderer\training_data\data_train\data.txt====DATA\ai_renderer\training_data\data_train_sk\data.txt====VersionDATA\ai_renderer\sentence_location_build\training_data_sentences\data.txt====VersionDATA\ai_renderer_2\training_data_sentences\data.csv
+architechture====sulfax
+server_support_local====True
+server_support_online====False
+encrypted_secure====False

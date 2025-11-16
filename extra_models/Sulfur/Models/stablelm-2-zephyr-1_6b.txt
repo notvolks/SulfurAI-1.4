@@ -1,0 +1,8 @@
+default====False
+name====stabilityai/stablelm-2-zephyr-1_6b
+main_model====nan
+data====nan
+architechture====Decoder_Only
+server_support_local====True
+server_support_online====True
+encrypted_secure====False

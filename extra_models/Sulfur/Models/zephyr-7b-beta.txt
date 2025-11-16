@@ -1,0 +1,8 @@
+default====False
+name====HuggingFaceH4/zephyr-7b-beta
+main_model====nan
+data====nan
+architechture====Dense_Transformer_Casual
+server_support_local====True
+server_support_online====True
+encrypted_secure====False

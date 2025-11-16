@@ -1,0 +1,2 @@
+print("⚠️ This application is external to SulfurAI and is maintained by different sources. Therefore project works may be different.")
+print("⚠️ This application is external to SulfurAI. Do you trust it? Ensure it comes from a trusted source before proceeding.")

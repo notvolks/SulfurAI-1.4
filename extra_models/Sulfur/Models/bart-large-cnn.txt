@@ -1,0 +1,8 @@
+default====False
+name====facebook/bart-large-cnn
+main_model====nan
+data====nan
+architechture====STS
+server_support_local====True
+server_support_online====True
+encrypted_secure====False

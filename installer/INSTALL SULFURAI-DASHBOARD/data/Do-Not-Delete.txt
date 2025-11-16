@@ -1,0 +1,2 @@
+This script contains all dependencies for SulfurAI external apps.
+Removing this folder is against the TOS and could break your installation.
