@@ -1,0 +1,201 @@
+.section-ring {
+    pointer-events: none;
+    position: absolute;
+    top: -5px; left: -5px; right: -5px; bottom: -5px;
+    border-radius: 18px;
+    border: 3px solid transparent;
+    border-image: conic-gradient(from var(--angle, 0deg), rgba(255,255,255,0.8) 0deg 20deg, rgba(255,255,255,0) 20deg 360deg) 1;
+    z-index: 2;
+    transition: box-shadow 0.2s ease;
+}
+
+.section-ring-sidebar {
+    pointer-events: none;
+    position: absolute;
+    top: -5px; left: -5px; right: -5px; bottom: -5px;
+    border-radius: 18px;
+    border: 3px solid transparent;
+    z-index: 2;
+    transition: box-shadow 0.2s ease;
+}
+
+.glowing-section {
+    position: relative;
+    border: 3px solid #FFA500;
+    border-radius: 12px;
+    background-color: #222222;
+    padding: 20px;
+    margin: 20px auto 40px auto;
+    box-shadow: 0 4px 12px rgba(255,165,0,0.3);
+    color: white;
+    max-width: 950px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    overflow: visible;
+}
+
+.glowing-section-sidebar {
+    position: relative;
+    border: 2px solid #FFA500;
+    border-radius: 8px;
+    background-color: #222;
+    padding: 10px 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(255,165,0,0.3);
+    color: white;
+    width: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+}
+.glowing-section-sidebar:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(255,165,0,0.5);
+}
+
+.glowing-section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFA500;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(255,165,0,0.9);
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#ring {
+    pointer-events: none;
+    position: absolute;
+    top: -8px; left: -8px; right: -8px; bottom: -8px;
+    border-radius: 24px;
+    border: 5px solid transparent;
+    border-image: conic-gradient(from var(--angle, 0deg), rgba(255,255,255,0.8) 0deg 20deg, rgba(255,255,255,0) 20deg 360deg) 1;
+    z-index: 1;
+    transition: box-shadow 0.2s ease;
+}
+
+.glowing-chart {
+    position: relative;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(255,165,0,0.3);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    overflow: visible;
+    display: inline-block; /* Ensures it wraps content */
+    width: auto;           /* Allow it to grow/shrink with content */
+}
+
+.glowing-chart .chart-ring {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    border: 3px solid transparent;
+    border-image: conic-gradient(
+        from var(--angle, 0deg),
+        rgba(255,255,255,0.8) 0deg 20deg,
+        rgba(255,255,255,0) 20deg 360deg
+    ) 1;
+    z-index: 2;
+    transition: box-shadow 0.2s ease, width 0.2s, height 0.2s;
+    pointer-events: none;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 4px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 8px rgba(255,165,0,0.25);
+    transition: transform 0.2s ease;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.slider-ring {
+    pointer-events: none;
+    position: absolute;
+    top: -4px; left: -4px; right: -4px; bottom: -4px;
+    border-radius: 14px;
+    border: 2px solid transparent;
+    border-image: conic-gradient(from var(--angle, 0deg), rgba(255,255,255,0.8) 0deg 20deg, rgba(255,255,255,0) 20deg 360deg) 1;
+    z-index: 1;
+    transition: box-shadow 0.2s ease;
+}
+
+.gradient-divider {
+    height: 2px;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        rgba(255, 215, 0, 0.5) 20%,
+        rgba(255, 165, 0, 0.8) 50%,
+        rgba(255, 215, 0, 0.5) 80%,
+        transparent 100%
+    );
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+    position: absolute;
+    width: 67%;
+    left: 15%;
+    top: 300px;  /* Adjust this value to position the divider */
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply the scrolling background */
+.glowing-dashboard-container {
+  /* replace with your own image URL, or a gradient */
+  background: url('DATA\images\logo\SulfurAILogo.jpeg') repeat;
+  background-size: auto 200%; /* wider than viewport vertically */
+  animation: scrollBG 60s linear infinite;
+}
+
+.summary-content {
+    color: #FFD700;
+    font-size: 18px;
+    font-family: 'Arial Black', sans-serif;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    pointer-events: auto;
+}
+
+#summary-section {
+    position: absolute; /* or relative, depending on your layout */
+    top: 850px; /* Adjust this value based on your layout */
+    left: 35%; /* Consider using percentages or 'calc()' for responsiveness */
+    width: 30%; /* Ensure this doesn't push it off-screen */
+}
+
+@media (max-width: 700px) {
+    #summary-section {
+        top: 600px; /* Adjust this value based on your layout */
+        width: 90%; /* Make it wider for smaller screens */
+        left: 5%; /* Center it */
+        position: relative; /* Ensure it's positioned correctly */
+    }
+}
+
+/* Keyframes to move the background downward */
+@keyframes scrollBG {
+  from { background-position: 0 0; }
+  to   { background-position: 0 100%; }
+}
+"""

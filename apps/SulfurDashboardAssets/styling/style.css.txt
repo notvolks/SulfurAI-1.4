@@ -1,0 +1,79 @@
+.glowing-section {{
+          position: relative;
+          border: 3px solid #FFA500;
+          border-radius: 20px;
+          background-color: #222222;
+          padding: 20px;
+          margin: 20px auto 40px auto;
+          box-shadow: 0 8px 30px rgba(255,165,0,0.5);
+          color: white;
+          max-width: 950px;
+          display: flex;
+          gap: 20px;
+          flex-wrap: wrap;
+          justify-content: center;
+          transition: transform 0.2s ease;
+          cursor: pointer;
+      }}
+      .glowing-section-title {{
+          font-family: 'Roboto', sans-serif;
+          font-size: 2rem;
+          font-weight: 700;
+          color: #FFA500;
+          text-align: center;
+          text-shadow: 0 0 8px rgba(255,165,0,0.9);
+          margin-bottom: 15px;
+          width: 100%;
+      }}
+      #ring {{
+          pointer-events: none;
+          position: absolute;
+          top: -8px; left: -8px; right: -8px; bottom: -8px;
+          border-radius: 24px;
+          border: 5px solid transparent;
+          border-image: conic-gradient(from var(--angle, 0deg), rgba(255,255,255,0.8) 0deg 20deg, rgba(255,255,255,0) 20deg 360deg) 1;
+          z-index: 1;
+          transition: box-shadow 0.2s ease;
+      }}
+      .glowing-chart {{
+          position: relative;
+          border-radius: 12px;
+          width: 220px;
+          padding: 10px;
+          box-shadow: 0 4px 12px rgba(255,165,0,0.3);
+          flex-shrink: 0;
+          transition: transform 0.2s ease;
+          cursor: pointer;
+          overflow: visible;
+      }}
+      .glowing-chart .chart-ring {{
+          pointer-events: none;
+          position: absolute;
+          top: -5px; left: -5px; right: -5px; bottom: -5px;
+          border-radius: 18px;
+          border: 3px solid transparent;
+          border-image: conic-gradient(from var(--angle, 0deg), rgba(255,255,255,0.8) 0deg 20deg, rgba(255,255,255,0) 20deg 360deg) 1;
+          z-index: 2;
+          transition: box-shadow 0.2s ease;
+      }}
+      .slider-wrapper {{
+          position: relative;
+          width: 100%;
+          padding: 4px;
+          border-radius: 12px;
+          margin-bottom: 10px;
+          box-shadow: 0 2px 8px rgba(255,165,0,0.25);
+          transition: transform 0.2s ease;
+          overflow: visible;
+          cursor: pointer;
+      }}
+      .slider-ring {{
+          pointer-events: none;
+          position: absolute;
+          top: -4px; left: -4px; right: -4px; bottom: -4px;
+          border-radius: 14px;
+          border: 2px solid transparent;
+          border-image: conic-gradient(from var(--angle, 0deg), rgba(255,255,255,0.8) 0deg 20deg, rgba(255,255,255,0) 20deg 360deg) 1;
+          z-index: 1;
+          transition: box-shadow 0.2s ease;
+      }}
