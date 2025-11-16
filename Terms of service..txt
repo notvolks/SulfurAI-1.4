@@ -1,0 +1,108 @@
+VolksHub & SulfurAI – Terms of Service
+Effective Date: 13 August 2025
+
+These Terms of Service ("TOS") govern your use of all services, software, platforms, codebases, assets, and tools provided by VolksHub and its AI division SulfurAI (collectively, “Services”). By installing, accessing, or using any part of the Services, you agree to the terms set forth herein **and** to the separate VolksHub TOS located at:
+
+```
+A VolksHub production/The VolksHub TOS
+```
+
+(collectively, the “Agreement”). If you do not agree to all of these terms, do not use the Services.
+
+1. Definitions
+   a. **User**, **you**, or **your**: any individual or entity accessing or using the Services.
+   b. **Services**: all VolksHub and SulfurAI software, APIs, dashboards, libraries, tools, game modifications, and related documentation.
+   c. **Contributor**: any person or organization who submits code, assets, feedback, or other work to VolksHub or SulfurAI.
+   d. **SulfurAI**: the AI-driven marketing and analytics suite developed by VolksHub, including chat interfaces, model-training pipelines, dashboards, and related services, also referred to legally as a Local Analytical Model (LoAM).
+
+2. Scope of Agreement
+   a. These TOS apply to every version, release, update, or derivative of the Services, including test builds and beta programs.
+   b. Project-specific licenses, policies, or terms (often in a file named **Terms of service.txt** in the project root) supplement these TOS and are legally binding. **The latest version** of any such project-specific TOS applies and, in the event of any conflict with these general TOS, will govern that specific project.
+
+3. General Use & Legal Compliance General Use & Legal Compliance
+   a. You agree to pay all applicable fees for commercial or business use of SulfurAI per your subscription agreement. Fees are due in GBP as specified.
+   b. Failure by VolksHub to enforce any provision does not waive its rights.
+   c. You may not share, distribute, or leak modified versions, Development Tool Kits, or proprietary information without explicit written permission.
+   d. You will not exploit legal loopholes, inject malicious code, or coerce the Services to perform unauthorized acts, including but not limited to terrorism, fraud, data tracking without consent, NSFW content, or illegal activity.
+
+4. Usage of Services & Artificial Intelligence (SulfurAI)
+   a. You may not use Services for illegal, harmful, or abusive activities, including rights infringement, malware distribution, or abuse of rate limits and protective measures.
+   b. You may not reverse engineer, decompile, or extract underlying models, algorithms, or data from SulfurAI.
+   c. You may not claim SulfurAI outputs are human-generated nor develop competing models using SulfurAI outputs.
+   d. You retain ownership of Input data; that term, along with Output, constitutes Content. You warrant you have rights to all Content you submit.
+   e. We may suspend or terminate access if you breach these Terms, violate usage policies, or create risk of harm or legal exposure.
+   f. You agree that Outputs are provided "AS-IS" and should not be relied on as sole sources of truth or professional advice.
+
+5. Identification & Classification of SulfurAI
+   a. Legally, SulfurAI is classified as a Local Analytical Model (LoAM), not generically as "AI".
+   b. References to "artificial intelligence" are for literacy or entertainment; SulfurAI operates locally on machine learning and neural networking.
+
+6. External Application Integration
+   a. SulfurAI open-source SDK and DevKit programs permit integration into External Applications only under their specific TOS.
+   b. External Applications must preserve provided folder structures (e.g., "data") and comply with SDK/DevKit terms.
+   c. VolksHub reserves the right to disable non-compliant External Applications in marketplaces or installations.
+
+7. Account Registration & Security
+   a. Certain SulfurAI features require registration and an API key. You must provide accurate information and safeguard credentials.
+   b. Notify us immediately of unauthorized access or credential compromise.
+
+8. License Grant & Restrictions
+   a. We grant a limited, non-exclusive, non-transferable, revocable license for internal, non-commercial use unless a commercial agreement is in place.
+   b. You may not sublicense, redistribute, or transfer the Services, nor decompile or reverse-engineer except as permitted by law.
+
+9. Contributor Anonymity
+   a. Public credits remain anonymous unless contributors explicitly request attribution in writing.
+   b. Attribution requests must be submitted via official channels.
+
+10. Intellectual Property & Modifications
+    a. All content, trademarks, logos, and software are property of VolksHub or licensors.
+    b. Unauthorized modification or redistribution of original code, game files, or scripts is prohibited without written permission.
+
+11. Submissions & Feedback
+    Any feedback, suggestions, or submissions are non-confidential and royalty-free; VolksHub may use them without obligation.
+
+12. Fees, Payments & Refunds
+    a. Core VolksHub software is free unless otherwise specified. SulfurAI paid tiers require subscription agreements.
+    b. Fees are non-refundable except as mandated by law or contract.
+
+13. Privacy & Data Protection
+    a. Our Privacy Policy governs personal data collection and use. You consent by using the Services.
+    b. SulfurAI may collect anonymized usage analytics for improvement purposes.
+
+14. Warranties Disclaimer
+    a. SERVICES ARE PROVIDED "AS-IS" AND "AS-AVAILABLE" WITHOUT WARRANTIES.
+    b. WE DISCLAIM ALL WARRANTIES, INCLUDING MERCHANTABILITY AND FITNESS FOR PURPOSE.
+
+15. Limitation of Liability
+    a. TO THE MAXIMUM EXTENT PERMITTED BY LAW, VOLKSHUB AND AFFILIATES ARE NOT LIABLE FOR INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES.
+    b. TOTAL LIABILITY IS LIMITED TO FEES PAID IN THE PRIOR TWELVE MONTHS OR €100, WHICHEVER IS GREATER.
+
+16. Indemnification
+    You agree to indemnify and hold harmless VolksHub, SulfurAI, and affiliates from claims arising from your breach or misuse of Services.
+
+17. Termination & Survival
+    a. We may suspend or terminate access for breach or at our discretion.
+    b. Sections on anonymity, usage provisions, IP, privacy, warranties, liability, indemnification, and governing law survive termination.
+
+18. Export Compliance
+    You agree to comply with UK and EU export laws; you may not use Services in prohibited territories or transfer them to restricted parties.
+
+19. Governing Law & Dispute Resolution
+    a. Governed by the laws of VolksHub’s registered jurisdiction.
+    b. Exclusive disputes in that jurisdiction’s courts within 12 months of claim.
+
+20. Notices & Severability
+    a. Notices must be in writing and sent to official contact addresses.
+    b. Invalid provisions do not affect the remainder of the Agreement.
+
+21. SulfurAI Output Usage & Disclaimer
+a. SulfurAI may generate “AI Plans” or “AI User Data Profiles,” which may be described, promoted, or marketed as “ensuring adherence to plans” or similar statements. Such descriptions are intended solely for illustrative, literary, and/or entertainment purposes, and do not constitute a promise, guarantee, or assurance of performance or results.
+
+b. You acknowledge and agree that all “AI Plans,” “AI User Data Profiles,” and any related features or content are provided for informational, advisory, and/or entertainment purposes only. You further agree not to hold VolksHub, SulfurAI, or their affiliates, officers, employees, or agents liable for any decisions, actions, omissions, or outcomes resulting from your use of such features or content. Any statements, marketing language, or representations suggesting otherwise shall be interpreted in accordance with this clause.
+
+22. Entire Agreement
+    This Agreement, plus referenced documents, is the complete understanding between you and VolksHub regarding Services.
+
+**Contact Information:**
+VolksHub Legal & Compliance
+Email: [nb.volkshub.inquiries@gmail.com]
