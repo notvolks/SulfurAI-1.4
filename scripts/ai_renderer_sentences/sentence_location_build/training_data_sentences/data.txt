@@ -1,0 +1,474 @@
+
+['woah this test is going pretty epicness']	England	98.04520606994629
+['Yesterday malanie was stream by the current.']	England	99.42982792854309
+['Yesterday valentia was did by the beady hot_seat.']	England	99.79175329208374
+['On sunday obadiah was did by the olympian magazine.']	England	99.90536868572235
+['This morning at 16:40 anurag did the hemlock.']	England	96.8575268983841
+['This morning at 17:39 rina did the yawl.']	England	98.33608567714691
+['Garvy was did by the amended mason.']	England	99.93269443511963
+['Marci did the selkup.']	England	99.0794837474823
+['On monday standford aim the purpose.']	England	85.96581518650055
+['Yesterday chrystel did the raucous satinet.']	England	98.25108647346497
+['On thursday elayne chart the eastern chartist.']	England	94.94372010231018
+['Jena did the jong.']	England	97.47732281684875
+['This morning at 22:39 morgan did the ginger pushan.']	England	97.73121476173401
+['On friday luana was fire by the theist fire.']	England	99.24338459968567
+['Yesterday ashly did the long lichen.']	England	93.7536746263504
+['Yesterday praneetf was did by the yakut.']	England	99.85032379627228
+['Institution light loss capital strong once.']	England	84.64974761009216
+['Address citizen somebody environmental very why.']	England	98.60943257808685
+['Past pick coach hold move.']	England	89.2073929309845
+['Catch office listen six exactly federal catch.']	England	92.37763583660126
+['Recognize point follow pass build with.']	England	96.22666835784912
+['Father only coach field operation yet theory.']	England	96.52987122535706
+['Dee was did by the agrestic teamwork.']	England	99.98686611652374
+['Zippy admix the hooker.']	England	83.51719677448273
+['This morning at 23:04 scot total the bloomers.']	England	91.24121069908142
+['On friday shayla screen the granicus.']	England	67.31349676847458
+['This morning at 15:52 florida stock the wall_rue.']	England	92.11111068725586
+['Yesterday paten wash_out the scout.']	England	85.9333723783493
+['Yesterday alexi bankroll the line.']	England	63.223469257354736
+['Jacob speckle the roommate.']	England	83.80934000015259
+['Yesterday feliza bandy the nobelium.']	England	59.12144482135773
+['On saturday mickie spang the pyrites.']	England	73.57160598039627
+['This morning at 21:16 gail ennoble the dairyman.']	England	91.80774688720703
+['On monday shanna issue the wiccan.']	England	85.56560575962067
+['Yesterday frederica begin the ptyalin.']	England	79.8829734325409
+['This morning at 02:43 elwira vet the cramp.']	England	90.47605395317078
+['Noam suggest the quince.']	England	92.81709492206573
+['Yesterday kerry crumble the fool.']	England	69.86700147390366
+['On tuesday erena measure the hellion.']	England	92.07309186458588
+['Dru deplume the shallot.']	England	78.13160419464111
+['Yesterday correna straiten the mountain.']	England	83.5176408290863
+['This morning at 06:05 morganica recast the fagoting.']	England	95.20378112792969
+['Yesterday miquela derail the skagit.']	England	57.07899257540703
+['Charline indurate the sting.']	England	94.67390775680542
+['Yesterday corrie agree the guy.']	England	93.5772716999054
+['This morning at 14:24 greer fume the probate.']	England	90.41649997234344
+['On friday guillermo devolve the taco.']	England	100.0
+['Yesterday auberta fly the clanger.']	England	85.53504049777985
+['On tuesday eyde sin the gig.']	England	67.26255416870117
+['On saturday chanderjit contrast the smoke.']	England	74.50321465730667
+['On monday cliff sign the cup_tie.']	England	100.0
+['This morning at 18:00 maurie point the edge.']	England	88.07002305984497
+['Sylvester strip the tractor.']	England	83.94103646278381
+['This morning at 11:27 leticia bayonet the cyberart.']	England	88.67650330066681
+['Beverie gap the hansom.']	England	65.02450704574585
+['This morning at 19:06 red disturb the rhexia.']	England	86.40752732753754
+['This morning at 22:17 kettie compound the reel.']	England	88.59493434429169
+['This morning at 14:10 murdoch parlay the windaus.']	England	78.57719659805298
+['Yesterday josefina stub_out the blackout.']	England	83.89906883239746
+['Yesterday kelsey solarize the tilth.']	England	81.52444362640381
+['Yesterday jasper rustle the mpeg.']	England	83.54130387306213
+['Adger co-opt the cult.']	England	95.42604982852936
+['On sunday caitlin weld the slammer.']	England	87.36158311367035
+['Yesterday zandra afford the stoop.']	England	76.31000280380249
+['Marlee was did by the radical cedilla.']	England	99.8007595539093
+['Laryssa did the porpoise.']	England	93.18512380123138
+['Yesterday tiphany haul the draw.']	England	78.70823740959167
+['Deserunt assumenda ullam temporibus maiores ipsa ipsum.']	Italy	51.25882746651769
+['Confessare americano arte cielo.']	Italy	100.0
+['Sed maxime magni.']	Italy	100.0
+['Modi corporis esse architecto sit consequuntur occaecati.']	Italy	100.0
+['资源影响其他工作不是时候.']	China	50.01110574885388
+['Can little table between.']	England	78.0665934085846
+['May house program possible.']	England	95.1169103384018
+['Necessitatibus asperiores aperiam nulla.']	Italy	89.99555592940088
+['音乐不同他们电话中文有限.']	China	99.40066337585449
+['Problema zitto alto un reale animo ufficiale.']	Italy	100.0
+['Laudantium autem veritatis voluptates voluptatum delectus ipsum.']	Spain	100.0
+['这些市场还是深圳.']	China	100.0
+['保証金ヘアバス血まみれの虐待ダッシュカラム知覚。']	Japan	100.0
+['Autorità vuoto dimostrare mentre opera.']	Italy	100.0
+['Yesterday julee attest the toda.']	United States	100.0
+['Lilla bake the bottle.']	United States	100.0
+['Wide book either all message suggest.']	United States	100.0
+['Begin continue describe magazine several partner.']	United States	100.0
+['Too between appear color alone visit share.']	United States	100.0
+['Skin player difference there because.']	United States	100.0
+['Happy guy season step finish decade.']	United States	100.0
+['This morning at 09:18 demetri endow the naphthol.']	United Kingdom	100.0
+['Kyla judder the oxalate.']	United Kingdom	100.0
+['Kyla judder the oxalate.']	England	61.0834648143195
+['run it back bro']	England	54.27230037130744
+['what the random chance mate']	England	75.99511438360331
+['Read blood act whether south scene know ago.']	United States	100.0
+['Start accept team rich fear.']	United States	100.0
+['Question explain here little.']	United States	100.0
+['Enter current maintain arrive certainly.']	United States	100.0
+['Executive benefit training life.']	United States	100.0
+['Truth she want.']	United States	100.0
+['Recent across cover water.']	United States	100.0
+['Approach carry they morning none about time.']	United States	100.0
+['Choose could know upon American.']	United States	100.0
+['Side apply read newspaper group simple.']	United States	100.0
+['Others may myself fund.']	United States	100.0
+['Nearly strategy letter compare.']	United States	100.0
+['Budget street good why see.']	United States	100.0
+['Forget grow measure choose.']	United States	100.0
+['Only size two north night modern away.']	United States	100.0
+['Lose black add simply avoid page.']	United States	100.0
+['Bank change radio shake perform good certain.']	United States	100.0
+['Adult or stand.']	United States	100.0
+['Whatever cup box instead.']	United States	100.0
+['Leave they speech letter eye detail open.']	United States	100.0
+['Wrong admit writer family.']	United Kingdom	100.0
+['Eirena overtake the fuller.']	United Kingdom	100.0
+['This morning at 05:43 ofilia suppress the noodle.']	United Kingdom	100.0
+['Kyrstin input the exhaust.']	United Kingdom	100.0
+['This morning at 19:32 gabriel number the colon.']	United Kingdom	100.0
+['This morning at 03:56 adrick get_over the hotness.']	United States	100.0
+['Yesterday kimberlee sell the filler.']	United Kingdom	100.0
+['This morning at 07:20 chevy affix the garland.']	United States	100.0
+['Yesterday godiva set_back the caption.']	United Kingdom	100.0
+['Yesterday corby rewrite the rush.']	United States	100.0
+['On monday ossie attract the antimony.']	United Kingdom	100.0
+['On sunday fidelity drum the alopecia.']	United States	100.0
+['Down trip something officer cut memory value.']	United Kingdom	100.0
+['To resource war field.']	United Kingdom	100.0
+['Totam non suscipit quam ratione nulla distinctio velit.']	United Kingdom	100.0
+['差別する販売クール。']	Japan	100.0
+['Auf wer Stadt Sommer.']	Germany	100.0
+['Personnage monter présent approcher tout souvenir.']	France	100.0
+['Hobby naar seconde hoe.']	Netherlands	100.0
+['Aperiam cupiditate saepe dolore blanditiis voluptatem deleniti.']	Spain	100.0
+['Parecchio domenica latte erba.']	Italy	100.0
+['Davvero valere economico valere capello medesimo ministro.']	Italy	100.0
+['Quam reiciendis eaque minima illo praesentium tempora.']	Brazil	100.0
+['Époque intelligence reconnaître sac rouge animal.']	France	100.0
+['Damit noch fährt allein neben merken Lehrerin.']	Germany	100.0
+['Voluptates iusto in incidunt.']	Spain	100.0
+['Facilis totam distinctio nisi voluptate beatae est occaecati.']	Spain	100.0
+['以及一些显示方式.']	China	100.0
+['Doloribus eos voluptates a nostrum voluptate aliquam.']	United Kingdom	100.0
+['Bon fusil commencer commander.']	France	100.0
+['Darauf rufen in weit trinken Pferd immer.']	Germany	100.0
+['查看觉得具有不会一次两个.']	China	100.0
+['Long etc occuper.']	France	100.0
+['Laufen hören hart gab ging bekommen.']	Germany	100.0
+['Far find pay seat blood traditional treatment.']	United States	100.0
+['Bruder fest dir Milch viel man.']	Germany	100.0
+['Guère sous ci abandonner maison eh.']	France	100.0
+['Culpa natus magnam nihil voluptatem.']	Brazil	100.0
+['Far kind collection process charge suddenly.']	United States	100.0
+['Consequuntur fugit dicta deleniti sapiente adipisci.']	United Kingdom	100.0
+['Partager visible oui jeune.']	France	100.0
+['Tenetur cupiditate voluptatibus unde harum vero.']	Brazil	100.0
+['一点这种推荐有关.']	China	100.0
+['Six plein suite respect fier possible.']	France	100.0
+['选择觉得为什结果他们安全.']	China	100.0
+['部门两个社区朋友今年语言.']	China	100.0
+['Правильный мрачно сустав засунуть монета.']	Russian Federation	90.87740182876587
+['Hi mother fuckers']	England	62.38802622157983
+['Hi mother fuckers']	England	68.59976322981592
+['Hi mother fuckers']	England	72.92190391210897
+['Hi mother fuckers']	England	75.62018714776555
+['Hi mother fuckers']	England	77.61200343964532
+['Hi mother fuckers']	England	79.13656466106666
+['Hi mother fuckers']	England	80.35720853902248
+['Hi mother fuckers']	England	81.34972135632428
+['hello there']	England	54.29240588253028
+['hello there']	England	59.28982497648416
+['hello there']	England	61.84921802427154
+['hello there']	England	64.12928623567069
+['hello there']	England	65.7891464165926
+['hello there']	England	67.11791950136133
+['hello there']	England	68.17296930401355
+['hello there']	England	69.04686920242294
+['hello there']	England	69.7928316693166
+['hello there']	England	70.43481050061284
+['hello there']	England	70.99540579751724
+['hello there']	England	71.46914198400238
+['hello there']	England	71.90501504711457
+['hello there']	England	72.3021844564934
+['Sollen oder wichtig kann springen versuchen einfach.']	Germany	98.62462282180786
+['This is a test message from SulfurAI.Remove these messages for an input OR use the API.']	England	64.40192481696575
+['This is a test message from SulfurAI.Remove these messages for an input OR use the API.']	England	69.10442720880168
+['This is a test message from SulfurAI.Remove these messages for an input OR use the API.']	England	73.31319343484628
+['This is a test message from SulfurAI.Remove these messages for an input OR use the API.']	England	76.00522531402025
+['This is a test message from SulfurAI.Remove these messages for an input OR use the API.']	England	77.9341280855378
+['Yesterday matthew sack the grouper.']	United Kingdom	100.0
+['Sidney bundle the bailey.']	United States	100.0
+['Sidney bundle the bailey.']	England	56.54926714818821
+['This is a test message.']	England	76.20253584337216
+['Nie grün früher früh auch fragen.']	Germany	100.0
+['Réussir intéresser selon ainsi accord nul.']	France	100.0
+['Réussir intéresser selon ainsi accord nul.']	France	64.65283843671084
+['Réussir intéresser selon ainsi accord nul.']	France	71.2906271290971
+['Réussir intéresser selon ainsi accord nul.']	France	75.52519765365022
+['Réussir intéresser selon ainsi accord nul.']	France	78.28978344352355
+['Fuga corporis odio.']	Italy	67.18749403953552
+['キャビネット省略憲法叔父。']	Japan	100.0
+['Posizione professore lo capo conoscere famoso studio.']	Italy	100.0
+['test message']	England	56.6611541288054
+['test message']	England	64.03114808124802
+['test message']	England	67.4289608258619
+['test message']	England	70.5152127047166
+['test message']	England	72.90519510652071
+['test message']	England	74.83069697872665
+['test message']	England	76.43671251106558
+['test message']	England	77.79198410935987
+['test message']	England	78.95372638624879
+['test message']	England	79.95984653357073
+['Test message: #1010']	England	65.68437465540265
+['Test message: #1010']	England	63.298490382058226
+['Test message: #1010']	England	62.83938150087257
+['Test message: #1010']	England	64.20571664270543
+['Test message: #1010']	England	65.21737069006616
+['Test message: #1010']	England	66.00660831724707
+['Test message: #1010']	England	66.64500406514881
+['Test message: #1010']	England	67.1753025710736
+['Test message: #1010']	England	67.62546396095806
+['Test message: #1010']	England	68.01538902284851
+['Test message: #1010']	England	68.35530046362837
+['Test message: #1010']	England	68.65573347473261
+['Test message: #1010']	England	68.92440033523172
+['Test message: #1010']	United States	100.0
+['Test message: #1010']	England	66.99472520141111
+['Test message: #1010']	England	67.31560501490236
+['Test message: #1010']	England	67.60673404795668
+['Test message: #1010']	England	67.87257179153134
+['Test message: #1010']	England	68.11717649739816
+['Test message: #1010']	England	68.34481232083029
+['Test message: #1010']	England	68.55086532472615
+['Test message: #1010']	England	68.74921493921427
+['Test message: #1010']	England	68.93235606947738
+['Test message: #1010']	England	69.09879167836519
+['Test message: #1010']	England	69.26425596553314
+['Test message: #1010']	England	69.40816282151262
+['Test message: #1010']	England	69.54923105337552
+['Test message: #1010']	England	69.68081397629383
+['Test message: #1010']	England	69.79665157396343
+['Test message: #1010']	England	69.92348846821592
+['Test message: #1010']	England	70.04961368077132
+['Test message: #1010']	England	70.1563037877888
+['Test message: #1010']	England	70.25982969541651
+['Test message: #1010']	England	70.34044749513279
+['Test message: #1010']	England	70.45432628079153
+['Test message: #1010']	England	70.5181568189905
+['Test message: #1010']	England	70.60946510412248
+['Test message: #1010']	England	70.69151416256855
+['Test message: #1010']	England	70.76138050454536
+['Test message: #1010']	England	70.83948077719364
+['Test message: #1010']	England	70.90808791402185
+['Test message: #1010']	England	70.98716031546587
+['Test message: #1010']	England	71.05458792544277
+['Test message: #1010']	England	71.10438526248244
+['Test message: #1010']	England	71.17185688895896
+['Test message: #1010']	England	71.23038329442332
+['Test message: #1010']	England	71.28856331637732
+['Test message: #1010']	England	71.35467928269547
+['Test message: #1010']	England	71.39267623922309
+['Test message: #1010']	England	71.45461366830749
+['Test message: #1010']	England	71.51117974400844
+['Test message: #1010']	England	71.54774558767858
+['Test message: #1010']	England	71.59557357070983
+['Test message: #1010']	England	71.64308502730574
+['Test message: #1010']	England	71.6877528660071
+['test']	England	69.79350410671402
+['AGSDGASDGASG']	France	88.08521032333374
+['im british']	Germany	99.53376650810242
+['Test message: #1010']	England	71.63834595982959
+['Test message: #1010']	England	71.68843271484542
+['test']	England	71.86958630759554
+['Test message: #1010']	England	71.70271271678665
+['Test message: #1010']	England	71.74453377484356
+['Test message: #1010']	England	71.7842507412003
+['Test message: #1010']	England	71.83369674209719
+['Test message: #1010']	England	71.8633939042592
+['Test message: #1010']	England	71.91535110536866
+['Test message: #1010']	England	71.93181634911012
+['Test message: #1010']	England	71.96786470956957
+['Test message: #1010']	England	72.00414170997334
+This is a deliberately long test sentence designed to push your system’s limits and verify how it handles spaces punctuation numbers like mixed CASE words and symbols like @#$*()The goal is to ensure that preprocessing correctly trims cleans and processes without breaking anything important—whether it’s removing extra whitespace ignoring emojis 😄🔥 or normalizing text to a consistent formImagine that this is part of a larger dataset arriving from unpredictable sources sometimes with extra spaces in awkward places or even strange characters like «» or “smart quotes” that might cause issues in certain encodingsUltimately this string should serve as a stress-test highlighting how robust your filtering logic really is when the unexpected inevitably arrives!	England	69.09465033182751
+This is a deliberately long test sentence designed to push your system’s limits and verify how it handles spaces punctuation numbers like mixed CASE words and symbols like @#$*()The goal is to ensure that preprocessing correctly trims cleans and processes without breaking anything important—whether it’s removing extra whitespace ignoring emojis 😄🔥 or normalizing text to a consistent formImagine that this is part of a larger dataset arriving from unpredictable sources sometimes with extra spaces in awkward places or even strange characters like «» or “smart quotes” that might cause issues in certain encodingsUltimately this string should serve as a stress-test highlighting how robust your filtering logic really is when the unexpected inevitably arrives!	England	73.62154596121275
+This is a deliberately long test sentence designed to push your system’s limits and verify how it handles spaces punctuation numbers like mixed CASE words and symbols like @#$*()The goal is to ensure that preprocessing correctly trims cleans and processes without breaking anything important—whether it’s removing extra whitespace ignoring emojis 😄🔥 or normalizing text to a consistent formImagine that this is part of a larger dataset arriving from unpredictable sources sometimes with extra spaces in awkward places or even strange characters like «» or “smart quotes” that might cause issues in certain encodingsUltimately this string should serve as a stress-test highlighting how robust your filtering logic really is when the unexpected inevitably arrives!	England	76.87453819947892
+This is a deliberately long test sentence designed to push your system’s limits and verify how it handles spaces punctuation numbers like mixed CASE words and symbols like @#$*()The goal is to ensure that preprocessing correctly trims cleans and processes without breaking anything important—whether it’s removing extra whitespace ignoring emojis 😄🔥 or normalizing text to a consistent formImagine that this is part of a larger dataset arriving from unpredictable sources sometimes with extra spaces in awkward places or even strange characters like «» or “smart quotes” that might cause issues in certain encodingsUltimately this string should serve as a stress-test highlighting how robust your filtering logic really is when the unexpected inevitably arrives!	England	79.24677378349965
+This is a deliberately long test sentence designed to push your system’s limits and verify how it handles spaces punctuation numbers like mixed CASE words and symbols like @#$*()The goal is to ensure that preprocessing correctly trims cleans and processes without breaking anything important—whether it’s removing extra whitespace ignoring emojis 😄🔥 or normalizing text to a consistent formImagine that this is part of a larger dataset arriving from unpredictable sources sometimes with extra spaces in awkward places or even strange characters like «» or “smart quotes” that might cause issues in certain encodingsUltimately this string should serve as a stress-test highlighting how robust your filtering logic really is when the unexpected inevitably arrives!	England	80.93652198021313
+test message mate	England	80.50236293663285
+test message mate	England	80.97049680118712
+test message mate	England	82.91385847547936
+test message mate	England	84.71768959949677
+test message mate	England	86.10516242777467
+test message mate	England	87.18752670979586
+test message mate	England	88.0974832552344
+This is a test message.	England	87.7140870365799
+This is a test message.	England	88.26442791435312
+This is a test message.	England	88.8256341740784
+This is a test message.	England	89.27660189411378
+This is a test message.	England	89.64008946645583
+This is a test message.	England	89.9480794192782
+This is a test message.	England	90.20929524728074
+This is a test message.	England	90.43913263110545
+This is a test message.	England	90.63722170599964
+This is a test message.	England	90.80719764555462
+This is a test message.	England	90.97577346381081
+This is a test message.	England	91.11486182544814
+This is a test message.	England	91.25013363672487
+This is a test message.	England	91.36331217307875
+This is a test message.	England	91.47496547147962
+This is a test message.	England	91.57255007064578
+This is a test message.	England	91.66261833684504
+This is a test message.	England	91.75036041573816
+This is a test message.	England	91.8315459593344
+This is a test message.	England	91.9073945038941
+This is a test message.	England	91.9772558049938
+This is a test message.	England	92.04505420071895
+This is a test message.	England	92.10664757137523
+This is a test message.	England	92.16524790674345
+This is a test message.	England	92.22076497687384
+This is a test message.	England	92.2733969213773
+This is a test message.	England	92.32319549251649
+This is a test message.	England	92.37038816255404
+This is a test message.	England	92.41610115374277
+This is a test message.	England	92.45889483959569
+This is a test message.	England	92.50023292901982
+This is a test message.	England	92.53993195838302
+This is a test message.	England	92.57715211495359
+This is a test message.	England	92.61226800799601
+This is a test message.	England	92.64095592133552
+This is a test message.	England	92.67869344629803
+This is a test message.	England	92.7140049016884
+Lets grow a business my dudes.	England	63.90983272527036
+Lets grow a business my dudes.	England	69.40133070313772
+Lets grow a business my dudes.	England	74.05077219459555
+Lets grow a business my dudes.	England	76.57084525041404
+Lets grow a business my dudes.	England	78.36671345116389
+Lets grow a business my dudes.	England	79.69395433446809
+Lets grow a business my dudes.	England	80.7639297177124
+Lets grow a business my dudes.	England	81.62571150900901
+Lets grow a business my dudes.	England	82.35173386442276
+Lets grow a business my dudes.	England	82.93369626214646
+Lets grow a business my dudes.	England	83.46040583265024
+Lets grow a business my dudes.	England	83.90058376242393
+Lets grow a business my dudes.	England	84.29859374327629
+Lets grow a business my dudes.	England	84.63373109108794
+Lets grow a business my dudes.	England	84.94197124928809
+Lets grow a business my dudes.	England	85.21827856674476
+Lets grow a business my dudes.	England	85.46126982797057
+Lets grow a business my dudes.	England	85.69664610612901
+Lets grow a business my dudes.	England	85.90339768385971
+Lets grow a business my dudes.	England	86.08595921584886
+Lets grow a business my dudes.	England	86.27295439624923
+Lets grow a business my dudes.	England	86.43858117149168
+Lets grow a business my dudes.	England	86.58685312893182
+Lets grow a business my dudes.	England	86.71015070496311
+Lets grow a business my dudes.	England	86.85693403460604
+Lets grow a business my dudes.	England	86.95335928794444
+Lets grow a business my dudes.	England	87.09044054003763
+Lets grow a business my dudes.	England	87.17114019303641
+Lets grow a business my dudes.	England	87.2724011904475
+Lets grow a business my dudes.	England	87.36937764956117
+On thursday rosalynd abrogate the curfew.	England	64.89373809269694
+Network church glass grow property cold.	United States	100.0
+Plan ability strong friend.	United Kingdom	100.0
+Boy forward power wide call state fast.	United Kingdom	100.0
+Break dinner him reality build main night.	United States	100.0
+Already fill administration make.	United Kingdom	100.0
+These space alone wind course.	United States	100.0
+Improve read quality walk decade business.	United Kingdom	100.0
+National billion late city attack trip side.	United Kingdom	100.0
+Research because at without this three believe.	United States	100.0
+Structure card general fear represent daughter never candidate.	United States	100.0
+Language letter federal into after glass news.	United Kingdom	100.0
+Political member choice trip ahead old end.	United States	100.0
+For traditional political.	United Kingdom	100.0
+Need free loss year participant.	United Kingdom	100.0
+Worry response manage describe practice.	United Kingdom	100.0
+Break create painting collection those not green set.	United States	100.0
+Offer over be doctor their moment north.	United Kingdom	100.0
+Program charge measure explain.	United States	100.0
+Argue feeling account save.	United Kingdom	100.0
+Create body firm why business staff.	United Kingdom	100.0
+Record itself serious total eight.	United States	100.0
+Kid than stand tonight.	United Kingdom	100.0
+Ask physical behavior short writer discussion join.	United States	100.0
+Too only head ok.	United Kingdom	100.0
+Hundred race central month recently.	United Kingdom	100.0
+Voice can dog population professional clear.	United Kingdom	100.0
+Church everything gun assume will everything.	United Kingdom	100.0
+Collection read find soldier.	United States	68.10797120167743
+Dinner fast single pay job.	United States	100.0
+Cold voice good social create practice eye.	United Kingdom	100.0
+Around fund after peace rise stock foot.	United States	100.0
+Institution play writer risk.	United States	66.37674848863033
+Message spring represent everything front seven.	United States	100.0
+Company left black bed do style.	United Kingdom	100.0
+Five cultural enter.	United Kingdom	100.0
+Need room road policy.	United States	100.0
+Adult drive rise.	United States	67.22477619623311
+Hospital couple strategy need behind cover girl.	United States	69.15184722169498
+Outside certainly world write.	United Kingdom	100.0
+Allow name us suffer ok front pull live.	United States	100.0
+Participant trouble police worry be.	United Kingdom	100.0
+May provide but call site learn.	United Kingdom	100.0
+Seat even morning central accept factor image.	United Kingdom	100.0
+Cost eat still amount during trip professional.	United Kingdom	66.5223285390195
+Market natural product hard.	United Kingdom	100.0
+Image trial human through can policy.	United States	100.0
+Word drop her memory.	United Kingdom	100.0
+Describe at soldier ready note require want try.	United States	67.54190734735477
+Look today family human mother.	United Kingdom	100.0
+South during common though including.	United Kingdom	100.0
+Up such politics control tax.	United States	66.21717456457871
+Church trip father list couple concern.	United Kingdom	100.0
+Personal camera serve left Mr fine we treatment.	United Kingdom	100.0
+International popular window.	United Kingdom	71.66963913914597
+Become business physical close ground.	United Kingdom	100.0
+Reach apply red factor only sound.	United Kingdom	100.0
+Kind home offer his camera morning.	United States	100.0
+Defense amount notice my make bring.	United States	100.0
+Great white ask treat.	United States	65.85922634343804
+Stuff hotel let article lead performance professional.	United Kingdom	68.92954410917581
+Crime court hotel city.	United Kingdom	100.0
+Assume they simply score meet.	United Kingdom	100.0
+Sister test interview present.	United Kingdom	100.0
+Adult along effect behind base age.	United Kingdom	100.0
+Time all break bank.	United Kingdom	100.0
+Enough ground lead watch.	United Kingdom	100.0
+Respond cost make school owner black.	United States	70.06151977848744
+Power mind despite keep.	United States	100.0
+Appear third before prepare matter everybody risk.	United States	69.14556045602932
+Source him poor.	United States	100.0
+First perhaps tree garden nearly your effort.	United Kingdom	100.0
+Face what return fact.	United States	100.0
+War night begin a every blue police car.	United Kingdom	100.0
+Daughter kitchen create president.	United States	100.0
+Act its reflect radio.	United Kingdom	100.0
+Develop condition value very study.	United Kingdom	66.26340699006126
+Rock citizen available relationship.	United Kingdom	64.9427890998369
+Such task treatment.	United Kingdom	100.0
+Road strategy blue study hundred.	United Kingdom	100.0
+Week Mrs read sure general.	United Kingdom	100.0
+Avoid couple sometimes money generation.	United States	100.0
+Moment thank certain discussion either exist.	United Kingdom	100.0
+Investment medical general better.	United Kingdom	68.38245013999406
+Rule although tell where.	United Kingdom	65.55835360590146
+Campaign serious reach official opportunity.	United States	100.0
+Even police discuss themselves law practice.	United States	100.0
+Ahead daughter weight painting modern.	United Kingdom	100.0
+Wear think way officer assume onto.	United States	100.0
+Recognize husband under ready account perhaps Republican.	United Kingdom	100.0
+Wonder than research history apply.	United Kingdom	66.48214076613009
+Every surface improve western shoulder must discover leader.	United States	67.42458900858857
+Stay improve require agent treat customer success process.	United States	66.48508662221765
+Author author it I boy assume.	United States	64.92412014770966
+Find recently claim effect first.	United Kingdom	69.29682069826693
+Stock test answer imagine cultural government order.	United States	100.0
+Federal himself over I cover what.	United States	73.98371142095831
+Itself value there provide argue.	United States	100.0
+Growth almost one PM base.	United Kingdom	100.0
+Nation debate onto.	United Kingdom	72.7908228150319
+Investment national maintain yeah southern miss image.	United Kingdom	71.63950297402553
+Argue process entire price.	United Kingdom	100.0
+Quickly difference effort itself situation present.	United States	68.91183453817484
+Stand ok truth six game many positive.	United States	68.05905607290758
+Protect these keep sport hour.	United Kingdom	100.0
+Wish mission want him pattern art.	United Kingdom	100.0
+Already order yeah day.	United States	100.0
+Western forward analysis vote day plant.	United Kingdom	66.89913768231418
+Environment act your you music their man lawyer.	United States	100.0
+Statement whole result care dark trouble past.	United Kingdom	68.28170421842616
+Film practice want offer hospital.	United States	100.0
+Produce many read science note of name.	United Kingdom	100.0
+Produce many read science note of name.	England	85.89919805526733
