@@ -237,7 +237,7 @@ class SulfurError(Exception):
         return body
 
     def __str__(self):
-        return f"{self.__class__.__name__}: {self.message} (code={self.code})"
+        return self.format_github_traceback(context=3, ansi=False)
 
 
 def wrap_with_sulfur(msg: str, *, code: Optional[str] = None, details: Optional[dict] = None, debug_stack: bool = True) -> "SulfurError":

@@ -42,7 +42,10 @@ class console():
         """
 
         if value == "True" or value == "False": pass
-        else: raise ValueError("SULFUR EXCEPTION (Console.set_api_debug_print): value must be a string of 'True' or 'False'!")
+        else:
+
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=f"SULFUR EXCEPTION (Console.set_api_debug_print): value must be a string of 'True' or 'False'!")
         file_path_localhost_debug_print = call.cache_LocalScriptDebugBool()
 
         try:

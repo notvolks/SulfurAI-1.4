@@ -33,7 +33,9 @@ class InferTimeModel:
             for fmt in ("%Y-%m-%d %H:%M:%S", "%d/%m/%Y %H:%M", "%Y-%m-%d", "%d/%m/%Y"):
                 try:     return self.datetime.strptime(s, fmt).date()
                 except Exception:   continue
-            raise ValueError(f"Unknown date format: {s}")
+
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=f"Unknown date format: {s}")
 
         grouped = {}
         for date_str, stype, intent, text in data:

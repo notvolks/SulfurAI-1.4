@@ -24,7 +24,9 @@ def install(pkg):
         subprocess.check_call(cmd)
         print(f"{pkg} installed successfully!")
     except Exception as e:
-        print(f"Failed to install {pkg}: {e}")
+
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message=f"Failed to install {pkg}: {e}")
 
 # ── ensure pygame & pygame_gui ──
 try:

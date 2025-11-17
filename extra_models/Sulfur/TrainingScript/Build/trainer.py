@@ -1,3 +1,12 @@
+
+from scripts.ai_renderer_sentences.error import SulfurError
+raise SulfurError(message=f"FILE_WAS_DEPRECATED_TRAIN_MANUALLY!")
+
+
+
+
+######################## deprecated!
+
 import os, subprocess, sys
 import importlib, random, time
 import importlib.metadata

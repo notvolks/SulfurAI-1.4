@@ -21,7 +21,7 @@
 |--------------------------------------------|
 |              Week Changes             |
 |  Changes to your userbase over the past 5 weeks:
-  Changes from 2025-11-03 to 2025-11-10:
+  Changes from 2025-11-10 to 2025-11-17:
   Type Changes: exclamation: 0.00%
   Intent Changes: expressing: 0.00%
 |  Average Changes over the past 5 weeks:
@@ -29,17 +29,17 @@
 
 
  Average Type Change:
-  question: -1.86%
-  exclamation: +1.83%
-  command: -0.39%
-  statement: -0.66%
+  question: -1.79%
+  exclamation: +1.76%
+  command: -0.38%
+  statement: -0.64%
 
  Average Intent Change:
-  commanding: -3.85%
-  expressing: +3.60%
-  informing: -0.31%
-  comparing: -0.52%
-  asking: -0.21%
+  commanding: -3.70%
+  expressing: +3.46%
+  informing: -0.30%
+  comparing: -0.50%
+  asking: -0.20%
 |   *Only includes changes at least 5 weeks apart.
 |--------------------------------------------|
 
@@ -77,61 +77,7 @@
 |   *Only includes changes at least 3 years apart.
 |--------------------------------------------|
 
-|--------------------------------------------------------------|
-|                                                               |
-|   Top Countries Trends Based on Userbase: ['England', 'United States', 'United Kingdom']    |
-|                                                               |
-|--------------------------------------------------------------|
-|   🌍 Country: England (GB)
-|--------------------------------------------------------------|
-|                                                               |
-|   📈 Trend Direction: flat
-|   🔍 Top Related Searches:
-|      test speed (100)
-|      driving test (64)
-|      blood test (58)
-|      theory test (36)
-|      internet test (29)
-|   🚀 Rising Related Searches:
-|      ind vs eng test (250)
-|      dvsa change driving test (120)
-|      book driving test uk (110)
-|      dvla book driving test (60)
-|      change driving test date (60)
-|--------------------------------------------------------------|
-|   🌍 Country: United States (US)
-|--------------------------------------------------------------|
-|                                                               |
-|   📈 Trend Direction: flat
-|   🔍 Top Related Searches:
-|      test speed (100)
-|      internet test (36)
-|      speed test internet (32)
-|      pregnancy test (28)
-|      permit test (16)
-|   🚀 Rising Related Searches:
-|      presidential fitness test (350)
-|      ind vs eng test (160)
-|      chipotle iq test (80)
-|--------------------------------------------------------------|
-|   🌍 Country: United Kingdom (GB)
-|--------------------------------------------------------------|
-|                                                               |
-|   📈 Trend Direction: flat
-|   🔍 Top Related Searches:
-|      test speed (100)
-|      driving test (64)
-|      blood test (58)
-|      theory test (36)
-|      internet test (29)
-|   🚀 Rising Related Searches:
-|      ind vs eng test (250)
-|      dvsa change driving test (120)
-|      book driving test uk (110)
-|      dvla book driving test (60)
-|      change driving test date (60)
-
-|                                                               |
-
-|--------------------------------------------------------------|
+|-----------------------|
+|ERROR_TOO_MANY_REQUESTS|
+|-----------------------|
 

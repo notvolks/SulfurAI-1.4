@@ -26,7 +26,9 @@ class Ensure():
         input_text = input.strip()
         input_text = re.sub(r"[\'\";\\&<>%^\s,]+", "", input_text)
         if not input_text:
-            raise ValueError("Invalid username: empty after cleaning.")
+
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=f"Invalid username: empty after cleaning.")
         return input_text
 
     def strip_input_list(self, input_list):
@@ -34,7 +36,8 @@ class Ensure():
         input_list_text = input_list.strip()
         input_list_text = re.sub(r"[\'\";\\&<>%^,]+", "", input_list_text)
         if not input_list_text:
-            raise ValueError("Invalid username: empty after cleaning.")
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=f"Invalid username: empty after cleaning.")
         return [input_list_text]
 
 

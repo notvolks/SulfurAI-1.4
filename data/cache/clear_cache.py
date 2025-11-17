@@ -60,6 +60,7 @@ for name, file_path in cache_logs.items():
     try:
         with open(file_path, "w", encoding="utf-8", errors="ignore") as file: pass
     except Exception as e:
-        print(f"Failed to write to {name} at {file_path}: {e}")
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message=f"Failed to write to {name} at {file_path}: {e}")
 
 print("All cache was successfully cleared.")

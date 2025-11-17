@@ -91,8 +91,11 @@ for mod in modules:
         file_path_cache_localHost_pip_debug = call.cache_LocalpipCacheDebug()
         with open(file_path_cache_localHost_pip_debug, "r", encoding="utf-8", errors="ignore") as file:
             cache_stored_pip_debug = file.readlines()
-        if mod not in [line.strip() for line in cache_stored_pip_debug]: print(
-            f"The dependancies for SulfurAI Dashboard are not installed. Please install them using the installer in INSTALLER/INSTALL SULFURAI-DASHBOARD/Run Installer.bat")
+        if mod not in [line.strip() for line in cache_stored_pip_debug]:
+
+            from scripts.ai_renderer_sentences.error import SulfurError
+
+            raise SulfurError(message=f"The dependancies for SulfurAI Dashboard are not installed. Please install them using the installer in INSTALLER/INSTALL SULFURAI-DASHBOARD/Run Installer.bat")
 
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # imports app modules
@@ -1143,6 +1146,7 @@ def run_dashboard():
         st.error(f"Failed to render section: {e}")
 
 
+
 # ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 def launch_self():
@@ -1298,4 +1302,6 @@ def main():
                     )
 
     except Exception as e:
-        st.error(f"Error loading or processing data: {e}")
+
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message=f"Error loading or processing data: {e}")

@@ -177,7 +177,9 @@ class CountryClassifier:
             self.char_vec = self.joblib.load(vec_path)
             self.model = self.joblib.load(model_path)
         else:
-            raise self.NotFittedError
+
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=self.NotFittedError)
 
 # Initialize classifier
 classifier = CountryClassifier()

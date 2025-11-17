@@ -597,10 +597,13 @@ def load_model_with_cache_safety(load_fn, model_identifier: str, offload_folder:
             return load_fn()  # caller should ensure load_fn respects env var / device flags
         except Exception as e_last:
             print(f"[CRASH REPORT]:     CONTEXT: load_model_with_cache_safety attempt={attempt} model={model_identifier}, GEN_SETTINGS: {json.dumps({'device_map': device_map, **extra_kwargs})}")
-            raise e_last
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=f"{e_last}[CRASH REPORT]:     CONTEXT: load_model_with_cache_safety attempt={attempt} model={model_identifier}, GEN_SETTINGS: {json.dumps({'device_map': device_map, **extra_kwargs})}")
 
     # if all failed raise last exception (caller will handle dump)
-    raise last_exc if last_exc is not None else RuntimeError("Unknown failure in load_model_with_cache_safety")
+    err =  last_exc if last_exc is not None else "Unknown failure in load_model_with_cache_safety"
+    from scripts.ai_renderer_sentences.error import SulfurError
+    raise SulfurError(message=f"{err}")
 
 
 def filter_generate_kwargs_from_pipeline(pipeline_obj, kwargs: dict) -> dict:
@@ -1338,7 +1341,9 @@ try:
         """
         size = src.size(dim)
         if size == 0:
-            raise IndexError(f"Source size along dim {dim} is 0")
+
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=f"Source size along dim {dim} is 0")
 
         idx = ensure_long_on_device(idx, src.device)
         if idx.numel() == 0:
@@ -1356,9 +1361,8 @@ try:
         if idx_min < 0 or idx_max >= size:
             if clamp:
                 return idx.clamp(0, size - 1)
-            raise IndexError(
-                f"Index out of bounds for dimension {dim}: min={idx_min}, max={idx_max}, allowed=[0, {size-1}]"
-            )
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=f"Index out of bounds for dimension {dim}: min={idx_min}, max={idx_max}, allowed=[0, {size-1}]")
         return idx
 
     def debug_indexing(src: torch.Tensor, idx: torch.Tensor, dim: int):
@@ -1476,7 +1480,10 @@ def file_path_dataprofileJSON(profile="default"):
         os.pardir,  # up to VersionFiles
     ))
     folder_path = os.path.join(current_dir_i, 'returns', 'dataprofiles', 'profiles',profile,'output_logs')
-    if not os.path.isdir(folder_path): raise FileNotFoundError(f"[DEV DEBUG]: Output logs folder not found: {folder_path} [DATAPROFILE ERROR]")
+    if not os.path.isdir(folder_path):
+
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message=f"[DEV DEBUG]: Output logs folder not found: {folder_path} [DATAPROFILE ERROR]")
     file_path = os.path.join(current_dir_i, 'returns', 'dataprofiles', 'profiles',profile,'profile','profile.json')
     return file_path
 
@@ -1490,7 +1497,9 @@ def write_output_to_logs(output_path,profile="default"):
         os.pardir,  # up to VersionFiles
     ))
     folder_path = os.path.join(current_dir_i, 'returns', 'dataprofiles', 'profiles',profile,'output_logs')
-    if not os.path.isdir(folder_path): raise FileNotFoundError(f"[DEV DEBUG]: Output logs folder not found: {folder_path} [DATAPROFILE ERROR]")
+    if not os.path.isdir(folder_path):
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message=f"[DEV DEBUG]: Output logs folder not found: {folder_path} [DATAPROFILE ERROR]")
     files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
     file_count = len(files)
     new_id = file_count + 1
@@ -1527,7 +1536,9 @@ def count_build_file_cache_permanent():
                     number = int(content)
                     new_number = number + 1
                 except ValueError:
-                    raise ValueError("File does not contain a valid integer!")
+
+                    from scripts.ai_renderer_sentences.error import SulfurError
+                    raise SulfurError(message=f"File does not contain a valid integer!")
 
                 f.seek(0)
                 f.write(str(new_number))
@@ -1584,13 +1595,17 @@ def create_folders_in_data_profile(profile_name: str, folder_structure: dict):
     ))
     profile_base = os.path.join(current_dir_i, 'returns', 'dataprofiles', 'profiles', profile_name)
     if not os.path.exists(profile_base) or not os.path.isdir(profile_base):
-        raise FileNotFoundError(f"Data profile not found: {profile_name}")
+
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message=f"Data profile not found: {profile_name}")
 
     def create_nested_folders(base_path: str, structure: dict):
         for folder, sub in structure.items():
             new_folder_path = os.path.join(base_path, folder)
             if os.path.exists(new_folder_path):
-                raise Exception(f"Folder already exists: {new_folder_path}")
+                from scripts.ai_renderer_sentences.error import SulfurError
+                raise SulfurError(message=f"Folder already exists: {new_folder_path}")
+
             os.makedirs(new_folder_path)
             if isinstance(sub, dict):
                 create_nested_folders(new_folder_path, sub)
@@ -1601,7 +1616,9 @@ def create_folders_in_data_profile(profile_name: str, folder_structure: dict):
                     else:
                         subfolder_path = os.path.join(new_folder_path, item)
                         if os.path.exists(subfolder_path):
-                            raise Exception(f"Folder already exists: {subfolder_path}")
+
+                            from scripts.ai_renderer_sentences.error import SulfurError
+                            raise SulfurError(message=f"Folder already exists: {subfolder_path}")
                         os.makedirs(subfolder_path)
     create_nested_folders(profile_base, folder_structure)
 
@@ -1730,7 +1747,9 @@ def safer_generate_call(prompt, generator, gen_settings):
     More robust generation call that handles common GPU/CPU issues
     """
     if not generator:
-        raise ValueError("No generator provided")
+
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message=f"No generator provided")
 
     try:
         # First attempt with original settings
@@ -3756,8 +3775,10 @@ def safe_call_generator_with_cuda_fallback(prompt, generator, model_name_hint=No
                 cpu_gen = hf_pipeline("text-generation", model=model_name, device=-1)
                 _sanitize_pipeline_defaults(cpu_gen)
             except Exception as e2:
-                LOG.exception("[safe_call] Failed to create CPU pipeline for fallback: %s", e2)
-                raise last_exc from e2
+
+
+                from scripts.ai_renderer_sentences.error import SulfurError
+                raise SulfurError(message=f"[safe_call] Failed to create CPU pipeline for fallback: %s {e2}")
 
             # safe truncate prompt then call CPU once
             try:
@@ -4257,8 +4278,10 @@ def generate_in_chunks_vram_aware(prompt, generator, gen_kwargs, model_name_hint
                 time.sleep(0.02)
             except RuntimeError as e:
                 # CUDA driver/runtime errors: re-raise so caller may handle them (preserve stack)
-                print(f"[VRAMMON] Chunk generation runtime error: {e}")
-                raise
+
+                from scripts.ai_renderer_sentences.error import SulfurError
+                raise SulfurError(message=f"[VRAMMON] Chunk generation runtime error: {e}")
+
             except Exception as e:
                 # Unexpected error: log and return partial output (defensive)
                 print(f"[VRAMMON] Chunk generation unexpected exception: {e}")
@@ -4633,7 +4656,9 @@ def get_model_loader(model_id, device="cpu"):
         try:
             from llama_cpp import Llama
         except Exception:
-            raise RuntimeError("llama_cpp not available - install llama-cpp-python to load GGUF models")
+
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=f"llama_cpp not available - install llama-cpp-python to load GGUF models")
         def llama_runner(prompt, params):
             # simple wrapper: pass prompt and params -> return text
             model_path = model_id  # expect local path or mapped identifier; expand if needed
@@ -4849,7 +4874,9 @@ def create_zephyr_with_cpu_fallback(
         try:
             from transformers import pipeline as hf_pipeline
         except Exception as ex:
-            raise RuntimeError(f"transformers.pipeline unavailable: {ex}")
+
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=f"transformers.pipeline unavailable: {ex}")
         kwargs = {'task': task, 'model': model_name}
         if extra_kwargs:
             kwargs.update(extra_kwargs)

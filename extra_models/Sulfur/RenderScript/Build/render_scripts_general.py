@@ -383,9 +383,13 @@ def _rest_of_the_script(tag_trainer,return_statements,start_time,output_file_pat
                 try:
                     return_dict = _return_statements_sulfur()
                     if not isinstance(return_dict, dict):
-                        raise RuntimeError("_return_statements_sulfur() did not return a dict")
+
+                        from scripts.ai_renderer_sentences.error import SulfurError
+                        raise SulfurError(message=f"_return_statements_sulfur() did not return a dict")
                 except Exception as e:
-                    raise RuntimeError("Could not obtain sulfur output: " + str(e))
+
+                    from scripts.ai_renderer_sentences.error import SulfurError
+                    raise SulfurError(message=f"Could not obtain sulfur output:  {str(e)}")
 
             # --- compute per-key scores ---
             per_key_scores = {}

@@ -23,7 +23,7 @@
 |                                   
 |  Main/Mean Devices : MOBILE(OTHER)  
 |                                   
-|  Average/Mean Accuracy: 70.03487816531295%  
+|  Average/Mean Accuracy: 70.01337153772684%  
 |                                   
 |----------------------------------
 
@@ -80,12 +80,12 @@
 |      Average <User : Mean> Accuracy : 86.9%                                   
 |       Predicted using a Neural Network.*                                                          
 |                                                                                                   
-|      Sentence Type : exclamation (88.66498470306396%)                                       
-|      Sentence Intent : expressing (91.18387699127197%)                                 
+|      Sentence Type : exclamation (88.69346976280212%)                                       
+|      Sentence Intent : expressing (91.20603203773499%)                                 
 |                                                                                                   
-|      Global Type : exclamation (93.16811788345612%)                                   
-|      Global Intent : expressing (23.978566644340255%)                             
-|      Overall Accuracy : 71.60080375083724%                                             
+|      Global Type : exclamation (93.17269076305222%)                                   
+|      Global Intent : expressing (24.029451137884873%)                             
+|      Overall Accuracy : 71.61981258366801%                                             
 |                                                                                                   
 |----------------------------------------------------------------------------------------------------
 
@@ -118,7 +118,7 @@
 |--------------------------------------------|
 |              Week Changes             |
 |  Changes to your userbase over the past 5 weeks:
-  Changes from 2025-11-03 to 2025-11-10:
+  Changes from 2025-11-10 to 2025-11-17:
   Type Changes: exclamation: 0.00%
   Intent Changes: expressing: 0.00%
 |  Average Changes over the past 5 weeks:
@@ -126,14 +126,14 @@
 
 
  Average Type Change:
-  question: -1.86%
-  exclamation: +1.83%
-  command: -0.39%
-  statement: -0.66%
+  question: -1.79%
+  exclamation: +1.76%
+  command: -0.38%
+  statement: -0.64%
 
  Average Intent Change:
-  commanding: -3.85%
-  expressing: +3.60%
+  commanding: -3.70%
+  expressing: +3.46%
 ...and 3 more lines. Removed due to limit cap.
 |   *Only includes changes at least 5 weeks apart.
 |--------------------------------------------|
@@ -188,63 +188,9 @@
 |
 |----------------------------------------------------|
 
-|--------------------------------------------------------------|
-|                                                               |
-|   Top Countries Trends Based on Userbase: ['England', 'United States', 'United Kingdom']    |
-|                                                               |
-|--------------------------------------------------------------|
-|   🌍 Country: England (GB)
-|--------------------------------------------------------------|
-|                                                               |
-|   📈 Trend Direction: flat
-|   🔍 Top Related Searches:
-|      test speed (100)
-|      driving test (64)
-|      blood test (58)
-|      theory test (36)
-|      internet test (29)
-|   🚀 Rising Related Searches:
-|      ind vs eng test (250)
-|      dvsa change driving test (120)
-|      book driving test uk (110)
-|      dvla book driving test (60)
-|      change driving test date (60)
-|--------------------------------------------------------------|
-|   🌍 Country: United States (US)
-|--------------------------------------------------------------|
-|                                                               |
-|   📈 Trend Direction: flat
-|   🔍 Top Related Searches:
-|      test speed (100)
-|      internet test (36)
-|      speed test internet (32)
-|      pregnancy test (28)
-|      permit test (16)
-|   🚀 Rising Related Searches:
-|      presidential fitness test (350)
-|      ind vs eng test (160)
-|      chipotle iq test (80)
-|--------------------------------------------------------------|
-|   🌍 Country: United Kingdom (GB)
-|--------------------------------------------------------------|
-|                                                               |
-|   📈 Trend Direction: flat
-|   🔍 Top Related Searches:
-|      test speed (100)
-|      driving test (64)
-|      blood test (58)
-|      theory test (36)
-|      internet test (29)
-|   🚀 Rising Related Searches:
-|      ind vs eng test (250)
-|      dvsa change driving test (120)
-|      book driving test uk (110)
-|      dvla book driving test (60)
-|      change driving test date (60)
-
-|                                                               |
-
-|--------------------------------------------------------------|
+|-----------------------|
+|ERROR_TOO_MANY_REQUESTS|
+|-----------------------|
 
 
 ------------------------------------------------
@@ -254,7 +200,7 @@
 |   [!] Description: Predicts the users opportunities (intent / business class).
 |
 |  User(s) Main opportunity: Business, Subsidiary opportunity: Consulting
-|  User(s) opportunities accuracy : 92.19143390655518% 
+|  User(s) opportunities accuracy : 92.21105575561523% 
 |
 |----------------------------------------------------|
 
@@ -297,11 +243,11 @@
 |  (String Count) casing : all lowercase 
 |  (String Count) matched_keywords : [] 
 |
-|  (Count) current sessions : 397 
+|  (Count) current sessions : 398 
 |
-|  Recent user actions : ['event_APIRetrieveActiveModelHistory', 'event_RanSulfurViaMain']
+|  Recent user actions : ['event_APIRetrieveActiveModelHistory', 'event_RanSulfurViaMain', 'event_RanSulfurViaMain']
 |
-| Percentage of user actions to sulfur runs: 50.0%
+| Percentage of user actions to sulfur runs: 33.33333333333333%
 |
 |----------------------------------------------------|
 
@@ -368,8 +314,8 @@
 |                   RESPONSE                   |
 ------------------------------------------------
 |
-|  Response Time : 0h 1m 20s, 245ms
-|  Generated on: 2025-11-16 20:15:28  
+|  Response Time : 0h 3m 33s, 482ms
+|  Generated on: 2025-11-17 19:39:56  
 |   General debugging only.
 |   *Settings can be changed. SulfurAI may make mistakes.*
 |---------------------------------------|
