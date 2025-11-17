@@ -6662,6 +6662,7 @@ def load_split_profiles(file_path: str) -> Dict[str, Any]:
     Returns two types of profiles: `API` and `MANUAL_RENDERS`.
 
     Automatically detects the type of profile and returns the appropriate structure.
+    Returns another variable "API" or "MANUAL_RENDER" to indicate which type was returned.
 
     ----
 
@@ -6706,26 +6707,27 @@ def load_split_profiles(file_path: str) -> Dict[str, Any]:
     # ---------------------------------------------
     gemini_pattern = re.compile(r"""['"]id['"]\s*:\s*['"]resp-""")
     is_gemini = bool(gemini_pattern.search(raw))
+    type = ""
 
     # ---------------------------------------------
     # 3. If GEMINI → return EXACT profile.json as a dict
     # ---------------------------------------------
     if is_gemini:
-
+        type = "API"
         # Try JSON → works only if the file is valid JSON
         try:
-            return json.loads(raw)
+            return json.loads(raw),type
         except:
             pass
 
         # Try Python literal (what Gemini actually outputs)
         try:
-            return ast.literal_eval(raw)
+            return ast.literal_eval(raw),type
         except:
             pass
 
         # Fallback
-        return raw
+        return raw,type
 
     # ---------------------------------------------
     # 4. MANUAL PROFILE MODE (unchanged old logic)
@@ -6784,20 +6786,23 @@ def load_split_profiles(file_path: str) -> Dict[str, Any]:
                 other[name] = collect(i, sorted(stop_indices))
 
         # If nothing matched, return raw fallback
+        type = "MANUAL_RENDER"
         if not adv and not summ and not norm and not other:
-            return {
+            ret = {
                 "advanced_data_profile": "",
                 "raw_advanced_summary": raw_text.strip(),
                 "normal_profile_summary": "",
                 "other_sections": {}
             }
+            return ret,type
 
-        return {
+        ret = {
             "advanced_data_profile": adv,
             "raw_advanced_summary": summ,
             "normal_profile_summary": norm,
             "other_sections": other
         }
+        return ret,type
 
     manual = manual_extract(raw)
     manual["style"] = "manual"

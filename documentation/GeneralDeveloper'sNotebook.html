@@ -72,7 +72,7 @@
     <header>
       <h1>SulfurAI Developer Kit</h1>
       <p>Everything you need to integrate, modify and extend SulfurAI</p>
-      <p>Last updated: 16 Nov 2025, accurate as of: [Build 10399d-patch8]</p>
+      <p>Last updated: 16 Nov 2025, accurate as of: [Build 10399d-patch9]</p>
     </header>
 
     <nav>
@@ -81,6 +81,7 @@
         <li><a href="#api">API Reference</a></li>
         <li><a href="#server">Sulfur Server System</a></li>
         <li><a href="#model-info">Model Info</a></li>
+          <li><a href="#best-practices">Best Practices</a></li>
          <li><a href="#directory-guide">Directory Guide</a></li>
         <li><a href="#bias-notice">Bias Notice</a></li>
         <li><a href="#license">License</a></li>
@@ -146,7 +147,6 @@
           <pre><code class="language-python">
       sulfur_console.set_api_debug_print
       sulfur_console.check_api_debug_print
-
       </code></pre>
 
       </section>
@@ -166,6 +166,8 @@
        SulfurAI.server.get_output_endpoint
        SulfurAI.server.wait_for_output_endpoint
       </code></pre>
+
+
         </section>
 
 
@@ -173,7 +175,7 @@
     <section id="model-info">
       <h2>Model Info + Creating / Identifying models.</h2>
       <p>SulfurAI uses multiple pre-trained transformer/classification models optimized for conversational tasks. Default model: <code>sulfur_drl_[build]</code>.</p>
-        <p>Creating models isn't supported in build 10399d-patch8, but you can find current ones with the SulfurAI API.</p>
+        <p>Creating models isn't supported in build 10399d-patch9, but you can find current ones with the SulfurAI API.</p>
         <br>
            <p>(Assuming you imported SulfurAI as SulfurAI)</p>
              <pre><code class="language-python">print(SulfurAI.retrieve_current_models())</code></pre>
@@ -182,11 +184,23 @@
 
     </section>
 
+
+      <section id="best-practices">
+          <br>
+          <h2>Best practices when writing API code:</h2>
+      <pre><code>
+
+          <p>1. Use the SulfurAI import (don't abbrievate 'as')</p>
+          <p>2. Use custom SulfurAI tracebacks: [from scripts.ai_renderer_sentences.error import SulfurError] and [raise SulfurError(message=f"")]</p>
+          <p>3. Use the HollyFormat to structure your code [documentation/HollyFormat]</p>
+      </code></pre>
+          </section>
+
     <section id="directory-guide">
       <h2>Directory Guide</h2>
       <p>Here is a brief overview of the SulfurAI directory (folders) structure:</p>
        <pre><code>
-     api - Hosts the API documentation, code and server cache.
+     api - Hosts the API code and server cache.
     </code></pre>
        <pre><code>
      apps - contains appdata for external apps.

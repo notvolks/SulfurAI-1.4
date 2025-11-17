@@ -73,7 +73,7 @@ Libraries include:
 > [!IMPORTANT]  
 > Work in Progress
 
-- Active developer release: **Build 10399d-patch8**  
+- Active developer release: **Build 10399d-patch9**  
 - Report non-security issues via GitHub Issues  
 
 <br>

@@ -3,7 +3,7 @@
 ### Functions here should be modified with proper intent.
 ### This python script was written in the Holly format. To find out how it works go into setup/HollyFormat/ReadMe.txt
 ### This python script is designed to host all SulfurAI API functions for python and run via the __main__ tag.
-
+#-
 ### LAYOUT:
 # ---------------GOING DOWN!
 ##### -Importing base level items, including TOS notice.
@@ -52,6 +52,9 @@ call = _get_call_file_path()
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 from scripts.ai_renderer_sentences import error
 from extra_models.Sulfur.GeneralScripts.LocalUserEvents import events_hoster
+
+
+
 
 
 
@@ -182,22 +185,17 @@ if ARCH_IS_VALID == 2:
         from extra_models.Sulfur.ArchitectureBuild import arch_runner
         start_arch()
     except (ImportError,AttributeError,TypeError,FileNotFoundError,ValueError) as e:
-        print(f"ARCHITECTURE COULD NOT BE RUN! Error as {e}")
-        print("Shutting down sulfur...")
-        time.sleep(2)
-        error.brick_out(2)
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message="Architechture failed to start.")
 
 else:
     try:
-        print("ARCHITECTURE COULD NOT BE VERIFIED!")
-        print("Shutting down sulfur...")
-        time.sleep(2)
-        error.brick_out(2)
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message="ARCHITECTURE COULD NOT BE VERIFIED")
     except (ImportError,TypeError,AttributeError,KeyboardInterrupt) as e:
-        print(f"ARCHITECTURE COULD NOT BE CLOSED ('ARCHITECTURE COULD NOT BE VERIFIED' RAN INTO AN ERROR)! Error as {e}")
-        print("Shutting down sulfur...")
-        time.sleep(2)
-        error.brick_out(2)
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message="ARCHITECTURE COULD NOT BE VERIFIED' RAN INTO AN ERROR)!")
+
 
 
 #####################------------------------------------------------SULFUR------------------------------------------------
@@ -319,9 +317,10 @@ if __name__ == "__main__":
         if __name__ == "__main__":
             time.sleep(100)  # Developer debug only
     except Exception as e:
-        print("Error:", e)
-        import traceback
-        traceback.print_exc()
+
+        from scripts.ai_renderer_sentences.error import SulfurError
+
+        raise SulfurError(message=f"{e}")
 
 
 def _call_file_input():
@@ -416,10 +415,9 @@ def run_via_trainer(tag_trainer):
         start_time = datetime.now()
         _rest_of_the_script(tag_trainer, False, start_time, "[]")
     except Exception as e:
-        print("Error:", e)
-        import traceback
-        traceback.print_exc()
-        input("Press Enter to exit...")
+
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message=f"{e}")
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -490,7 +488,9 @@ def run_locally(input_string, add_to_training_data=True):
         with open(file_path_input_mod, "w", encoding="utf-8", errors="ignore") as file_mod:
             file_mod.write(input_string)
     except TypeError:
-        raise TypeError("SULFUR EXCEPTION (run_locally): Input_string must be a *string*!")
+
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message=f"Input_string must be a *string*!")
 
 
     old_cwd = os.getcwd()
@@ -507,7 +507,9 @@ def run_locally(input_string, add_to_training_data=True):
         try:
             returned_final = json.loads(returned)
         except TypeError as e:
-            raise TypeError("SULFUR EXCEPTION (run_locally): JSON decode failed — input was None") from e
+
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=f"JSON decode failed — input was None")
 
         return returned_final
 
@@ -666,10 +668,13 @@ class server():
                 return last_line.strip('\n')
 
             except FileNotFoundError:
-                print(f"File not found: {file_path}")
+
+                wim = error.who_imported_me()
+                error.error("er1", "SCRIPT_TRACEBACK", f"File not found: {file_path} issue at imports: {wim}", "nAn")
                 return None
             except Exception as e:
-                print(f"Error: {e}")
+                wim = error.who_imported_me()
+                error.error("er1", "SCRIPT_TRACEBACK", f"Error: {e} issue at imports: {wim}", "nAn")
                 return None
 
         try:
@@ -696,7 +701,9 @@ class server():
                     with open(file_path_input_mod, "w", encoding="utf-8", errors="ignore") as file_mod:
                         file_mod.write(input_string)
                 except TypeError:
-                    raise TypeError("SULFUR EXCEPTION (run_locally): Input_string must be a *string*!")
+
+                    from scripts.ai_renderer_sentences.error import SulfurError
+                    raise SulfurError(message=f"Input_string must be a *string*!")
 
                 old_cwd = os.getcwd()
                 try:
@@ -803,7 +810,8 @@ class server():
 
         if extra_debug: print(f"💻 Adding {str(input_string)} to the local endpoint via SSS (SulfurAI Server System)...")
         if type(input_string) is not str:
-            raise TypeError("SULFUR EXCEPTION (run_locally): Input_string must be a *string*!")
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=f"Input_string must be a *string*!")
         file_path_input_api_server = call.api_server_python_cache_input()
         with open(file_path_input_api_server, "a", encoding="utf-8",errors="ignore") as file_mod:
             file_mod.write(input_string + "\n")
@@ -845,7 +853,9 @@ class server():
         import ast,re
         if extra_debug: print(f"💻 Attempting to find {str(input_string)} in the local endpoint via SSS (SulfurAI Server System)...")
         if type(input_string) is not str:
-            raise TypeError("SULFUR EXCEPTION (run_locally): Input_string must be a *string*!")
+
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=f"Input_string must be a *string*!")
         current_dir = os.path.abspath(os.path.join(
             os.path.dirname(__file__),
         ))
@@ -931,7 +941,9 @@ class server():
         print(f"📖 Max timeout is {max_timeout} seconds, timeout is {timeout} seconds.")
 
         if type(input_string) is not str:
-            raise TypeError("SULFUR EXCEPTION (run_locally): Input_string must be a *string*!")
+
+            from scripts.ai_renderer_sentences.error import SulfurError
+            raise SulfurError(message=f"Input_string must be a *string*!")
         current_dir = os.path.abspath(os.path.join(
             os.path.dirname(__file__),
         ))
@@ -1176,16 +1188,17 @@ def render_dataprofile(USE_API: str = False,
             return_ = render_scripts_general.api_render_dp(API_KEY, USE_API, API_MODEL)
             return return_
     except Exception as e:
-        print("Error:", e)
-        import traceback
-        traceback.print_exc()
-        input("Press Enter to exit...")
+
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message=f"{e}")
+
 
 def return_dataprofiles():
     """
     Returns two types of profiles: `API` and `MANUAL_RENDERS`.
 
     Automatically detects the type of profile and returns the appropriate structure.
+    Returns another variable "API" or "MANUAL_RENDER" to indicate which type was returned.
 
     ----
 
@@ -1217,14 +1230,14 @@ def return_dataprofiles():
     try:
         from returns.dataprofiles.scripts import run_profile_builder
         path = call.profile_default()
-        dict = run_profile_builder.load_split_profiles(file_path=path)
-        return dict
+        dict,type = run_profile_builder.load_split_profiles(file_path=path)
+        return dict,type
     except Exception as e:
 
-        print("Error:", e)
-        import traceback
-        traceback.print_exc()
-        input("Press Enter to exit...")
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message=f"{e}")
+
+
 
 
 def return_offline_dataprofiles():

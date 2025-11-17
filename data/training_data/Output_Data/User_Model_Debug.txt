@@ -21,10 +21,10 @@ General toxicity score : 0.0
 (Count) exclamations : 0 
 (Count) questions : 0 
 (Count) periods : 0 
-(Count) current sessions : 395 
+(Count) current sessions : 397 
 (String Count) hashtags : [] 
 (String Count) emojis : [] 
 (String Count) casing : all lowercase 
 (String Count) matched_keywords : [] 
-Recent user actions : ['event_SetupServerAPI', 'event_SetupAPILocal']
-Percentage of user actions to sulfur runs: 100.0%
+Recent user actions : ['event_APIRetrieveActiveModelHistory', 'event_RanSulfurViaMain']
+Percentage of user actions to sulfur runs: 50.0%

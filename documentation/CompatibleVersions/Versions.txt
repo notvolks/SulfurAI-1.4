@@ -1,5 +1,6 @@
-Developer Release 1-3-99-patch8 is compatible with:
+Developer Release 1-3-99-patch9 is compatible with:
 
+-Developer Release 1-3-99-patch8 or 10399d-patch9 // with a compatibility score of [10/10]
 -Developer Release 1-3-99-patch8 or 10399d-patch8 // with a compatibility score of [10/10]
 
 

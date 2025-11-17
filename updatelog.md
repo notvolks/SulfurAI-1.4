@@ -2,8 +2,7 @@
 
 
 
-* Completely revamped file structures to be more developer-friendly.
-* Fixed issues with the Sulfur Server System API \& directory issues.
+* Added custom traceback for the API
 
 
 

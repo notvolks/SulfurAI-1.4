@@ -4,7 +4,7 @@
 
 |---------------INPUT---------------
 |                                   
-|    Input (text) : ['Produce many read science note of name.']   
+|    Input (text) : ['test_endpoint']   
 |                                   
 |----------------------------------
 
@@ -19,11 +19,11 @@
 |                                   
 |  Predicted Device : Desktop   
 |                                   
-|  Predicted Device Accuracy : 80.40201005025126%  
+|  Predicted Device Accuracy : 99.9%  
 |                                   
 |  Main/Mean Devices : MOBILE(OTHER)  
 |                                   
-|  Average/Mean Accuracy: 70.22211492032834%  
+|  Average/Mean Accuracy: 70.03487816531295%  
 |                                   
 |----------------------------------
 
@@ -37,7 +37,7 @@
 |   Basic version limit: 3 preferred words!     
 *|  Predicted using Hard Values.*               
 |                                   
-|  User(s) preferred words : many,many,science [Not Summarised] 
+|  User(s) preferred words : test_endpoint [Not Summarised] 
 |                                   
 |  Average preferred words : hows test basic [Not Summarised]    
 |                                   
@@ -46,7 +46,7 @@
 |                                   
 |          Nouns          
 |                                   
-|  User(s): science [To an extent of noun]  
+|  User(s): test_endpoint [To an extent of noun]  
 |  Average: hows [To an extent of noun]   
 |                                   
 |----------------------------------
@@ -80,12 +80,12 @@
 |      Average <User : Mean> Accuracy : 86.9%                                   
 |       Predicted using a Neural Network.*                                                          
 |                                                                                                   
-|      Sentence Type : exclamation (90.42553305625916%)                                       
-|      Sentence Intent : expressing (90.69148898124695%)                                 
+|      Sentence Type : exclamation (88.66498470306396%)                                       
+|      Sentence Intent : expressing (91.18387699127197%)                                 
 |                                                                                                   
-|      Global Type : exclamation (93.07065217391305%)                                   
-|      Global Intent : expressing (25.47554347826087%)                             
-|      Overall Accuracy : 72.05615942028986%                                             
+|      Global Type : exclamation (93.16811788345612%)                                   
+|      Global Intent : expressing (23.978566644340255%)                             
+|      Overall Accuracy : 71.60080375083724%                                             
 |                                                                                                   
 |----------------------------------------------------------------------------------------------------
 
@@ -181,7 +181,7 @@
 |   [!] Description: Predicts the user's location with a medium intelligence model.
 |
 |  User(s) predicted location : England 
-|  User(s) predicted location accuracy : 85.89919805526733%
+|  User(s) predicted location accuracy : 36.44341823153029%
 |
 |  Average predicted location : England 
 |  Average predicted location accuracy : 86.4693546743878%
@@ -198,48 +198,49 @@
 |                                                               |
 |   📈 Trend Direction: flat
 |   🔍 Top Related Searches:
-|      speed test (100)
-|      driving test (66)
-|      blood test (55)
-|      theory test (35)
-|      internet test (28)
+|      test speed (100)
+|      driving test (64)
+|      blood test (58)
+|      theory test (36)
+|      internet test (29)
 |   🚀 Rising Related Searches:
-|      book a driving test uk (130)
+|      ind vs eng test (250)
 |      dvsa change driving test (120)
 |      book driving test uk (110)
-|      driving test booking change (80)
-|      change driving test date (70)
+|      dvla book driving test (60)
+|      change driving test date (60)
 |--------------------------------------------------------------|
 |   🌍 Country: United States (US)
 |--------------------------------------------------------------|
 |                                                               |
 |   📈 Trend Direction: flat
 |   🔍 Top Related Searches:
-|      speed test (100)
-|      internet test (32)
-|      speed test internet (31)
-|      pregnancy test (30)
+|      test speed (100)
+|      internet test (36)
+|      speed test internet (32)
+|      pregnancy test (28)
 |      permit test (16)
 |   🚀 Rising Related Searches:
-|      race purity test (1900)
-|      how long does weed stay in your system urine test (50)
+|      presidential fitness test (350)
+|      ind vs eng test (160)
+|      chipotle iq test (80)
 |--------------------------------------------------------------|
 |   🌍 Country: United Kingdom (GB)
 |--------------------------------------------------------------|
 |                                                               |
 |   📈 Trend Direction: flat
 |   🔍 Top Related Searches:
-|      speed test (100)
-|      driving test (66)
-|      blood test (55)
-|      theory test (35)
-|      internet test (28)
+|      test speed (100)
+|      driving test (64)
+|      blood test (58)
+|      theory test (36)
+|      internet test (29)
 |   🚀 Rising Related Searches:
-|      book a driving test uk (130)
+|      ind vs eng test (250)
 |      dvsa change driving test (120)
 |      book driving test uk (110)
-|      driving test booking change (80)
-|      change driving test date (70)
+|      dvla book driving test (60)
+|      change driving test date (60)
 
 |                                                               |
 
@@ -253,7 +254,7 @@
 |   [!] Description: Predicts the users opportunities (intent / business class).
 |
 |  User(s) Main opportunity: Business, Subsidiary opportunity: Consulting
-|  User(s) opportunities accuracy : 91.7553186416626% 
+|  User(s) opportunities accuracy : 92.19143390655518% 
 |
 |----------------------------------------------------|
 
@@ -264,43 +265,43 @@
 |   [!] Description: Uses quick and efficient inference models to make advanced predictions of already existing output.
 |   [!] It's recommended to use this debug with the already existing output on a 80:20 ratio for better accuracy.
 |
-|  Tokens:  ['Produce', 'many', 'read', 'science', 'note', 'of', 'name.'] 
-|  Frequency of keywords : {'Produce': 1, 'many': 1, 'read': 1, 'science': 1, 'note': 1, 'of': 1, 'name.': 1}
+|  Tokens:  ['test_endpoint'] 
+|  Frequency of keywords : {'test_endpoint': 1}
 |  Percent of Uppercase letters : 0.0%
-|  Average word length : 5.571428571428571 characters.
+|  Average word length : 13.0 characters.
 |
-|  Flesch Reading Ease : 78.87285714285717
-|  Flesch-Kincaid Grade : 3.997142857142858
+|  Flesch Reading Ease : 36.62000000000003
+|  Flesch-Kincaid Grade : 8.400000000000002
 |  SMOG Index : 3.1291
-|  Gunning Fog : 2.8000000000000003
-|  Sentences: 1 | Words: 7
+|  Gunning Fog : 0.4
+|  Sentences: 1 | Words: 1
 |
-|  Lemmas : ['Produce', 'many', 'read', 'science', 'note', 'of', 'name', '.']
-|  Position counts: : Counter({'JJ': 2, 'NN': 2, 'NNP': 1, 'VBP': 1, 'IN': 1, '.': 1})
+|  Lemmas : ['test_endpoint']
+|  Position counts: : Counter({'NN': 1})
 |  List of bi-grams : 3.1291
-|  Gunning Fog : [('Produce', 'many'), ('many', 'read'), ('read', 'science'), ('science', 'note'), ('note', 'of'), ('of', 'name'), ('name', '.')]
-|  Keyframes: ['science note']
+|  Gunning Fog : []
+|  Keyframes: []
 |
-|  General sentiment : Positive
-|  General sentiment score : 0.5
+|  General sentiment : Neutral
+|  General sentiment score : 0.0
 |  General toxicity flags : False
 |  General toxicity score : 0.0
 |
-|  (Count) words : 7 
-|  (Count) characters : 39 
+|  (Count) words : 1 
+|  (Count) characters : 13 
 |  (Count) exclamations : 0 
 |  (Count) questions : 0 
-|  (Count) periods : 1 
+|  (Count) periods : 0 
 |  (String Count) hashtags : [] 
 |  (String Count) emojis : [] 
-|  (String Count) casing : Sentence case 
+|  (String Count) casing : all lowercase 
 |  (String Count) matched_keywords : [] 
 |
-|  (Count) current sessions : 376 
+|  (Count) current sessions : 397 
 |
-|  Recent user actions : ['event_RanSulfurViaMain']
+|  Recent user actions : ['event_APIRetrieveActiveModelHistory', 'event_RanSulfurViaMain']
 |
-| Percentage of user actions to sulfur runs: 0.0%
+| Percentage of user actions to sulfur runs: 50.0%
 |
 |----------------------------------------------------|
 
@@ -319,27 +320,27 @@
 |  Advanced tense:  Present 
 |  Advanced sentence types:  Declarative 
 |  Advanced clause counts:  1 
-|  Advanced token count:  ['Produce', 'many', 'read', 'science', 'note', 'of', 'name.'] 
-|  Advanced formality:  Informal 
-|  Advanced formality [positive] : informality [negative] score:  -1 
+|  Advanced token count:  ['test_endpoint'] 
+|  Advanced formality:  Neutral 
+|  Advanced formality [positive] : informality [negative] score:  0 
 |  * If the number is positive, it is a formal score. Opposites apply. 
 |  Advanced slang that was found:  None 
 |  User's tone:  ['neutral'] 
 |  User's primary intent:  Statement 
 |  User's audience:  General 
-|  User's polarity:  Positive 
+|  User's polarity:  Neutral 
 |
-|  Final anomaly score:  65.0 
-|  Final mood score:  100.0 
+|  Final anomaly score:  60.0 
+|  Final mood score:  90.0 
 |  Final change score:  30.0 
 |
-|  Final detected anomalies:  ["⚠️ Sentiment shift: User mood 'Neutral' vs Avg mood 'Negative'", '📈 ML Sentiment Alert: Strong positive polarity (0.50)', "✅ Day: Type 'exclamation' stable (0.0% vs avg -5.49%, Δ 5.49%)", "✅ Day: Intent 'expressing' stable (0.0% vs avg 0.0%, Δ 0.00%)", "✅ Week: Type 'exclamation' stable (0.0% vs avg 1.83%, Δ 1.83%)", "✅ Week: Intent 'expressing' stable (0.0% vs avg 3.6%, Δ 3.60%)", "✅ Month: Type 'exclamation' stable (0.0% vs avg 6.8%, Δ 6.80%)", "✅ Month: Intent 'expressing' stable (0.0% vs avg 12.06%, Δ 12.06%)"] 
+|  Final detected anomalies:  ["⚠️ Sentiment shift: User mood 'Neutral' vs Avg mood 'Negative'", '😐 ML Sentiment Stable (0.00)', "✅ Day: Type 'exclamation' stable (0.0% vs avg -5.49%, Δ 5.49%)", "✅ Day: Intent 'expressing' stable (0.0% vs avg 0.0%, Δ 0.00%)", "✅ Week: Type 'exclamation' stable (0.0% vs avg 1.83%, Δ 1.83%)", "✅ Week: Intent 'expressing' stable (0.0% vs avg 3.6%, Δ 3.60%)", "✅ Month: Type 'exclamation' stable (0.0% vs avg 6.8%, Δ 6.80%)", "✅ Month: Intent 'expressing' stable (0.0% vs avg 12.06%, Δ 12.06%)"] 
 |
-|  Final detected anomalies (block) :   🔎 Final Anomaly Confidence Score: 65.0%
-    - Mood Score Contribution: 100.0%
+|  Final detected anomalies (block) :   🔎 Final Anomaly Confidence Score: 60.0%
+    - Mood Score Contribution: 90.0%
     - Change Score Contribution: 30.0%
 | ⚠️ Sentiment shift: User mood 'Neutral' vs Avg mood 'Negative' |
-| 📈 ML Sentiment Alert: Strong positive polarity (0.50) |
+| 😐 ML Sentiment Stable (0.00) |
 | ✅ Day: Type 'exclamation' stable (0.0% vs avg -5.49%, Δ 5.49%) |
 | ✅ Day: Intent 'expressing' stable (0.0% vs avg 0.0%, Δ 0.00%) |
 | ✅ Week: Type 'exclamation' stable (0.0% vs avg 1.83%, Δ 1.83%) |
@@ -356,10 +357,19 @@
 |
 |   [!] Description: Provides a general output score the data profile renderer.
 |
-|  Overall_score: 38
-|  Per_key_scores: {'INPUT_TEXT': 21, 'INPUT_TOO_LONG': 20, 'INPUT_HAD_UNACCEPTED_PARTS': 20, 'PREDICTED_USER_DEVICE': 3, 'PREDICTED_USER_DEVICE_ACCURACY': 80, 'DATABASE_AVERAGE_DEVICE': 5, 'DATABASE_AVERAGE_DEVICE_ACCURACY': 70, 'USER_MOOD_PREDICTED': 3, 'GLOBAL_MOOD_PREDICTED': 4, 'USER_MOOD_PREDICTED_ACCURACY': 100, 'GLOBAL_MOOD_PREDICTED_ACCURACY': 74, 'MOOD_AVERAGE_ACCURACY_ALL': 87, 'USER_SENTENCE_TYPE': 4, 'USER_SENTENCE_INTENT': 4, 'USER_SENTENCE_TYPE_ACCURACY': 90, 'USER_SENTENCE_INTENT_ACCURACY': 91, 'GLOBAL_SENTENCE_TYPE': 4, 'GLOBAL_SENTENCE_INTENT': 4, 'GLOBAL_SENTENCE_TYPE_ACCURACY': 93, 'GLOBAL_SENTENCE_INTENT_ACCURACY': 25, 'GLOBAL_OVERALL_ACCURACY': 72, 'PREDICTED_USER_LOCATION_COUNTRY': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE': 86, 'PREDICTED_USER_LOCATION_COUNTRY_GLOBAL': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL': 86, 'USER_MAIN_OPPORTUNITY': 4, 'USER_SUBSIDIARY_OPPORTUNITY': 4, 'USER_OPPORTUNITY_ACCURACY': 92, 'RESPONSE_TOTAL_TIME': 4, 'MODEL': 1, 'ADVANCED_MODEL_DEBUG': 43, 'MODEL_DEBUG': 37}
-|  Ranked: [('USER_MOOD_PREDICTED_ACCURACY', 100), ('GLOBAL_SENTENCE_TYPE_ACCURACY', 93), ('USER_OPPORTUNITY_ACCURACY', 92), ('USER_SENTENCE_INTENT_ACCURACY', 91), ('USER_SENTENCE_TYPE_ACCURACY', 90), ('MOOD_AVERAGE_ACCURACY_ALL', 87), ('PREDICTED_USER_LOCATION_CONFIDENCE', 86), ('PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL', 86), ('PREDICTED_USER_DEVICE_ACCURACY', 80), ('GLOBAL_MOOD_PREDICTED_ACCURACY', 74), ('GLOBAL_OVERALL_ACCURACY', 72), ('DATABASE_AVERAGE_DEVICE_ACCURACY', 70), ('ADVANCED_MODEL_DEBUG', 43), ('MODEL_DEBUG', 37), ('GLOBAL_SENTENCE_INTENT_ACCURACY', 25), ('INPUT_TEXT', 21), ('INPUT_TOO_LONG', 20), ('INPUT_HAD_UNACCEPTED_PARTS', 20), ('DATABASE_AVERAGE_DEVICE', 5), ('GLOBAL_MOOD_PREDICTED', 4), ('USER_SENTENCE_TYPE', 4), ('USER_SENTENCE_INTENT', 4), ('GLOBAL_SENTENCE_TYPE', 4), ('GLOBAL_SENTENCE_INTENT', 4), ('USER_MAIN_OPPORTUNITY', 4), ('USER_SUBSIDIARY_OPPORTUNITY', 4), ('RESPONSE_TOTAL_TIME', 4), ('PREDICTED_USER_DEVICE', 3), ('USER_MOOD_PREDICTED', 3), ('PREDICTED_USER_LOCATION_COUNTRY', 3), ('PREDICTED_USER_LOCATION_COUNTRY_GLOBAL', 3), ('MODEL', 1)]
+|  Overall_score: 36
+|  Per_key_scores: {'INPUT_TEXT': 6, 'INPUT_TOO_LONG': 20, 'INPUT_HAD_UNACCEPTED_PARTS': 20, 'PREDICTED_USER_DEVICE': 3, 'PREDICTED_USER_DEVICE_ACCURACY': 100, 'DATABASE_AVERAGE_DEVICE': 5, 'DATABASE_AVERAGE_DEVICE_ACCURACY': 70, 'USER_MOOD_PREDICTED': 3, 'GLOBAL_MOOD_PREDICTED': 4, 'USER_MOOD_PREDICTED_ACCURACY': 100, 'GLOBAL_MOOD_PREDICTED_ACCURACY': 74, 'MOOD_AVERAGE_ACCURACY_ALL': 87, 'USER_SENTENCE_TYPE': 4, 'USER_SENTENCE_INTENT': 4, 'USER_SENTENCE_TYPE_ACCURACY': 89, 'USER_SENTENCE_INTENT_ACCURACY': 91, 'GLOBAL_SENTENCE_TYPE': 4, 'GLOBAL_SENTENCE_INTENT': 4, 'GLOBAL_SENTENCE_TYPE_ACCURACY': 93, 'GLOBAL_SENTENCE_INTENT_ACCURACY': 24, 'GLOBAL_OVERALL_ACCURACY': 72, 'PREDICTED_USER_LOCATION_COUNTRY': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE': 36, 'PREDICTED_USER_LOCATION_COUNTRY_GLOBAL': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL': 86, 'USER_MAIN_OPPORTUNITY': 4, 'USER_SUBSIDIARY_OPPORTUNITY': 4, 'USER_OPPORTUNITY_ACCURACY': 92, 'RESPONSE_TOTAL_TIME': 4, 'MODEL': 1, 'ADVANCED_MODEL_DEBUG': 41, 'MODEL_DEBUG': 32}
+|  Ranked: [('PREDICTED_USER_DEVICE_ACCURACY', 100), ('USER_MOOD_PREDICTED_ACCURACY', 100), ('GLOBAL_SENTENCE_TYPE_ACCURACY', 93), ('USER_OPPORTUNITY_ACCURACY', 92), ('USER_SENTENCE_INTENT_ACCURACY', 91), ('USER_SENTENCE_TYPE_ACCURACY', 89), ('MOOD_AVERAGE_ACCURACY_ALL', 87), ('PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL', 86), ('GLOBAL_MOOD_PREDICTED_ACCURACY', 74), ('GLOBAL_OVERALL_ACCURACY', 72), ('DATABASE_AVERAGE_DEVICE_ACCURACY', 70), ('ADVANCED_MODEL_DEBUG', 41), ('PREDICTED_USER_LOCATION_CONFIDENCE', 36), ('MODEL_DEBUG', 32), ('GLOBAL_SENTENCE_INTENT_ACCURACY', 24), ('INPUT_TOO_LONG', 20), ('INPUT_HAD_UNACCEPTED_PARTS', 20), ('INPUT_TEXT', 6), ('DATABASE_AVERAGE_DEVICE', 5), ('GLOBAL_MOOD_PREDICTED', 4), ('USER_SENTENCE_TYPE', 4), ('USER_SENTENCE_INTENT', 4), ('GLOBAL_SENTENCE_TYPE', 4), ('GLOBAL_SENTENCE_INTENT', 4), ('USER_MAIN_OPPORTUNITY', 4), ('USER_SUBSIDIARY_OPPORTUNITY', 4), ('RESPONSE_TOTAL_TIME', 4), ('PREDICTED_USER_DEVICE', 3), ('USER_MOOD_PREDICTED', 3), ('PREDICTED_USER_LOCATION_COUNTRY', 3), ('PREDICTED_USER_LOCATION_COUNTRY_GLOBAL', 3), ('MODEL', 1)]
 |
 |----------------------------------------------------|
 
 
+------------------------------------------------
+|                   RESPONSE                   |
+------------------------------------------------
+|
+|  Response Time : 0h 1m 20s, 245ms
+|  Generated on: 2025-11-16 20:15:28  
+|   General debugging only.
+|   *Settings can be changed. SulfurAI may make mistakes.*
+|---------------------------------------|
