@@ -1,0 +1,366 @@
+------------------------------------------------
+|                 Sulfur Output*               |
+------------------------------------------------
+
+|---------------INPUT---------------
+|                                   
+|    Input (text) : ['test_endpoint']   
+|                                   
+|----------------------------------
+
+------------------------------------------------
+
+|                 DEVICES                     |
+------------------------------------------------
+|
+|   [!] Description: Predicts the users device using an extremely large scale intelligence model.
+|                                   
+|  *Predicted using Machine Learning.*  
+|                                   
+|  Predicted Device : Desktop   
+|                                   
+|  Predicted Device Accuracy : 99.9%  
+|                                   
+|  Main/Mean Devices : MOBILE(OTHER)  
+|                                   
+|  Average/Mean Accuracy: 69.99142040038132%  
+|                                   
+|----------------------------------
+
+------------------------------------------------
+
+|                 PREFERENCES                |
+------------------------------------------------
+|
+|   [!] Description: Predicts the users preferences.
+|                                   
+|   Basic version limit: 3 preferred words!     
+*|  Predicted using Hard Values.*               
+|                                   
+|  User(s) preferred words : test_endpoint [Not Summarised] 
+|                                   
+|  Average preferred words : hows test basic [Not Summarised]    
+|                                   
+|----------------------------------
+|----------------------------------
+|                                   
+|          Nouns          
+|                                   
+|  User(s): test_endpoint [To an extent of noun]  
+|  Average: hows [To an extent of noun]   
+|                                   
+|----------------------------------
+|----------------------------------
+|                                   
+|          Verbs          
+|                                   
+|  User(s): None_Found [To an extent of verb]  
+|  Average: test [To an extent of verb]   
+|                                   
+|----------------------------------
+|----------------------------------
+|                                   
+|          Adjectives          
+|                                   
+|  User(s): None_Found [To an extent of adjective]  
+|  Average: basic [To an extent of adjective]   
+|                                   
+|----------------------------------
+|----------------------------------
+|                                   
+|          Mood          
+|                                   
+|  User(s): Neutral [To an extent of emotion]  
+|  Average: Negative [To an extent of emotion]   
+|                                   
+|----------------------------------
+|----------------------------------------------------------------------------------------------------
+|                                                                                                   
+|      Predicted Mood Accuracy : 99.9% (user), 73.9% (global)    
+|      Average <User : Mean> Accuracy : 86.9%                                   
+|       Predicted using a Neural Network.*                                                          
+|                                                                                                   
+|      Sentence Type : exclamation (88.77805471420288%)                                       
+|      Sentence Intent : expressing (91.27181768417358%)                                 
+|                                                                                                   
+|      Global Type : exclamation (93.18637274549098%)                                   
+|      Global Intent : expressing (24.181696726786907%)                             
+|      Overall Accuracy : 71.67668670674684%                                             
+|                                                                                                   
+|----------------------------------------------------------------------------------------------------
+
+------------------------------------------------
+|                   USER INSIGHT                |
+------------------------------------------------
+|
+|   [!] Description: Predicts the userbase intent over a period of time.
+|                                                                                                   
+|--------------------------------------------|
+|              Day Changes             |
+|  Changes to your userbase over the past 5 days:
+  Changes from 2025-11-05 to 2025-11-15:
+  Type Changes: exclamation: 0.00%
+  Intent Changes: expressing: 0.00%
+|  Average Changes over the past 5 days:
+  
+
+
+ Average Type Change:
+  exclamation: -5.49%
+
+ Average Intent Change:
+  commanding: 0.00%
+  expressing: 0.00%
+|   *Only includes changes at least 5 days apart.
+|--------------------------------------------|
+
+|                                                                                                   
+|--------------------------------------------|
+|              Week Changes             |
+|  Changes to your userbase over the past 5 weeks:
+  Changes from 2025-11-10 to 2025-11-17:
+  Type Changes: exclamation: 0.00%
+  Intent Changes: expressing: 0.00%
+|  Average Changes over the past 5 weeks:
+  
+
+
+ Average Type Change:
+  question: -1.79%
+  exclamation: +1.76%
+  command: -0.38%
+  statement: -0.64%
+
+ Average Intent Change:
+  commanding: -3.70%
+  expressing: +3.46%
+...and 3 more lines. Removed due to limit cap.
+|   *Only includes changes at least 5 weeks apart.
+|--------------------------------------------|
+
+|                                                                                                   
+|--------------------------------------------|
+|              Month Changes             |
+|  Changes to your userbase over the past 5 months:
+  Changes from 2025-10-01 to 2025-11-01:
+  Type Changes: exclamation: 0.00%
+  Intent Changes: expressing: 0.00%
+|  Average Changes over the past 5 months:
+  
+
+
+ Average Type Change:
+  question: -6.22%
+  exclamation: +6.80%
+  command: -0.95%
+  statement: -0.28%
+
+ Average Intent Change:
+  commanding: -14.29%
+  expressing: +12.06%
+...and 3 more lines. Removed due to limit cap.
+|   *Only includes changes at least 5 months apart.
+|--------------------------------------------|
+
+|                                                                                                   
+|--------------------------------------------|
+|              Year Changes             |
+|  Changes to your userbase over the past 5 years:
+  None_Found
+|  Average Changes over the past 5 years:
+  None_Found
+|   *Only includes changes at least 3 years apart.
+|--------------------------------------------|
+
+|                                                                                                   
+
+------------------------------------------------
+|              USER INSIGHT/LOCATION           |
+------------------------------------------------
+|
+|   [!] Description: Predicts the user's location with a medium intelligence model.
+|
+|  User(s) predicted location : England 
+|  User(s) predicted location accuracy : 36.44341823153029%
+|
+|  Average predicted location : England 
+|  Average predicted location accuracy : 86.4693546743878%
+|
+|----------------------------------------------------|
+
+|--------------------------------------------------------------|
+|                                                               |
+|   Top Countries Trends Based on Userbase: ['England', 'United States', 'United Kingdom']    |
+|                                                               |
+|--------------------------------------------------------------|
+|   🌍 Country: England (GB)
+|--------------------------------------------------------------|
+|                                                               |
+|   📈 Trend Direction: flat
+|   🔍 Top Related Searches:
+|      speed test (100)
+|      driving test (64)
+|      blood test (57)
+|      theory test (35)
+|      internet test (30)
+|   🚀 Rising Related Searches:
+|      ind vs eng test (250)
+|      dvsa change driving test (120)
+|      book driving test uk (110)
+|      change driving test date (70)
+|      driving test cancellations (70)
+|--------------------------------------------------------------|
+|   🌍 Country: United States (US)
+|--------------------------------------------------------------|
+|                                                               |
+|   📈 Trend Direction: flat
+|   🔍 Top Related Searches:
+|      test speed (100)
+|      internet test (35)
+|      test internet speed (32)
+|      pregnancy test (32)
+|      permit test (15)
+|   🚀 Rising Related Searches:
+|      presidential fitness test (400)
+|      ind vs eng test (130)
+|      chipotle iq test (90)
+|--------------------------------------------------------------|
+|   🌍 Country: United Kingdom (GB)
+|--------------------------------------------------------------|
+|                                                               |
+|   📈 Trend Direction: flat
+|   🔍 Top Related Searches:
+|      speed test (100)
+|      driving test (64)
+|      blood test (57)
+|      theory test (35)
+|      internet test (30)
+|   🚀 Rising Related Searches:
+|      ind vs eng test (250)
+|      dvsa change driving test (120)
+|      book driving test uk (110)
+|      change driving test date (70)
+|      driving test cancellations (70)
+
+|                                                               |
+
+|--------------------------------------------------------------|
+
+
+------------------------------------------------
+|               USER OPPORTUNITIES             |
+------------------------------------------------
+|
+|   [!] Description: Predicts the users opportunities (intent / business class).
+|
+|  User(s) Main opportunity: Business, Subsidiary opportunity: Consulting
+|  User(s) opportunities accuracy : 92.26932525634766% 
+|
+|----------------------------------------------------|
+
+------------------------------------------------
+|               USER : MODEL DEBUG             |
+------------------------------------------------
+|
+|   [!] Description: Uses quick and efficient inference models to make advanced predictions of already existing output.
+|   [!] It's recommended to use this debug with the already existing output on a 80:20 ratio for better accuracy.
+|
+|  Tokens:  ['test_endpoint'] 
+|  Frequency of keywords : {'test_endpoint': 1}
+|  Percent of Uppercase letters : 0.0%
+|  Average word length : 13.0 characters.
+|
+|  Flesch Reading Ease : 36.62000000000003
+|  Flesch-Kincaid Grade : 8.400000000000002
+|  SMOG Index : 3.1291
+|  Gunning Fog : 0.4
+|  Sentences: 1 | Words: 1
+|
+|  Lemmas : ['test_endpoint']
+|  Position counts: : Counter({'NN': 1})
+|  List of bi-grams : 3.1291
+|  Gunning Fog : []
+|  Keyframes: []
+|
+|  General sentiment : Neutral
+|  General sentiment score : 0.0
+|  General toxicity flags : False
+|  General toxicity score : 0.0
+|
+|  (Count) words : 1 
+|  (Count) characters : 13 
+|  (Count) exclamations : 0 
+|  (Count) questions : 0 
+|  (Count) periods : 0 
+|  (String Count) hashtags : [] 
+|  (String Count) emojis : [] 
+|  (String Count) casing : all lowercase 
+|  (String Count) matched_keywords : [] 
+|
+|  (Count) current sessions : 400 
+|
+|  Recent user actions : ['event_APIRetrieveActiveModelHistory', 'event_RanSulfurViaMain', 'event_RanSulfurViaMain', 'event_RanSulfurViaMain', 'event_RanSulfurViaMain', 'event_RanSulfurViaMain', 'event_RanSulfurViaMain']
+|
+| Percentage of user actions to sulfur runs: 14.285714285714285%
+|
+|----------------------------------------------------|
+
+------------------------------------------------
+|          ADVANCED USER : MODEL DEBUG         |
+------------------------------------------------
+|
+|   [!] Description: Uses AI or large inference models to make advanced predictions of already existing output.
+|   [!] It's recommended to use this debug with the already existing output on a 80:20 ratio for better accuracy.
+|
+|  Advanced speech actions:  Statement 
+|  Advanced speech action type:  Statement 
+|  Advanced speech tense:  Present 
+|  Advanced mood:  Neutral 
+|  Advanced mood II (further processed with a different model):  Neutral 
+|  Advanced tense:  Present 
+|  Advanced sentence types:  Declarative 
+|  Advanced clause counts:  1 
+|  Advanced token count:  ['test_endpoint'] 
+|  Advanced formality:  Neutral 
+|  Advanced formality [positive] : informality [negative] score:  0 
+|  * If the number is positive, it is a formal score. Opposites apply. 
+|  Advanced slang that was found:  None 
+|  User's tone:  ['neutral'] 
+|  User's primary intent:  Statement 
+|  User's audience:  General 
+|  User's polarity:  Neutral 
+|
+|  Final anomaly score:  60.0 
+|  Final mood score:  90.0 
+|  Final change score:  30.0 
+|
+|  Final detected anomalies:  ["⚠️ Sentiment shift: User mood 'Neutral' vs Avg mood 'Negative'", '😐 ML Sentiment Stable (0.00)', "✅ Day: Type 'exclamation' stable (0.0% vs avg -5.49%, Δ 5.49%)", "✅ Day: Intent 'expressing' stable (0.0% vs avg 0.0%, Δ 0.00%)", "✅ Week: Type 'exclamation' stable (0.0% vs avg 1.76%, Δ 1.76%)", "✅ Week: Intent 'expressing' stable (0.0% vs avg 3.46%, Δ 3.46%)", "✅ Month: Type 'exclamation' stable (0.0% vs avg 6.8%, Δ 6.80%)", "✅ Month: Intent 'expressing' stable (0.0% vs avg 12.06%, Δ 12.06%)"] 
+|
+|  Final detected anomalies (block) :   🔎 Final Anomaly Confidence Score: 60.0%
+    - Mood Score Contribution: 90.0%
+    - Change Score Contribution: 30.0%
+| ⚠️ Sentiment shift: User mood 'Neutral' vs Avg mood 'Negative' |
+| 😐 ML Sentiment Stable (0.00) |
+| ✅ Day: Type 'exclamation' stable (0.0% vs avg -5.49%, Δ 5.49%) |
+| ✅ Day: Intent 'expressing' stable (0.0% vs avg 0.0%, Δ 0.00%) |
+| ✅ Week: Type 'exclamation' stable (0.0% vs avg 1.76%, Δ 1.76%) |
+| ✅ Week: Intent 'expressing' stable (0.0% vs avg 3.46%, Δ 3.46%) |
+| ✅ Month: Type 'exclamation' stable (0.0% vs avg 6.8%, Δ 6.80%) |
+| ✅ Month: Intent 'expressing' stable (0.0% vs avg 12.06%, Δ 12.06%) |
+ 
+|
+|----------------------------------------------------|
+
+------------------------------------------------
+|                   OUTPUT SCORE               |
+------------------------------------------------
+|
+|   [!] Description: Provides a general output score the data profile renderer.
+|
+|  Overall_score: 36
+|  Per_key_scores: {'INPUT_TEXT': 6, 'INPUT_TOO_LONG': 20, 'INPUT_HAD_UNACCEPTED_PARTS': 20, 'PREDICTED_USER_DEVICE': 3, 'PREDICTED_USER_DEVICE_ACCURACY': 100, 'DATABASE_AVERAGE_DEVICE': 5, 'DATABASE_AVERAGE_DEVICE_ACCURACY': 70, 'USER_MOOD_PREDICTED': 3, 'GLOBAL_MOOD_PREDICTED': 4, 'USER_MOOD_PREDICTED_ACCURACY': 100, 'GLOBAL_MOOD_PREDICTED_ACCURACY': 74, 'MOOD_AVERAGE_ACCURACY_ALL': 87, 'USER_SENTENCE_TYPE': 4, 'USER_SENTENCE_INTENT': 4, 'USER_SENTENCE_TYPE_ACCURACY': 89, 'USER_SENTENCE_INTENT_ACCURACY': 91, 'GLOBAL_SENTENCE_TYPE': 4, 'GLOBAL_SENTENCE_INTENT': 4, 'GLOBAL_SENTENCE_TYPE_ACCURACY': 93, 'GLOBAL_SENTENCE_INTENT_ACCURACY': 24, 'GLOBAL_OVERALL_ACCURACY': 72, 'PREDICTED_USER_LOCATION_COUNTRY': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE': 36, 'PREDICTED_USER_LOCATION_COUNTRY_GLOBAL': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL': 86, 'USER_MAIN_OPPORTUNITY': 4, 'USER_SUBSIDIARY_OPPORTUNITY': 4, 'USER_OPPORTUNITY_ACCURACY': 92, 'RESPONSE_TOTAL_TIME': 4, 'MODEL': 1, 'ADVANCED_MODEL_DEBUG': 41, 'MODEL_DEBUG': 32}
+|  Ranked: [('PREDICTED_USER_DEVICE_ACCURACY', 100), ('USER_MOOD_PREDICTED_ACCURACY', 100), ('GLOBAL_SENTENCE_TYPE_ACCURACY', 93), ('USER_OPPORTUNITY_ACCURACY', 92), ('USER_SENTENCE_INTENT_ACCURACY', 91), ('USER_SENTENCE_TYPE_ACCURACY', 89), ('MOOD_AVERAGE_ACCURACY_ALL', 87), ('PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL', 86), ('GLOBAL_MOOD_PREDICTED_ACCURACY', 74), ('GLOBAL_OVERALL_ACCURACY', 72), ('DATABASE_AVERAGE_DEVICE_ACCURACY', 70), ('ADVANCED_MODEL_DEBUG', 41), ('PREDICTED_USER_LOCATION_CONFIDENCE', 36), ('MODEL_DEBUG', 32), ('GLOBAL_SENTENCE_INTENT_ACCURACY', 24), ('INPUT_TOO_LONG', 20), ('INPUT_HAD_UNACCEPTED_PARTS', 20), ('INPUT_TEXT', 6), ('DATABASE_AVERAGE_DEVICE', 5), ('GLOBAL_MOOD_PREDICTED', 4), ('USER_SENTENCE_TYPE', 4), ('USER_SENTENCE_INTENT', 4), ('GLOBAL_SENTENCE_TYPE', 4), ('GLOBAL_SENTENCE_INTENT', 4), ('USER_MAIN_OPPORTUNITY', 4), ('USER_SUBSIDIARY_OPPORTUNITY', 4), ('RESPONSE_TOTAL_TIME', 4), ('PREDICTED_USER_DEVICE', 3), ('USER_MOOD_PREDICTED', 3), ('PREDICTED_USER_LOCATION_COUNTRY', 3), ('PREDICTED_USER_LOCATION_COUNTRY_GLOBAL', 3), ('MODEL', 1)]
+|
+|----------------------------------------------------|
+
+

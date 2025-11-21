@@ -4,7 +4,7 @@
 
 |---------------INPUT---------------
 |                                   
-|    Input (text) : ['test_endpoint']   
+|    Input (text) : ['test_endpoint_with_trace']   
 |                                   
 |----------------------------------
 
@@ -23,7 +23,7 @@
 |                                   
 |  Main/Mean Devices : MOBILE(OTHER)  
 |                                   
-|  Average/Mean Accuracy: 70.01337153772684%  
+|  Average/Mean Accuracy: 69.61103319308089%  
 |                                   
 |----------------------------------
 
@@ -37,7 +37,7 @@
 |   Basic version limit: 3 preferred words!     
 *|  Predicted using Hard Values.*               
 |                                   
-|  User(s) preferred words : test_endpoint [Not Summarised] 
+|  User(s) preferred words : test_endpoint_with_trace [Not Summarised] 
 |                                   
 |  Average preferred words : hows test basic [Not Summarised]    
 |                                   
@@ -46,7 +46,7 @@
 |                                   
 |          Nouns          
 |                                   
-|  User(s): test_endpoint [To an extent of noun]  
+|  User(s): test_endpoint_with_trace [To an extent of noun]  
 |  Average: hows [To an extent of noun]   
 |                                   
 |----------------------------------
@@ -76,16 +76,16 @@
 |----------------------------------
 |----------------------------------------------------------------------------------------------------
 |                                                                                                   
-|      Predicted Mood Accuracy : 99.9% (user), 73.9% (global)    
-|      Average <User : Mean> Accuracy : 86.9%                                   
+|      Predicted Mood Accuracy : 99.9% (user), 74.2% (global)    
+|      Average <User : Mean> Accuracy : 87.05%                                   
 |       Predicted using a Neural Network.*                                                          
 |                                                                                                   
-|      Sentence Type : exclamation (88.69346976280212%)                                       
-|      Sentence Intent : expressing (91.20603203773499%)                                 
+|      Sentence Type : exclamation (89.79591727256775%)                                       
+|      Sentence Intent : expressing (92.0634925365448%)                                 
 |                                                                                                   
-|      Global Type : exclamation (93.17269076305222%)                                   
-|      Global Intent : expressing (24.029451137884873%)                             
-|      Overall Accuracy : 71.61981258366801%                                             
+|      Global Type : exclamation (93.3636955107352%)                                   
+|      Global Intent : expressing (26.154847104749514%)                             
+|      Overall Accuracy : 72.41379310344827%                                             
 |                                                                                                   
 |----------------------------------------------------------------------------------------------------
 
@@ -181,10 +181,10 @@
 |   [!] Description: Predicts the user's location with a medium intelligence model.
 |
 |  User(s) predicted location : England 
-|  User(s) predicted location accuracy : 36.44341823153029%
+|  User(s) predicted location accuracy : 44.32902047028345%
 |
 |  Average predicted location : England 
-|  Average predicted location accuracy : 86.4693546743878%
+|  Average predicted location accuracy : 86.39373492290211%
 |
 |----------------------------------------------------|
 
@@ -200,7 +200,7 @@
 |   [!] Description: Predicts the users opportunities (intent / business class).
 |
 |  User(s) Main opportunity: Business, Subsidiary opportunity: Consulting
-|  User(s) opportunities accuracy : 92.21105575561523% 
+|  User(s) opportunities accuracy : 92.97052025794983% 
 |
 |----------------------------------------------------|
 
@@ -211,20 +211,20 @@
 |   [!] Description: Uses quick and efficient inference models to make advanced predictions of already existing output.
 |   [!] It's recommended to use this debug with the already existing output on a 80:20 ratio for better accuracy.
 |
-|  Tokens:  ['test_endpoint'] 
-|  Frequency of keywords : {'test_endpoint': 1}
+|  Tokens:  ['test_endpoint_with_trace'] 
+|  Frequency of keywords : {'test_endpoint_with_trace': 1}
 |  Percent of Uppercase letters : 0.0%
-|  Average word length : 13.0 characters.
+|  Average word length : 24.0 characters.
 |
-|  Flesch Reading Ease : 36.62000000000003
-|  Flesch-Kincaid Grade : 8.400000000000002
-|  SMOG Index : 3.1291
-|  Gunning Fog : 0.4
+|  Flesch Reading Ease : -132.57999999999996
+|  Flesch-Kincaid Grade : 32.0
+|  SMOG Index : 8.841846274778883
+|  Gunning Fog : 40.400000000000006
 |  Sentences: 1 | Words: 1
 |
-|  Lemmas : ['test_endpoint']
+|  Lemmas : ['test_endpoint_with_trace']
 |  Position counts: : Counter({'NN': 1})
-|  List of bi-grams : 3.1291
+|  List of bi-grams : 8.841846274778883
 |  Gunning Fog : []
 |  Keyframes: []
 |
@@ -234,7 +234,7 @@
 |  General toxicity score : 0.0
 |
 |  (Count) words : 1 
-|  (Count) characters : 13 
+|  (Count) characters : 24 
 |  (Count) exclamations : 0 
 |  (Count) questions : 0 
 |  (Count) periods : 0 
@@ -243,11 +243,11 @@
 |  (String Count) casing : all lowercase 
 |  (String Count) matched_keywords : [] 
 |
-|  (Count) current sessions : 398 
+|  (Count) current sessions : 438 
 |
-|  Recent user actions : ['event_APIRetrieveActiveModelHistory', 'event_RanSulfurViaMain', 'event_RanSulfurViaMain']
+|  Recent user actions : ['event_RanSulfurViaMain', 'event_RanSulfurViaMain']
 |
-| Percentage of user actions to sulfur runs: 33.33333333333333%
+| Percentage of user actions to sulfur runs: 0.0%
 |
 |----------------------------------------------------|
 
@@ -266,7 +266,7 @@
 |  Advanced tense:  Present 
 |  Advanced sentence types:  Declarative 
 |  Advanced clause counts:  1 
-|  Advanced token count:  ['test_endpoint'] 
+|  Advanced token count:  ['test_endpoint_with_trace'] 
 |  Advanced formality:  Neutral 
 |  Advanced formality [positive] : informality [negative] score:  0 
 |  * If the number is positive, it is a formal score. Opposites apply. 
@@ -280,7 +280,7 @@
 |  Final mood score:  90.0 
 |  Final change score:  30.0 
 |
-|  Final detected anomalies:  ["⚠️ Sentiment shift: User mood 'Neutral' vs Avg mood 'Negative'", '😐 ML Sentiment Stable (0.00)', "✅ Day: Type 'exclamation' stable (0.0% vs avg -5.49%, Δ 5.49%)", "✅ Day: Intent 'expressing' stable (0.0% vs avg 0.0%, Δ 0.00%)", "✅ Week: Type 'exclamation' stable (0.0% vs avg 1.83%, Δ 1.83%)", "✅ Week: Intent 'expressing' stable (0.0% vs avg 3.6%, Δ 3.60%)", "✅ Month: Type 'exclamation' stable (0.0% vs avg 6.8%, Δ 6.80%)", "✅ Month: Intent 'expressing' stable (0.0% vs avg 12.06%, Δ 12.06%)"] 
+|  Final detected anomalies:  ["⚠️ Sentiment shift: User mood 'Neutral' vs Avg mood 'Negative'", '😐 ML Sentiment Stable (0.00)', "✅ Day: Type 'exclamation' stable (0.0% vs avg -5.49%, Δ 5.49%)", "✅ Day: Intent 'expressing' stable (0.0% vs avg 0.0%, Δ 0.00%)", "✅ Week: Type 'exclamation' stable (0.0% vs avg 1.76%, Δ 1.76%)", "✅ Week: Intent 'expressing' stable (0.0% vs avg 3.46%, Δ 3.46%)", "✅ Month: Type 'exclamation' stable (0.0% vs avg 6.8%, Δ 6.80%)", "✅ Month: Intent 'expressing' stable (0.0% vs avg 12.06%, Δ 12.06%)"] 
 |
 |  Final detected anomalies (block) :   🔎 Final Anomaly Confidence Score: 60.0%
     - Mood Score Contribution: 90.0%
@@ -289,8 +289,8 @@
 | 😐 ML Sentiment Stable (0.00) |
 | ✅ Day: Type 'exclamation' stable (0.0% vs avg -5.49%, Δ 5.49%) |
 | ✅ Day: Intent 'expressing' stable (0.0% vs avg 0.0%, Δ 0.00%) |
-| ✅ Week: Type 'exclamation' stable (0.0% vs avg 1.83%, Δ 1.83%) |
-| ✅ Week: Intent 'expressing' stable (0.0% vs avg 3.6%, Δ 3.60%) |
+| ✅ Week: Type 'exclamation' stable (0.0% vs avg 1.76%, Δ 1.76%) |
+| ✅ Week: Intent 'expressing' stable (0.0% vs avg 3.46%, Δ 3.46%) |
 | ✅ Month: Type 'exclamation' stable (0.0% vs avg 6.8%, Δ 6.80%) |
 | ✅ Month: Intent 'expressing' stable (0.0% vs avg 12.06%, Δ 12.06%) |
  
@@ -303,9 +303,9 @@
 |
 |   [!] Description: Provides a general output score the data profile renderer.
 |
-|  Overall_score: 36
-|  Per_key_scores: {'INPUT_TEXT': 6, 'INPUT_TOO_LONG': 20, 'INPUT_HAD_UNACCEPTED_PARTS': 20, 'PREDICTED_USER_DEVICE': 3, 'PREDICTED_USER_DEVICE_ACCURACY': 100, 'DATABASE_AVERAGE_DEVICE': 5, 'DATABASE_AVERAGE_DEVICE_ACCURACY': 70, 'USER_MOOD_PREDICTED': 3, 'GLOBAL_MOOD_PREDICTED': 4, 'USER_MOOD_PREDICTED_ACCURACY': 100, 'GLOBAL_MOOD_PREDICTED_ACCURACY': 74, 'MOOD_AVERAGE_ACCURACY_ALL': 87, 'USER_SENTENCE_TYPE': 4, 'USER_SENTENCE_INTENT': 4, 'USER_SENTENCE_TYPE_ACCURACY': 89, 'USER_SENTENCE_INTENT_ACCURACY': 91, 'GLOBAL_SENTENCE_TYPE': 4, 'GLOBAL_SENTENCE_INTENT': 4, 'GLOBAL_SENTENCE_TYPE_ACCURACY': 93, 'GLOBAL_SENTENCE_INTENT_ACCURACY': 24, 'GLOBAL_OVERALL_ACCURACY': 72, 'PREDICTED_USER_LOCATION_COUNTRY': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE': 36, 'PREDICTED_USER_LOCATION_COUNTRY_GLOBAL': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL': 86, 'USER_MAIN_OPPORTUNITY': 4, 'USER_SUBSIDIARY_OPPORTUNITY': 4, 'USER_OPPORTUNITY_ACCURACY': 92, 'RESPONSE_TOTAL_TIME': 4, 'MODEL': 1, 'ADVANCED_MODEL_DEBUG': 41, 'MODEL_DEBUG': 32}
-|  Ranked: [('PREDICTED_USER_DEVICE_ACCURACY', 100), ('USER_MOOD_PREDICTED_ACCURACY', 100), ('GLOBAL_SENTENCE_TYPE_ACCURACY', 93), ('USER_OPPORTUNITY_ACCURACY', 92), ('USER_SENTENCE_INTENT_ACCURACY', 91), ('USER_SENTENCE_TYPE_ACCURACY', 89), ('MOOD_AVERAGE_ACCURACY_ALL', 87), ('PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL', 86), ('GLOBAL_MOOD_PREDICTED_ACCURACY', 74), ('GLOBAL_OVERALL_ACCURACY', 72), ('DATABASE_AVERAGE_DEVICE_ACCURACY', 70), ('ADVANCED_MODEL_DEBUG', 41), ('PREDICTED_USER_LOCATION_CONFIDENCE', 36), ('MODEL_DEBUG', 32), ('GLOBAL_SENTENCE_INTENT_ACCURACY', 24), ('INPUT_TOO_LONG', 20), ('INPUT_HAD_UNACCEPTED_PARTS', 20), ('INPUT_TEXT', 6), ('DATABASE_AVERAGE_DEVICE', 5), ('GLOBAL_MOOD_PREDICTED', 4), ('USER_SENTENCE_TYPE', 4), ('USER_SENTENCE_INTENT', 4), ('GLOBAL_SENTENCE_TYPE', 4), ('GLOBAL_SENTENCE_INTENT', 4), ('USER_MAIN_OPPORTUNITY', 4), ('USER_SUBSIDIARY_OPPORTUNITY', 4), ('RESPONSE_TOTAL_TIME', 4), ('PREDICTED_USER_DEVICE', 3), ('USER_MOOD_PREDICTED', 3), ('PREDICTED_USER_LOCATION_COUNTRY', 3), ('PREDICTED_USER_LOCATION_COUNTRY_GLOBAL', 3), ('MODEL', 1)]
+|  Overall_score: 37
+|  Per_key_scores: {'INPUT_TEXT': 8, 'INPUT_TOO_LONG': 20, 'INPUT_HAD_UNACCEPTED_PARTS': 20, 'PREDICTED_USER_DEVICE': 3, 'PREDICTED_USER_DEVICE_ACCURACY': 100, 'DATABASE_AVERAGE_DEVICE': 5, 'DATABASE_AVERAGE_DEVICE_ACCURACY': 70, 'USER_MOOD_PREDICTED': 3, 'GLOBAL_MOOD_PREDICTED': 4, 'USER_MOOD_PREDICTED_ACCURACY': 100, 'GLOBAL_MOOD_PREDICTED_ACCURACY': 74, 'MOOD_AVERAGE_ACCURACY_ALL': 87, 'USER_SENTENCE_TYPE': 4, 'USER_SENTENCE_INTENT': 4, 'USER_SENTENCE_TYPE_ACCURACY': 90, 'USER_SENTENCE_INTENT_ACCURACY': 92, 'GLOBAL_SENTENCE_TYPE': 4, 'GLOBAL_SENTENCE_INTENT': 4, 'GLOBAL_SENTENCE_TYPE_ACCURACY': 93, 'GLOBAL_SENTENCE_INTENT_ACCURACY': 26, 'GLOBAL_OVERALL_ACCURACY': 72, 'PREDICTED_USER_LOCATION_COUNTRY': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE': 44, 'PREDICTED_USER_LOCATION_COUNTRY_GLOBAL': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL': 86, 'USER_MAIN_OPPORTUNITY': 4, 'USER_SUBSIDIARY_OPPORTUNITY': 4, 'USER_OPPORTUNITY_ACCURACY': 93, 'RESPONSE_TOTAL_TIME': 4, 'MODEL': 1, 'ADVANCED_MODEL_DEBUG': 41, 'MODEL_DEBUG': 33}
+|  Ranked: [('PREDICTED_USER_DEVICE_ACCURACY', 100), ('USER_MOOD_PREDICTED_ACCURACY', 100), ('GLOBAL_SENTENCE_TYPE_ACCURACY', 93), ('USER_OPPORTUNITY_ACCURACY', 93), ('USER_SENTENCE_INTENT_ACCURACY', 92), ('USER_SENTENCE_TYPE_ACCURACY', 90), ('MOOD_AVERAGE_ACCURACY_ALL', 87), ('PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL', 86), ('GLOBAL_MOOD_PREDICTED_ACCURACY', 74), ('GLOBAL_OVERALL_ACCURACY', 72), ('DATABASE_AVERAGE_DEVICE_ACCURACY', 70), ('PREDICTED_USER_LOCATION_CONFIDENCE', 44), ('ADVANCED_MODEL_DEBUG', 41), ('MODEL_DEBUG', 33), ('GLOBAL_SENTENCE_INTENT_ACCURACY', 26), ('INPUT_TOO_LONG', 20), ('INPUT_HAD_UNACCEPTED_PARTS', 20), ('INPUT_TEXT', 8), ('DATABASE_AVERAGE_DEVICE', 5), ('GLOBAL_MOOD_PREDICTED', 4), ('USER_SENTENCE_TYPE', 4), ('USER_SENTENCE_INTENT', 4), ('GLOBAL_SENTENCE_TYPE', 4), ('GLOBAL_SENTENCE_INTENT', 4), ('USER_MAIN_OPPORTUNITY', 4), ('USER_SUBSIDIARY_OPPORTUNITY', 4), ('RESPONSE_TOTAL_TIME', 4), ('PREDICTED_USER_DEVICE', 3), ('USER_MOOD_PREDICTED', 3), ('PREDICTED_USER_LOCATION_COUNTRY', 3), ('PREDICTED_USER_LOCATION_COUNTRY_GLOBAL', 3), ('MODEL', 1)]
 |
 |----------------------------------------------------|
 
@@ -314,8 +314,8 @@
 |                   RESPONSE                   |
 ------------------------------------------------
 |
-|  Response Time : 0h 3m 33s, 482ms
-|  Generated on: 2025-11-17 19:39:56  
+|  Response Time : 0h 1m 27s, 426ms
+|  Generated on: 2025-11-21 21:04:41  
 |   General debugging only.
 |   *Settings can be changed. SulfurAI may make mistakes.*
 |---------------------------------------|

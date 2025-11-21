@@ -55,16 +55,44 @@ def read_events():
 
 # python
 def calculate_events_average():
-    # Calculates the percentage of non-sulfur events relative to the total user events.
+    """
+    Calculates the percentage of non-sulfur events relative to total events.
+    If read_events() returns None, returns None.
+    """
     events = read_events()
-    total_pre = len(events) if events else 0
+
+    # If no events exist, propagate None upward
+    if events is None:
+        return None
+
+    # Ensure events is iterable; if it's a single value, wrap it
+    if not isinstance(events, (list, tuple, set)):
+        events = [events]
+
+    total_pre = len(events)
+
+    # If list is empty after normalization, return None (no data)
+    if total_pre == 0:
+        return None
+
     count_sulfur = ["event_RanSulfurViaMain", "event_RanSulfurViaAPI"]
-    total_sulfur = sum(events.count(thing) for thing in count_sulfur)
-    try:
-        non_sulfur = total_pre - total_sulfur
-        percentage = (non_sulfur / total_pre) * 100 if total_pre > 0 else 0
-    except ZeroDivisionError:
-        percentage = 0
+
+    # Safe counting, even if items inside events are not strings
+    total_sulfur = 0
+    for thing in count_sulfur:
+        for ev in events:
+            if ev == thing:
+                total_sulfur += 1
+            # Optional defensive fallback:
+            elif str(ev) == str(thing):
+                total_sulfur += 1
+
+    non_sulfur = total_pre - total_sulfur
+
+    # Normal percentage calculation
+    percentage = (non_sulfur / total_pre) * 100
+
     return percentage
+
 
 

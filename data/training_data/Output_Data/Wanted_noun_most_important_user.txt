@@ -1,1 +1,1 @@
-test_endpoint
+test_endpoint_with_trace

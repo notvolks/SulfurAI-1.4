@@ -6,7 +6,7 @@ Advanced mood II (further processed with a different model):  Neutral
 Advanced tense:  Present 
 Advanced sentence types:  Declarative 
 Advanced clause counts:  1 
-Advanced token count:  ['test_endpoint'] 
+Advanced token count:  ['test_endpoint_with_trace'] 
 Advanced formality:  Neutral 
 Advanced formality [positive] : informality [negative] score:  0 
 Advanced slang that was found:  None 
@@ -17,7 +17,7 @@ User's polarity:  Neutral
 Final anomaly score:  60.0 
 Final mood score:  90.0 
 Final change score:  30.0 
-Final detected anomalies:  ["⚠️ Sentiment shift: User mood 'Neutral' vs Avg mood 'Negative'", '😐 ML Sentiment Stable (0.00)', "✅ Day: Type 'exclamation' stable (0.0% vs avg -5.49%, Δ 5.49%)", "✅ Day: Intent 'expressing' stable (0.0% vs avg 0.0%, Δ 0.00%)", "✅ Week: Type 'exclamation' stable (0.0% vs avg 1.83%, Δ 1.83%)", "✅ Week: Intent 'expressing' stable (0.0% vs avg 3.6%, Δ 3.60%)", "✅ Month: Type 'exclamation' stable (0.0% vs avg 6.8%, Δ 6.80%)", "✅ Month: Intent 'expressing' stable (0.0% vs avg 12.06%, Δ 12.06%)"] 
+Final detected anomalies:  ["⚠️ Sentiment shift: User mood 'Neutral' vs Avg mood 'Negative'", '😐 ML Sentiment Stable (0.00)', "✅ Day: Type 'exclamation' stable (0.0% vs avg -5.49%, Δ 5.49%)", "✅ Day: Intent 'expressing' stable (0.0% vs avg 0.0%, Δ 0.00%)", "✅ Week: Type 'exclamation' stable (0.0% vs avg 1.76%, Δ 1.76%)", "✅ Week: Intent 'expressing' stable (0.0% vs avg 3.46%, Δ 3.46%)", "✅ Month: Type 'exclamation' stable (0.0% vs avg 6.8%, Δ 6.80%)", "✅ Month: Intent 'expressing' stable (0.0% vs avg 12.06%, Δ 12.06%)"] 
 Final detected anomalies (block) :   🔎 Final Anomaly Confidence Score: 60.0%
     - Mood Score Contribution: 90.0%
     - Change Score Contribution: 30.0%
@@ -25,8 +25,8 @@ Final detected anomalies (block) :   🔎 Final Anomaly Confidence Score: 60.0%
 | 😐 ML Sentiment Stable (0.00) |
 | ✅ Day: Type 'exclamation' stable (0.0% vs avg -5.49%, Δ 5.49%) |
 | ✅ Day: Intent 'expressing' stable (0.0% vs avg 0.0%, Δ 0.00%) |
-| ✅ Week: Type 'exclamation' stable (0.0% vs avg 1.83%, Δ 1.83%) |
-| ✅ Week: Intent 'expressing' stable (0.0% vs avg 3.6%, Δ 3.60%) |
+| ✅ Week: Type 'exclamation' stable (0.0% vs avg 1.76%, Δ 1.76%) |
+| ✅ Week: Intent 'expressing' stable (0.0% vs avg 3.46%, Δ 3.46%) |
 | ✅ Month: Type 'exclamation' stable (0.0% vs avg 6.8%, Δ 6.80%) |
 | ✅ Month: Intent 'expressing' stable (0.0% vs avg 12.06%, Δ 12.06%) |
  

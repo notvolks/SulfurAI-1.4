@@ -1,3 +1,2 @@
-event_APIRetrieveActiveModelHistory
 event_RanSulfurViaMain
 event_RanSulfurViaMain

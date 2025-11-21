@@ -1,92 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SulfurAI Developer Kit</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      background: #fafafa;
-    }
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-bottom: 2rem;
-    }
-    nav a {
-      text-decoration: none;
-      color: #007acc;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 0.3rem;
-      margin-top: 2rem;
-    }
-    pre {
-      background: #f4f4f4;
-      padding: 1rem;
-      overflow-x: auto;
-    }
-    code {
-      font-family: Consolas, "Courier New", monospace;
-      background: #f4f4f4;
-      padding: 0.2rem 0.4rem;
-      border-radius: 3px;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-      margin-top: 3rem;
-      padding-top: 1rem;
-      border-top: 1px solid #eee;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SulfurAI Developer Kit</title>
+<style>
+body {
+font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+color: #333;
+background: #fafafa;
+display: flex;
+}
+/* Sidebar */
+.sidebar {
+position: fixed;
+top: 0;
+left: 0;
+width: 220px;
+height: 100vh;
+background: #fff;
+border-right: 1px solid #ddd;
+padding: 1rem;
+overflow-y: auto;
+}
+.sidebar h2 {
+font-size: 1.1rem;
+margin-bottom: 1rem;
+}
+.sidebar ul {
+list-style: none;
+padding: 0;
+}
+.sidebar li {
+margin-bottom: 0.7rem;
+}
+.sidebar a {
+text-decoration: none;
+color: #007acc;
+}
+/* Main content */
+.container {
+max-width: 800px;
+margin-left: 900px;
+padding: 2rem 1rem;
+}
+header {
+text-align: center;
+margin-bottom: 2rem;
+}
+h2 {
+border-bottom: 1px solid #ddd;
+padding-bottom: 0.3rem;
+margin-top: 2rem;
+}
+pre {
+background: #f4f4f4;
+padding: 1rem;
+overflow-x: auto;
+}
+code {
+font-family: Consolas, "Courier New", monospace;
+background: #f4f4f4;
+padding: 0.2rem 0.4rem;
+border-radius: 3px;
+}
+footer {
+text-align: center;
+font-size: 0.9rem;
+color: #666;
+margin-top: 3rem;
+padding-top: 1rem;
+border-top: 1px solid #eee;
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>SulfurAI Developer Kit</h1>
-      <p>Everything you need to integrate, modify and extend SulfurAI</p>
-      <p>Last updated: 16 Nov 2025, accurate as of: [Build 10399d-patch9]</p>
-    </header>
 
-    <nav>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#api">API Reference</a></li>
-        <li><a href="#server">Sulfur Server System</a></li>
-        <li><a href="#model-info">Model Info</a></li>
-          <li><a href="#best-practices">Best Practices</a></li>
-         <li><a href="#directory-guide">Directory Guide</a></li>
-        <li><a href="#bias-notice">Bias Notice</a></li>
-        <li><a href="#license">License</a></li>
-      </ul>
-    </nav>
+
+<nav class="sidebar">
+<h2>Sections</h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#api">API Reference</a></li>
+<li><a href="#server">Sulfur Server System</a></li>
+<li><a href="#model-info">Model Info</a></li>
+<li><a href="#best-practices">Best Practices</a></li>
+<li><a href="#directory-guide">Directory Guide</a></li>
+<li><a href="#bias-notice">Bias Notice</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+</nav>
+
+
+<div class="container">
+<header>
+<h1>SulfurAI Developer Kit</h1>
+<p>Everything you need to integrate, modify and extend SulfurAI</p>
+<p>Last updated: 21 Nov 2025, accurate as of: [Build 10399d-patch9]</p>
+</header>
+
+
 
     <section id="installation">
       <h2>Installation</h2>
@@ -155,16 +171,45 @@
       <h2>Additional API reference - Sulfur Server System</h2>
             <br>
        <p>The Sulfur Server System is a custom API host that lets you create local—and soon online—servers and input APIs.</p>
+        <pre>&gt; &quot;Note: The SSS does not support deepthinking aka profile rendering.&quot;</pre>
+
 
       <p>|--------SulfurAI Local-Servers ------|</p>
             <br>
-              <p>Documentation, as always - is provided in the IDE.</p>
-      <p>(Assuming you imported SulfurAI as SulfurAI)</p>
+
+        <p>Functions:</p>
        <pre><code class="language-python">
-       SulfurAI.server.host_local_endpoint
-       SulfurAI.server.add_input_endpoint
-       SulfurAI.server.get_output_endpoint
-       SulfurAI.server.wait_for_output_endpoint
+       srv = SulfurAI.server.get
+       srv.host_local_endpoint
+       srv.add_input_endpoint
+       srv.get_output_endpoint
+       srv.wait_for_output_endpoint
+      </code></pre>
+
+
+        <p>Using the API:</p>
+
+       <pre><code class="language-python">
+       Hosting a local server in python:
+           import SulfurAI
+           srv = SulfurAI.server.get()
+           srv.host_local_endpoint()
+      </code></pre>
+
+         <pre><code class="language-python">
+       Adding an input:
+           import SulfurAI
+           srv = SulfurAI.server.get()
+           srv.add_input_endpoint(input_string="Your input")
+      </code></pre>
+
+           <pre><code class="language-python">
+       Waiting for output and retrieving it:
+           import SulfurAI
+           srv = SulfurAI.server.get()
+           srv.add_input_endpoint(input_string="Your input") # returns the id to call the output (as a dict)
+           srv.wait_for_output_endpoint(id="Your ID",input_string="Your input (optional as a fallback)") # returns a status
+           srv.srv.get_output_endpoint(id="Your ID",input_string="Your input (optional as a fallback)") # returns the output as a dict
       </code></pre>
 
 

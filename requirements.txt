@@ -12,7 +12,7 @@ textblob
 pandas
 tf-keras
 tensorflow
-fasttext
+fasttext-wheel
 pycountry
 torch
 torchvision
@@ -35,3 +35,5 @@ llama-cpp-python
 spacy
 emoji
 google-genai
+flask
+uvicorn

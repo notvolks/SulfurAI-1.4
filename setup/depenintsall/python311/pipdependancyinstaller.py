@@ -43,6 +43,113 @@ try:
 except Exception:
     print_debug = False
 
+def detect_gpu_backend():
+    """
+    Lightweight system-level GPU detection used BEFORE torch is installed.
+    Returns: ("cuda", info) or ("rocm", info) or ("directml", info) or ("none", None)
+    Uses quick checks (nvidia-smi, rocminfo) so it works when torch is not installed.
+    """
+    try:
+        # NVIDIA / CUDA check (fast): look for nvidia-smi
+        proc = subprocess.run(["nvidia-smi", "-L"], capture_output=True, text=True)
+        if proc.returncode == 0 and proc.stdout.strip():
+            return ("cuda", None)
+    except Exception:
+        pass
+
+    try:
+        # ROCm check: rocminfo present?
+        proc = subprocess.run(["rocminfo"], capture_output=True, text=True)
+        if proc.returncode == 0 and proc.stdout.strip():
+            return ("rocm", None)
+    except Exception:
+        pass
+
+    # DirectML: check for torch-directml presence in venv (unlikely pre-install)
+    # Fallback: on Windows with WSL or AMD integrated GPUs, treat as none
+    return ("none", None)
+
+
+def detect_gpu_backend():
+    """
+    Lightweight system-level GPU detection used BEFORE torch is installed.
+    Returns: ("cuda", info) or ("rocm", info) or ("directml", info) or ("none", None)
+    Uses quick checks (nvidia-smi, rocminfo) so it works when torch is not installed.
+    """
+    try:
+        # NVIDIA / CUDA check (fast): look for nvidia-smi
+        proc = subprocess.run(["nvidia-smi", "-L"], capture_output=True, text=True)
+        if proc.returncode == 0 and proc.stdout.strip():
+            return ("cuda", None)
+    except Exception:
+        pass
+
+    try:
+        # ROCm check: rocminfo present?
+        proc = subprocess.run(["rocminfo"], capture_output=True, text=True)
+        if proc.returncode == 0 and proc.stdout.strip():
+            return ("rocm", None)
+    except Exception:
+        pass
+
+    # DirectML: check for torch-directml presence in venv (unlikely pre-install)
+    # Fallback: on Windows with WSL or AMD integrated GPUs, treat as none
+    return ("none", None)
+
+
+def install_torch_gpu_or_cpu(venv_python: str, print_debug: bool = False):
+    """
+    Attempt to pip-install an appropriate torch wheel using the provided venv_python path.
+    This function prefers GPU wheels when a GPU backend is detected, otherwise installs CPU-only torch.
+    """
+    backend, info = detect_gpu_backend()
+    if print_debug:
+        print(f"[DEBUG]: detect_gpu_backend -> {backend}, info={info}")
+
+    # Basic command building
+    def run_install(cmd_list):
+        try:
+            if print_debug:
+                print(f"[DEBUG]: running install: {' '.join(cmd_list)}")
+            res = subprocess.run(cmd_list, capture_output=True, text=True)
+            if print_debug:
+                print(f"[DEBUG]: pip returncode: {res.returncode}")
+                if res.stdout:
+                    print(f"[DEBUG]: stdout: {res.stdout[:1000]}")
+                if res.stderr:
+                    print(f"[DEBUG]: stderr: {res.stderr[:1000]}")
+            return res.returncode == 0
+        except Exception as e:
+            if print_debug:
+                print(f"[DEBUG]: pip install exception: {e}")
+            return False
+
+    # Try GPU-first if detected
+    if backend == "cuda":
+        # NOTE: cu124 is an example; adapt index-url if you want a different cuda version.
+        cmd = [venv_python, "-m", "pip", "install",
+               "torch", "torchvision", "torchaudio",
+               "--index-url", "https://download.pytorch.org/whl/cu124"]
+        if run_install(cmd):
+            return True
+
+    if backend == "rocm":
+        cmd = [venv_python, "-m", "pip", "install",
+               "torch", "torchvision", "torchaudio",
+               "--index-url", "https://download.pytorch.org/whl/rocm"]
+        if run_install(cmd):
+            return True
+
+    # Fall back to CPU wheel
+    if print_debug:
+        print("[DEBUG]: No appropriate GPU wheel installed or no GPU detected — installing CPU-only torch.")
+    cpu_cmd = [venv_python, "-m", "pip", "install",
+               "torch", "torchvision", "torchaudio",
+               "--index-url", "https://download.pytorch.org/whl/cpu"]
+    return run_install(cpu_cmd)
+
+
+
 # -----------------------------
 # Name canonicalization + filesystem detection helpers
 # -----------------------------
@@ -166,8 +273,46 @@ def _get_project_root() -> Path:
     # fallback to three levels up
     return current_file.parents[3]
 
+
+def _restrict_to_project_venv(project_root, venv_dir):
+    project_root = str(project_root)
+    venv_dir = str(venv_dir)
+
+    safe_paths = []
+    venv_lower = venv_dir.lower()
+    root_lower = project_root.lower()
+
+    for p in sys.path:
+        pl = str(p).lower()
+
+        # ALWAYS keep the script directory (sys.path[0])
+        if p == sys.path[0]:
+            safe_paths.append(p)
+            continue
+
+        # Keep stdlib (no site-packages, contains 'python3X')
+        if "python3" in pl and "site-packages" not in pl:
+            safe_paths.append(p)
+            continue
+
+        # Keep the venv and its site-packages
+        if pl.startswith(venv_lower):
+            safe_paths.append(p)
+            continue
+
+        # Keep anything inside the project root
+        if pl.startswith(root_lower):
+            safe_paths.append(p)
+            continue
+
+    sys.path[:] = safe_paths
+
+
 project_root = _get_project_root()
 VENV_DIR = project_root / ".venv"
+
+# Strictly enforce that ONLY the project venv is used
+_restrict_to_project_venv(project_root, VENV_DIR)
 CACHE_JSON_PATH = os.path.join(str(project_root), "pip_install_failures.json")
 PIP_CMD = [sys.executable, "-m", "pip"]
 ORIGINAL_PYTHON = sys.executable
@@ -875,6 +1020,7 @@ def _add_global_path():
             print(f"[DEBUG]: _add_global_path unexpected error: {e}")
 
 
+
 class run:
     import importlib
     importlib.invalidate_caches()
@@ -907,7 +1053,7 @@ class run:
             # Core ML / AI
             "sklearn": {"package": "scikit-learn", "imports": ["sklearn"], "extras": []},
             "sklearnex": {"package": "scikit-learn-intelex", "imports": ["sklearnex"], "extras": []},
-            "torch": {"package": "torch", "imports": ["torch"], "extras": ["torchvision", "torchaudio"]},
+            "torch": {"package": "torch", "imports": ["torch"], "extras": ["torchvision", "torchaudio"], "special": "torch_backend"},
             "torchvision": {"package": "torchvision", "imports": ["torchvision"], "extras": []},
             "torchaudio": {"package": "torchaudio", "imports": ["torchaudio"], "extras": []},
             "tensorflow": {"package": "tensorflow", "imports": ["tensorflow"], "extras": []},
@@ -927,7 +1073,7 @@ class run:
             "transformers": {"package": "transformers", "imports": ["transformers"], "extras": []},
             "sentencepiece": {"package": "sentencepiece", "imports": ["sentencepiece"], "extras": []},
             "safetensors": {"package": "safetensors", "imports": ["safetensors"], "extras": []},
-            "fasttext": {"package": "fasttext", "imports": ["fasttext"], "extras": []},
+            "fasttext": {"package": "fasttext-wheel", "imports": ["fasttext"], "extras": []},
             "langdetect": {"package": "langdetect", "imports": ["langdetect"], "extras": []},
             "langcodes": {"package": "langcodes", "imports": ["langcodes"], "extras": []},
             "pycountry": {"package": "pycountry", "imports": ["pycountry"], "extras": []},
@@ -954,12 +1100,16 @@ class run:
             "emoji": {"package": "emoji", "imports": ["emoji"], "extras": []},
 
             # LLM / AI interfaces
-            "llama_cpp": {"package": "llama-cpp-python", "imports": ["llama_cpp", "llama"], "extras": []},
+            "llama_cpp": {"package": "llama-cpp-python", "imports": ["llama_cpp"], "extras": []},
             "hf_xet": {"package": "hf_xet", "imports": ["hf_xet"], "extras": []},
             "google-genai": {"package": "google-genai", "imports": ["google.genai", "google_genai"], "extras": []},
 
             # Security / crypto
             "cryptography": {"package": "cryptography", "imports": ["cryptography"], "extras": []},
+
+            # Server Hosting
+            "flask": {"package": "flask", "imports": ["flask"], "extras": []},
+            "uvicorn": {"package": "uvicorn", "imports": ["uvicorn"], "extras": []},
 
 
             # Test
@@ -1033,60 +1183,68 @@ class run:
         cache = load_failure_cache()
 
         # attempt to import each module, applying heuristics
+        def fast_import_check(import_names, debug=False):
+            import importlib.util
+            for name in import_names:
+                try:
+                    spec = importlib.util.find_spec(name)
+                except:
+                    spec = None
+
+                if spec is None:
+                    if debug:
+                        print(f"[DEBUG] find_spec failed for {name}")
+                    continue
+
+                # Module exists — treat as installed even if import fails
+                return True
+
+            return False
+
+        missing_pkgs = set()
+        missing_imports = {}
+
         for module_key in modules_to_check:
-            entry = MODULE_IMPORT_MAP.get(module_key, {})
-            package_token = entry.get("package", module_key)
+            entry = MODULE_IMPORT_MAP[module_key]
+            pkg = entry["package"]
             imports = entry.get("imports", [module_key])
             extras = entry.get("extras", [])
 
-            found_any = False
-            for im in imports:
+            # Quick import check (venv-first due to earlier prepend/restrict)
+            if fast_import_check(imports, debug=print_debug):
+                continue
+
+            # If module defines a special hook, run it BEFORE marking missing.
+            special = entry.get("special")
+            if special == "torch_backend":
+                # Prepare venv python path
+                venv_python = os.path.join(str(VENV_DIR), "Scripts", "python.exe") if os.name == "nt" \
+                    else os.path.join(str(VENV_DIR), "bin", "python")
                 try:
-                    if importlib.util.find_spec(im) is not None:
-                        found_any = True
-                        if print_debug:
-                            print(f"| DEBUG: find_spec succeeded for {im} |")
-                        break
-                    # try import to surface DLL errors etc.
-                    try:
-                        __import__(im)
-                        found_any = True
-                        break
-                    except Exception as e:
-                        # if import raises DLL load errors, try to register native dirs and retry
-                        txt = str(e).lower()
-                        if any(x in txt for x in ("dll", "pyd", "lib", "cannot open shared object file", "importerror")):
+                    if print_debug:
+                        print("| DEBUG: Running special installer for torch_backend |")
+                    ok = install_torch_gpu_or_cpu(venv_python, print_debug=print_debug)
+                    if ok:
+                        # Re-check imports after attempting install
+                        if fast_import_check(imports, debug=print_debug):
                             if print_debug:
-                                print(f"| DEBUG: import of {im} raised: {e}; attempting native dir registration |")
-                            ensure_native_dirs_registered([im], venv_site=_venv_site_packages_path(), print_debug=print_debug)
-                            # retry once
-                            try:
-                                __import__(im)
-                                found_any = True
-                                break
-                            except Exception:
-                                pass
-                except Exception:
-                    continue
+                                print("| DEBUG: torch imports now available after special install |")
+                            # also remove extras from missing list if they exist
+                            continue
+                except Exception as e:
+                    if print_debug:
+                        print(f"| DEBUG: special torch installer failed: {e} |")
 
-            if not found_any:
-                # final fallback: check distribution metadata and site-packages scan
-                try:
-                    if distribution_installed(package_token) or find_distinfo_by_name(package_token) or _is_installed_in_venv(module_key):
-                        found_any = True
-                except Exception:
-                    pass
+            # Still missing — register
+            missing_pkgs.add(pkg)
+            for ex in extras:
+                missing_pkgs.add(ex)
+            missing_imports[module_key] = pkg
 
-            if not found_any:
-                # register as missing
-                missing_pkgs.add(package_token)
-                for ex in extras:
-                    missing_pkgs.add(ex)
-                missing_imports[module_key] = package_token
-                # bump failure cache count
-                ent = cache.get(module_key, {"ts": None, "count": 0})
-                ent["count"] = int(ent.get("count", 0)) + 1
-                cache[module_key] = ent
+            # failure cache update
+            ent = cache.get(module_key, {"ts": None, "count": 0})
+            ent["count"] = ent.get("count", 0) + 1
+            cache[module_key] = ent
 
         # Save updated cache
         try:
@@ -1118,23 +1276,54 @@ class run:
                 bash_cmd = f'"{unix_abs}" -m pip install {fixes_str}'
 
                 print("\n| Incompatible package versions detected. |")
-                print("| Packages needing adjustment: " + ", ".join(fix_list) + " |\n")
+
+
                 print(
                     "| Install using one of the following commands (run from project root / adjust path if needed): |\n")
+
+                # ------------------------------------------------------------------------------------
+                # OPTION 1 — Install via requirements.txt
+                # ------------------------------------------------------------------------------------
+                print("OPTION 1 — Install using requirements.txt (recommended)")
+                print("--------------------------------------------------------")
+                print("  Windows (PowerShell):")
+                print(f"      .\\{VENV_DIR.name}\\Scripts\\Activate.ps1")
+                print("      pip install -r requirements.txt\n")
+
+                print("  Windows (CMD):")
+                print(f"      .\\{VENV_DIR.name}\\Scripts\\activate.bat")
+                print("      pip install -r requirements.txt\n")
+
+                print("  Linux / macOS (Bash / Zsh):")
+                print(f"      source ./{VENV_DIR.name}/bin/activate")
+                print("      pip install -r requirements.txt\n")
+
+                # ------------------------------------------------------------------------------------
+                # OPTION 2 — Direct pip installation of only the required fixes
+                # ------------------------------------------------------------------------------------
+                print("OPTION 2 — Install only the required packages")
+                print("--------------------------------------------------------")
                 print("  Windows (CMD):")
                 print(f"    {cmd_cmd}\n")
+
                 print("  Windows (PowerShell):")
                 print(f"    {powershell_cmd}\n")
+
                 print("  Linux / macOS (Bash / Zsh):")
                 print(f"    {bash_cmd}\n")
 
+                # ------------------------------------------------------------------------------------
+                # NOTES
+                # ------------------------------------------------------------------------------------
                 print("| Notes: |")
+                print("  - Option 1 ensures a full, reproducible environment.")
+                print("  - Option 2 installs only the missing/incompatible packages shown above.")
                 print("  - In PowerShell you should use the call operator (&) before a quoted executable path.")
                 print("  - CMD and Bash accept the quoted-path form shown above.")
-                print(
-                    "  - If you prefer, you can activate the virtualenv first and then run 'pip install' without the path:")
-                print(
-                    f"      source ./{VENV_DIR.name}/bin/activate  # (bash/zsh)  OR  .\\{VENV_DIR.name}\\Scripts\\Activate.ps1  # (PowerShell)\n")
+                print("  - You may activate the virtualenv first, then run pip manually:")
+                print(f"      source ./{VENV_DIR.name}/bin/activate  # (bash/zsh)")
+                print(f"      .\\{VENV_DIR.name}\\Scripts\\Activate.ps1  # (PowerShell)\n")
+
                 print("| Inspect commands before running. They will install into the project's .venv. |\n")
 
                 import time
@@ -1189,10 +1378,33 @@ class run:
         bash_cmd = f'"{venv_python_unix_abs}" -m pip install {pkg_list}'
 
         # Output user-friendly instructions (keep existing pipe-style formatting)
-        print("\n| Some imports are missing or failed to load. |")
-        print("| Missing packages (pip tokens): " + ", ".join(sorted_pkgs) + " |\n")
-        print("| Install using one of the following commands (run from project root / adjust path if needed): |\n")
+        print("\n| Incompatible package versions detected. |")
 
+        print(
+            "| Install using one of the following commands (run from project root / adjust path if needed): |\n")
+
+        # ------------------------------------------------------------------------------------
+        # OPTION 1 — Install via requirements.txt
+        # ------------------------------------------------------------------------------------
+        print("OPTION 1 — Install using requirements.txt (recommended)")
+        print("--------------------------------------------------------")
+        print("  Windows (PowerShell):")
+        print(f"      .\\{VENV_DIR.name}\\Scripts\\Activate.ps1")
+        print("      pip install -r requirements.txt\n")
+
+        print("  Windows (CMD):")
+        print(f"      .\\{VENV_DIR.name}\\Scripts\\activate.bat")
+        print("      pip install -r requirements.txt\n")
+
+        print("  Linux / macOS (Bash / Zsh):")
+        print(f"      source ./{VENV_DIR.name}/bin/activate")
+        print("      pip install -r requirements.txt\n")
+
+        # ------------------------------------------------------------------------------------
+        # OPTION 2 — Direct pip installation of only the required fixes
+        # ------------------------------------------------------------------------------------
+        print("OPTION 2 — Install only the required packages")
+        print("--------------------------------------------------------")
         print("  Windows (CMD):")
         print(f"    {cmd_cmd}\n")
 
@@ -1202,12 +1414,18 @@ class run:
         print("  Linux / macOS (Bash / Zsh):")
         print(f"    {bash_cmd}\n")
 
+        # ------------------------------------------------------------------------------------
+        # NOTES
+        # ------------------------------------------------------------------------------------
         print("| Notes: |")
+        print("  - Option 1 ensures a full, reproducible environment.")
+        print("  - Option 2 installs only the missing/incompatible packages shown above.")
         print("  - In PowerShell you should use the call operator (&) before a quoted executable path.")
         print("  - CMD and Bash accept the quoted-path form shown above.")
-        print("  - If you prefer, you can activate the virtualenv first and then run 'pip install' without the path:")
-        print(
-            f"      source ./{VENV_DIR.name}/bin/activate  # (bash/zsh)  OR  .\\{VENV_DIR.name}\\Scripts\\Activate.ps1  # (PowerShell)\n")
+        print("  - You may activate the virtualenv first, then run pip manually:")
+        print(f"      source ./{VENV_DIR.name}/bin/activate  # (bash/zsh)")
+        print(f"      .\\{VENV_DIR.name}\\Scripts\\Activate.ps1  # (PowerShell)\n")
+
         print("| Inspect commands before running. They will install into the project's .venv. |\n")
 
         # Pause briefly so user can copy the correct command

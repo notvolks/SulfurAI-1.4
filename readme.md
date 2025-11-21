@@ -60,13 +60,7 @@ Option 2: Use the instructions provided when running SulfurAI.py or the INSTALLE
 - Requires **Python 3.11**  , **Microsoft Visual Studio C++**
 - Optional: **CUDA GPU** for ML acceleration  
 - Includes a custom installer — setup in under 10 minutes  
-
-Libraries include:  
-`nltk`, `tensorflow`, `torch`, `sklearn`, `tqdm`, `pygame`, `pywebview`
-`streamlit`, `dash`, `plotly` (UI)
-`language_tool_python`, `langdetect`, `langcodes`, `fasttext-wheel`, `pycountry`
-`transformers`, `faker`, `xgboost`, `pytrends`, `numpy` , `func_timeout`, `textstat`, `textblob`, `better_profanity`,`vaderSentiment`,`hf_xet`
-`accelerate`,`bitsandbytes`,`sentencepiece`,`safetensors`,`llama_cpp`,`spacy`,`emoji`,`google-genai`
+> Python dependencies are inside requirements.txt
 
 <br>
 

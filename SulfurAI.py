@@ -559,494 +559,699 @@ def get_output_data_ui(strip_newline_marker=False):
 #|                                                                                                                                                                        |
 #|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-
+_server_singleton = None
 class server():
     """
-    The SulfurAI Server System (SSS) is a server system that runs SulfurAI in parallel.
-    To find out more, see the ``developer SDK``.
+    Hybrid HTTP + legacy-file-queue SulfurAI server.
+    - Preserves legacy file layout: <project>/api/Python/SulfurServerSystem/cache/id_*/output.txt
+    - Preserves legacy queue file: call.api_server_python_cache_input()
+    - Provides HTTP endpoints: POST /input, GET /output, GET /wait_output, DELETE /cache
+
+    > [!IMPORTANT!]
+    > The SulfurServerSystem API does *not* support deep-thinking (aka profile rendering) mode.
     """
-    def __init__(self):
-        self._mngr_wn()
+    def __init__(self, host="127.0.0.1", port=8000):
+        # imports & attachments (so class remains self-contained)
+        from flask import Flask, request, jsonify, has_request_context
+        from queue import LifoQueue
+        from threading import Thread, Lock
+        import threading, time, os, json, ast, uuid
 
-    def _mngr_wn(self):
-        server_manager_warning = ["|----------------------------------|",
-                                  "|    SULFUR SERVER SYSTEM    ",
-                                  "|        ",
-                                  "|   ⚠️ Certain SSS functions may require an active internet connection.     ",
-                                  "|----------------------------------|",
-                                  "|        ",
-                                  "|    📖 INITIATING SSS....    ",
-                                  "|----------------------------------|",
+        self.Flask = Flask
+        self.request = request
+        self.jsonify = jsonify
+        self.has_request_context = has_request_context
+        self.LifoQueue = LifoQueue
+        self.Thread = Thread
+        self.Lock = Lock
+        self.time = time
+        self.os = os
+        self.json = json
+        self.ast = ast
+        self.uuid = uuid
 
-                                  ]
-        for item in server_manager_warning: print(item)
-
-    @classmethod
-    def host_local_endpoint(self,timeout_max=90,delete_cache=True,add_to_training_data=True,setup_local_auto=True,priority_processing=False):
-        #############Hosts a local SulfurAI endpoint API server (SSS).
-
-        """
-        Hosts a local SulfurAI endpoint API server (SSS).
-        Allows you to run SulfurAI in a loop and add as many inputs as wanted.
-
-        ------------------------------
-
-        [! WARNING !]
-
-            Runs SulfurAI in a shadow instance, meaning it replaces your current inputs and processes the local SulfurScript.
-
-            *DO NOT RUN IN AN ONLINE SERVER. THIS COULD LEAK DATA!*
-
-        -------------------------------
-
-        Main arguments:
-            ``timeout_max`` = [int] [DEFAULT: 90]
-         - after the timeout_max seconds, if the current render is not finished - the script will stop processing it and move on.
-         - [!] Warning, this does not guarantee the script will stop processing. In BETA testing!
-
-          ``delete_cache`` = True/False [DEFAULT: True]
-         - decides whether to delete all cache after the script is closed.
-
-          ``setup_local_auto`` = True/False [DEFAULT: True]
-         - decides whether to automatically set up the local environment for SulfurAI.
-         - (disabling this will mean you must manually set up the env with 'SulfurAI.setup_local()')
-
-        -------------------------------
-
-        Extra arguments:
-            ``add_to_training_data`` = True/False [DEFAULT: True]
-         - decides whether to add this input to the SulfurAI training data
-
-            ``priority_processing`` = True/False [DEFAULT: False]
-         - decides whether to use LIFO (Last in, First out) processing for inputs. Means latest inputs will be processed after the current input.
-
-
-        -------------------------------
-
-
-
-        """
-        from func_timeout import func_timeout, FunctionTimedOut
-        server()
-        events_hoster.write_event("event_SetupServerAPI")
-        if setup_local_auto: setup_local()
-        current_dir_i_mod = os.path.abspath(os.path.join(os.path.dirname(__file__), ))
-        folder_path_input_mod = os.path.join(current_dir_i_mod, 'data', 'training_data',)
-        file_name_input_mod = 'Input.txt'  # Debugger variables
-        file_path_input_mod = os.path.join(folder_path_input_mod, file_name_input_mod)
-
-        def delete_first_line(file_path):
-            try:
-                with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
-                    lines = f.readlines()
-
-                if len(lines) > 1:
-                    with open(file_path, "w", encoding="utf-8", errors="ignore") as f:
-                        f.writelines(lines[1:])
-                else:
-                    # If there's only one line or it's empty, clear the file
-                    open(file_path, "w").close()
-            except FileNotFoundError:
-                pass  # Ignore if file doesn't exist
-
-        def priority_process(file_path):
-            try:
-                with open(file_path, 'r', encoding='utf-8') as file:
-                    lines = file.readlines()
-
-                #if len(lines) < 2:
-
-                    #return None
-
-                last_line = lines.pop()  # remove the last line
-                lines.insert(0, last_line)  # insert it at the top
-
-                with open(file_path, 'w', encoding='utf-8') as file:
-                    file.writelines(lines)
-
-
-                return last_line.strip('\n')
-
-            except FileNotFoundError:
-
-                wim = error.who_imported_me()
-                error.error("er1", "SCRIPT_TRACEBACK", f"File not found: {file_path} issue at imports: {wim}", "nAn")
-                return None
-            except Exception as e:
-                wim = error.who_imported_me()
-                error.error("er1", "SCRIPT_TRACEBACK", f"Error: {e} issue at imports: {wim}", "nAn")
-                return None
-
+        # try to import SulfurError if present
         try:
-            print("💻 Setting up local server endpoint via SSS (SulfurAI Server System)...")
-            while True:
-                try:
-                    if priority_processing: print(f"--⚠️ Priority processing enabled. Latest inputs will be processed first with LIFO.")
+            from scripts.ai_renderer_sentences.error import SulfurError
+            self.SulfurError = SulfurError
+        except Exception:
+            class SulfurError(Exception):
+                pass
+            self.SulfurError = SulfurError
 
-                    file_path_input_api_server = call.api_server_python_cache_input()
-                    print("--💻 Waiting for action from endpoint...")
-                    while os.path.getsize(file_path_input_api_server) == 0:  time.sleep(0.1)
-                    print("--💻 Commencing endpoint....")
+        # module-level run_locally fallback
+        self.run_locally_fn = globals().get("run_locally", None)
 
-                    if priority_processing:
-                        priority_item = priority_process(file_path_input_api_server)
-                        print(f"--💻 Priority item: {priority_item} took priority processing next.")
+        # call object (original code uses call.api_server_python_cache_input())
+        try:
+            # call() factory exists earlier in file (from your original script)
+            call_obj = globals().get("call", None)
+            self.call = call_obj
+            self.legacy_queue_file = call_obj.api_server_python_cache_input() if (call_obj and callable(getattr(call_obj, "api_server_python_cache_input", None))) else None
+        except Exception:
+            self.legacy_queue_file = None
 
-                    # After priority_process has rearranged the file, read the first line (the priority line)
-                    with open(file_path_input_api_server, "r", encoding="utf-8", errors="ignore") as file_mod:
-                        input_string = file_mod.readline()
+        # base paths (preserve original structure)
+        current_dir = self.os.path.abspath(self.os.path.join(self.os.path.dirname(__file__), ))
+        self.current_dir = current_dir
+        self.cache_base = self.os.path.join(current_dir, "api", "Python", "SulfurServerSystem", "cache")
+        self.input_txt_global = self.os.path.join(current_dir, "data", "training_data", "Input.txt")
 
-                    delete_first_line(file_path_input_api_server)  # Delete the first line after reading it
+        # ensure cache dir exists
+        self.os.makedirs(self.cache_base, exist_ok=True)
 
-                    with open(file_path_input_mod, "w", encoding="utf-8", errors="ignore") as file_mod:
-                        file_mod.write(input_string)
-                except TypeError:
+        # HTTP app
+        self.app = self.Flask(__name__)
+        self.host = host
+        self.port = port
 
-                    from scripts.ai_renderer_sentences.error import SulfurError
-                    raise SulfurError(message=f"Input_string must be a *string*!")
+        # in-memory LIFO queue + bookkeeping
+        self.queue = self.LifoQueue()
+        self.id_lock = self.Lock()
+        self._local_id_counter = 0
 
-                old_cwd = os.getcwd()
-                try:
-                    os.chdir(current_dir_i_mod)  # Switch working directory to SulfurAI root
+        # Thread control
+        self._stop_event = threading.Event()
 
-                    start_time = datetime.now()
-                    start_time_printed = start_time.strftime("%Y-%m-%d %H:%M:%S")
-                    start_time_ms = f".{start_time.microsecond // 1000:03d}"
+        # start worker thread
+        w = self.Thread(target=self._worker_loop, daemon=True)
+        w.start()
+        self._worker_thread = w
+        self.last_processed_id = None
 
-                    import json
-                    current_dir = os.path.abspath(os.path.join(
-                        os.path.dirname(__file__),
-                    ))
+        # start legacy queue watcher thread (if legacy queue path known)
+        if self.legacy_queue_file:
+            fw = self.Thread(target=self._file_watcher_loop, daemon=True)
+            fw.start()
+            self._file_watcher_thread = fw
 
-                    base_path = os.path.join(current_dir, 'api', 'Python', 'SulfurServerSystem', 'cache')
-                    os.makedirs(base_path, exist_ok=True)
+        # bind endpoints
+        self.app.add_url_rule("/input", "add_input_endpoint", self.add_input_endpoint, methods=["POST"])
+        self.app.add_url_rule("/output", "get_output_endpoint", self.get_output_endpoint, methods=["GET"])
+        self.app.add_url_rule("/wait_output", "wait_for_output_endpoint", self.wait_for_output_endpoint, methods=["GET"])
+        self.app.add_url_rule("/cache", "clear_local_endpoint_cache", self.clear_local_endpoint_cache, methods=["DELETE"])
 
-                    # Count existing folders in base_path
-                    existing_folders = [f for f in os.listdir(base_path)
-                                        if os.path.isdir(os.path.join(base_path, f)) and f.startswith("id_")]
+    # ---------------- helpers ----------------
+    @staticmethod
+    def get():
+        global _server_singleton
+        if _server_singleton is None:
+            _server_singleton = server()
+        return _server_singleton
 
-                    next_id = len(existing_folders) + 1
-                    new_folder_name = f"id_{next_id}"
-                    new_folder_path = os.path.join(base_path, new_folder_name)
-                    os.makedirs(new_folder_path, exist_ok=False)
+    def _make_new_id(self):
+        with self.id_lock:
+            self._local_id_counter += 1
+            counter = self._local_id_counter
+        ts_ms = int(self.time.time() * 1000)
+        short = self.uuid.uuid4().hex[:6]
+        return f"id_{ts_ms}_{counter}_{short}"
 
-                    # Create text file inside the new folder
-                    file_path = os.path.join(new_folder_path, "output.txt")
+    def _enqueue(self, task_id, input_string, legacy_append=False):
+        """Put into in-memory LIFO queue and optionally append to legacy file."""
+        # push tuple for worker
+        self.queue.put((task_id, input_string))
+        # optionally append to legacy queue file for external tools compatibility
+        if legacy_append and self.legacy_queue_file:
+            try:
+                with open(self.legacy_queue_file, "a", encoding="utf-8", errors="ignore") as fh:
+                    fh.write(input_string + "\n")
+            except Exception:
+                pass
 
-                    ####################---------------------rendering
+    def _extract_input(self, input_string):
+        # If running under HTTP, use request.json
+        from flask import request
+        if self.has_request_context():
+            if request.json and "input_string" in request.json:
+                return request.json["input_string"]
+        # If called directly in Python, accept the argument
+        return input_string
 
-                    def render():
-                        result = _rest_of_the_script("None", True, start_time=start_time, output_file_path=file_path, add_to_training_data=add_to_training_data,
-                                                     endpoint_custom=True)
-                        print("🚶 Ran successful loop of endpoint.")
-                        return result
+    # ---------------- legacy file watcher ----------------
+    def _file_watcher_loop(self):
+        """
+        Watches legacy queue file and processes NEW lines only.
+        After reading lines, the file is TRUNCATED so they are not re-read.
+        Prevents infinite id folder creation.
+        """
+        path = self.legacy_queue_file
+
+        while not self._stop_event.is_set():
+            try:
+                # If file doesn't exist yet, skip.
+                if not self.os.path.exists(path):
+                    self.time.sleep(0.5)
+                    continue
+
+                # Read ALL current lines ONCE.
+                with open(path, "r", encoding="utf-8", errors="ignore") as fh:
+                    lines = [line.strip() for line in fh.readlines() if line.strip()]
+
+                # If empty, nothing to do.
+                if not lines:
+                    self.time.sleep(0.5)
+                    continue
+
+                # --- CRITICAL FIX ---
+                # Immediately clear the file so lines aren't re-read.
+                with open(path, "w", encoding="utf-8", errors="ignore") as clear:
+                    clear.write("")
+                # ---------------------
+
+                # Process each line EXACTLY ONE TIME.
+                for line in lines:
+                    task_id = self._make_new_id()
+                    folder = self.os.path.join(self.cache_base, task_id)
 
                     try:
-                        result = func_timeout(timeout_max, render)
-                    except FunctionTimedOut:
-                        print("⏱️ Server timed out. Could not process input, moving on to the next input.")
+                        # Create folder + status
+                        self.os.makedirs(folder, exist_ok=True)
+                        with open(self.os.path.join(folder, "input.txt"), "w", encoding="utf-8") as ff:
+                            ff.write(line)
+                        with open(self.os.path.join(folder, "status.json"), "w", encoding="utf-8") as sf:
+                            self.json.dump({"status": "queued", "id": task_id}, sf)
+                    except Exception:
+                        pass
 
+                    # Push to in-memory LIFO queue (important!)
+                    self.queue.put((task_id, line))
 
+            except Exception:
+                # never crash; just delay and continue
+                self.time.sleep(0.5)
 
+            self.time.sleep(0.5)
 
+    def _worker_loop(self):
+        """
+        Single self-contained worker loop. Includes an internal helper to append logs into
+        status.log and keep a structured 'log' array inside status.json (bounded).
+        Replace your existing _worker_loop with this function body.
+        """
+        import os, time, json, tempfile, traceback
 
+        # Config
+        MAX_LOG_ENTRIES = 200
+        debug_log = os.path.join(tempfile.gettempdir(), "sulfur_worker_debug.log")
 
+        def _debug_write(s):
+            try:
+                with open(debug_log, "a", encoding="utf-8") as fh:
+                    fh.write(f"{time.time():.3f} {s}\n")
+                    fh.flush()
+                    try:
+                        os.fsync(fh.fileno())
+                    except Exception:
+                        pass
+            except Exception:
+                pass
 
+        # Internal helper: append plain-line log and also update status.json['log'] atomically
+        def append_status_log_and_line(job_dir, task_id, status_line):
+            """
+            Append status_line (string) to job_dir/status.log and also append a structured
+            entry to job_dir/status.json['log'] (timestamped). Keeps last MAX_LOG_ENTRIES entries.
+            """
+            try:
+                os.makedirs(job_dir, exist_ok=True)
+            except Exception:
+                # if we cannot create job dir, still attempt to record debug
+                _debug_write(f"[append_status] mkdir failed for {job_dir}")
 
-                except (NameError, TypeError, FileNotFoundError, IOError, ValueError, AttributeError) as e:
-                    except_host.handle_sulfur_exception(e, call)
+            # 1) append plain-line to status.log (fast)
+            try:
+                log_path = os.path.join(job_dir, "status.log")
+                with open(log_path, "a", encoding="utf-8") as fh:
+                    fh.write(status_line + "\n")
+                    fh.flush()
+                    try:
+                        os.fsync(fh.fileno())
+                    except Exception:
+                        pass
+            except Exception as e:
+                _debug_write(f"[append_status] append log failed: {e}")
 
-                finally:
-                    os.chdir(old_cwd)
-        except KeyboardInterrupt:
-            if delete_cache:
-                print("⚠️ Deleting cache..")
-                current_dir = os.path.abspath(os.path.join(
-                    os.path.dirname(__file__),
-                ))
-                base_path = os.path.join(current_dir, 'api', 'Python', 'SulfurServerSystem', 'cache')
-                import shutil
+            # 2) update status.json with a bounded 'log' array atomically
+            status_path = os.path.join(job_dir, "status.json")
+            tmp_path = status_path + ".tmp"
+            try:
+                status_obj = {}
+                # if existing status.json present, try to load and preserve fields
+                if os.path.exists(status_path):
+                    try:
+                        with open(status_path, "r", encoding="utf-8") as fh:
+                            status_obj = json.load(fh) or {}
+                    except Exception:
+                        status_obj = {"status": status_obj.get("status", "processing"), "id": task_id}
 
-                if not os.path.exists(base_path):
-                    print("Base path doesn't exist.")
-                    return
+                # ensure minimal fields
+                status_obj.setdefault("id", task_id)
+                status_obj.setdefault("status", status_obj.get("status", "processing"))
+                log_arr = status_obj.get("log", [])
+                if not isinstance(log_arr, list):
+                    log_arr = list(log_arr) if log_arr is not None else []
 
-                for folder in os.listdir(base_path):
-                    folder_path = os.path.join(base_path, folder)
-                    if os.path.isdir(folder_path) and folder.startswith("id_"):
+                entry = {"ts": int(time.time()), "msg": status_line}
+                log_arr.append(entry)
+                # keep bounded
+                if len(log_arr) > MAX_LOG_ENTRIES:
+                    log_arr = log_arr[-MAX_LOG_ENTRIES:]
+                status_obj["log"] = log_arr
+
+                # atomic write
+                with open(tmp_path, "w", encoding="utf-8") as fh:
+                    json.dump(status_obj, fh, indent=2, ensure_ascii=False)
+                    fh.flush()
+                    try:
+                        os.fsync(fh.fileno())
+                    except Exception:
+                        pass
+                try:
+                    os.replace(tmp_path, status_path)
+                except Exception:
+                    # best-effort replacement
+                    try:
+                        if os.path.exists(tmp_path):
+                            os.remove(tmp_path)
+                    except Exception:
+                        pass
+
+            except Exception as e:
+                _debug_write(f"[append_status] status.json update failed: {e}")
+                try:
+                    if os.path.exists(tmp_path):
+                        os.remove(tmp_path)
+                except Exception:
+                    pass
+
+        # ---------- worker main loop ----------
+        while True:
+            try:
+                task = self.queue.get(block=True, timeout=None)
+            except Exception:
+                # resilient - tiny sleep and continue
+                time.sleep(0.05)
+                continue
+
+            try:
+                # normalize task shape
+                try:
+                    task_id, input_string, legacy_append = task
+                except Exception:
+                    if isinstance(task, (list, tuple)) and len(task) >= 2:
+                        task_id = task[0]
+                        input_string = task[1]
+                        legacy_append = False
+                    else:
+                        task_id = getattr(task, "id", f"id_{int(time.time() * 1000)}")
+                        input_string = str(task)
+                        legacy_append = False
+
+                # compute job paths
+                job_dir = os.path.join(self.cache_base, task_id) if hasattr(self, "cache_base") else None
+                if job_dir:
+                    try:
+                        os.makedirs(job_dir, exist_ok=True)
+                    except Exception as e:
+                        _debug_write(f"[WORKER] mkdir failed for {job_dir}: {e}")
+
+                # log processing start
+                try:
+                    if job_dir:
+                        append_status_log_and_line(job_dir, task_id, f"> {task_id} processing started")
+                    _debug_write(f"[WORKER] start id={task_id} pid={os.getpid()} cwd={os.getcwd()}")
+                except Exception:
+                    pass
+
+                # call run_locally safely
+                result = None
+                try:
+                    if callable(self.run_locally_fn):
                         try:
-                            shutil.rmtree(folder_path)
-                            print(f"Deleted: {folder_path}")
+                            if job_dir:
+                                append_status_log_and_line(job_dir, task_id, f"> {task_id} calling run_locally")
+                            start_t = time.time()
+                            result = self.run_locally_fn(input_string, True)
+                            elapsed = time.time() - start_t
+                            if job_dir:
+                                append_status_log_and_line(job_dir, task_id,
+                                                           f"> {task_id} run_locally done elapsed={elapsed:.2f}s")
+                            _debug_write(f"[WORKER] run_locally returned id={task_id} elapsed={elapsed:.2f}s")
+                        except Exception as exc:
+                            tb = traceback.format_exc()
+                            _debug_write(f"[WORKER] run_locally EXC id={task_id}: {repr(exc)}")
+                            _debug_write(tb)
+                            if job_dir:
+                                append_status_log_and_line(job_dir, task_id,
+                                                           f"> {task_id} run_locally EXC: {repr(exc)}")
+                                append_status_log_and_line(job_dir, task_id,
+                                                           f"> {task_id} traceback written to debug log")
+                            result = {"ERROR": "run_locally raised exception", "exception": str(exc), "traceback": tb}
+                    else:
+                        result = {"ERROR": "no run_locally function available", "input": input_string}
+                except Exception as outer_exc:
+                    tb = traceback.format_exc()
+                    _debug_write(f"[WORKER] unexpected EXC id={task_id}: {outer_exc}")
+                    _debug_write(tb)
+                    if job_dir:
+                        append_status_log_and_line(job_dir, task_id, f"> {task_id} unexpected EXC: {outer_exc}")
+                    result = {"ERROR": "unexpected worker exception", "exception": str(outer_exc), "traceback": tb}
+
+                # normalize result
+                normalized = None
+                try:
+                    if isinstance(result, dict):
+                        normalized = result
+                    elif isinstance(result, str):
+                        try:
+                            normalized = json.loads(result)
+                        except Exception:
+                            normalized = {"RAW_RETURN": result}
+                    elif result is None:
+                        normalized = {"ERROR": "run_locally returned None"}
+                    else:
+                        try:
+                            normalized = json.loads(str(result))
+                        except Exception:
+                            normalized = {"RAW_RETURN": str(result)}
+                except Exception as e:
+                    tb = traceback.format_exc()
+                    _debug_write(f"[WORKER] normalization EXC id={task_id}: {e}")
+                    _debug_write(tb)
+                    normalized = {"ERROR": "normalization failed", "exception": str(e), "traceback": tb}
+
+                # write outputs
+                try:
+                    out_json_path = os.path.join(job_dir, "output.json") if job_dir else None
+                    out_txt_path = os.path.join(job_dir, "output.txt") if job_dir else None
+                    status_path = os.path.join(job_dir, "status.json") if job_dir else None
+
+                    if job_dir and not os.path.exists(job_dir):
+                        os.makedirs(job_dir, exist_ok=True)
+
+                    # atomic write output.json
+                    if out_json_path:
+                        try:
+                            tmp_json = out_json_path + ".tmp"
+                            with open(tmp_json, "w", encoding="utf-8") as fh:
+                                json.dump(normalized, fh, indent=2, ensure_ascii=False)
+                                fh.flush()
+                                try:
+                                    os.fsync(fh.fileno())
+                                except Exception:
+                                    pass
+                            try:
+                                os.replace(tmp_json, out_json_path)
+                            except Exception:
+                                if os.path.exists(tmp_json):
+                                    os.remove(tmp_json)
                         except Exception as e:
-                            print(f"Failed to delete {folder_path}. Reason: {e}")
-                file_path_input_api_server = call.api_server_python_cache_input()
-                with open(file_path_input_api_server, "w", encoding="utf-8", errors="ignore") as file_mod: file_mod.writelines("")
-                print(f"Deleted input cache.")
+                            _debug_write(f"[WORKER] writing output.json failed id={task_id}: {e}")
+                            if job_dir:
+                                append_status_log_and_line(job_dir, task_id,
+                                                           f"> {task_id} writing output.json failed: {e}")
 
+                    # write human-readable output.txt
+                    if out_txt_path:
+                        try:
+                            with open(out_txt_path, "w", encoding="utf-8") as ftxt:
+                                if isinstance(normalized, dict) and "RAW_RETURN" in normalized:
+                                    ftxt.write(str(normalized["RAW_RETURN"]))
+                                elif isinstance(normalized, dict) and (
+                                        "OUTPUT_TEXT" in normalized or "output" in normalized):
+                                    out_text = normalized.get("OUTPUT_TEXT") or normalized.get("output") or str(
+                                        normalized)
+                                    ftxt.write(str(out_text))
+                                else:
+                                    ftxt.write(json.dumps(normalized, ensure_ascii=False, indent=2))
+                        except Exception as e:
+                            _debug_write(f"[WORKER] writing output.txt failed id={task_id}: {e}")
+                            if job_dir:
+                                append_status_log_and_line(job_dir, task_id,
+                                                           f"> {task_id} writing output.txt failed: {e}")
 
-    @classmethod
-    def add_input_endpoint(self,input_string,extra_debug=True):
-        #############Adds input to the local SulfurAI endpoint API server (SSS).
+                    # update final status.json (merge and keep previous log if any)
+                    try:
+                        status_obj = {"status": "finished", "id": task_id, "finished_at": int(time.time())}
+                        if isinstance(normalized, dict) and normalized.get("ERROR"):
+                            status_obj["status"] = "error"
+                            status_obj["error_summary"] = normalized.get("ERROR") or normalized.get("exception")
 
+                        # preserve previous log entries
+                        if status_path and os.path.exists(status_path):
+                            try:
+                                with open(status_path, "r", encoding="utf-8") as fh:
+                                    prev = json.load(fh) or {}
+                            except Exception:
+                                prev = {}
+                        else:
+                            prev = {}
+
+                        status_obj["log"] = prev.get("log", []) if isinstance(prev.get("log", []), list) else []
+                        # keep bounded
+                        if len(status_obj["log"]) > MAX_LOG_ENTRIES:
+                            status_obj["log"] = status_obj["log"][-MAX_LOG_ENTRIES:]
+
+                        # write atomically
+                        if status_path:
+                            tmp_status = status_path + ".tmp"
+                            try:
+                                with open(tmp_status, "w", encoding="utf-8") as fh:
+                                    json.dump(status_obj, fh, indent=2, ensure_ascii=False)
+                                    fh.flush()
+                                    try:
+                                        os.fsync(fh.fileno())
+                                    except Exception:
+                                        pass
+                                try:
+                                    os.replace(tmp_status, status_path)
+                                except Exception:
+                                    if os.path.exists(tmp_status):
+                                        os.remove(tmp_status)
+                            except Exception as e:
+                                _debug_write(f"[WORKER] writing final status.json failed id={task_id}: {e}")
+                                if job_dir:
+                                    append_status_log_and_line(job_dir, task_id,
+                                                               f"> {task_id} writing final status.json failed: {e}")
+                    except Exception as e:
+                        _debug_write(f"[WORKER] status object creation failed id={task_id}: {e}")
+                        if job_dir:
+                            append_status_log_and_line(job_dir, task_id, f"> {task_id} status object failed: {e}")
+
+                    # notify finished and record
+                    try:
+                        done_msg = f"[WORKER FINISHED] id={task_id} folder={job_dir}"
+                        try:
+                            print(done_msg, flush=True)
+                        except Exception:
+                            pass
+                        if job_dir:
+                            append_status_log_and_line(job_dir, task_id, f"> {task_id} finished")
+                        _debug_write(done_msg)
+                        try:
+                            self.last_processed_id = task_id
+                        except Exception:
+                            pass
+                    except Exception as e:
+                        _debug_write(f"[WORKER] post-finish notify failed id={task_id}: {e}")
+
+                except Exception as e:
+                    tb = traceback.format_exc()
+                    _debug_write(f"[WORKER] writing outputs EXC id={task_id}: {e}")
+                    _debug_write(tb)
+                    if job_dir:
+                        append_status_log_and_line(job_dir, task_id, f"> {task_id} writing outputs EXC: {e}")
+
+            finally:
+                try:
+                    try:
+                        self.queue.task_done()
+                    except Exception:
+                        pass
+                except Exception:
+                    pass
+
+            # yield
+            time.sleep(0.01)
+
+    # ---------------- endpoints ----------------
+    def add_input_endpoint(self, input_string: str = None):
         """
-        Adds input to the local SulfurAI endpoint API server (SSS).
-
-
-        -------------------------------
-
-        Main arguments:
-          ``input_string`` [str]
-        - Adds an input to the server cache to be processed.
-
-        -------------------------------
-
-        Extra arguments:
-            ``extra_debug`` = True/False [DEFAULT: True]
-         - decides whether to print debug statements for this function.
-
-
-        -------------------------------
+        POST /input
+        Accepts JSON { "input_string": "..." } or plain text body.
+        Returns {"status":"queued","id": "<id>"}.
         """
+        # accept JSON or form or raw body:
+        try:
+            data = None
+            if self.has_request_context():
+                data = self.request.get_json(silent=True)
+            if data and isinstance(data, dict) and "input_string" in data:
+                input_string = data["input_string"]
+            elif self.has_request_context() and not input_string:
+                # maybe raw body or form
+                input_string = (self.request.form.get("input_string") or (self.request.data.decode("utf-8") if self.request.data else None))
+        except Exception:
+            pass
 
-        if extra_debug: print(f"💻 Adding {str(input_string)} to the local endpoint via SSS (SulfurAI Server System)...")
-        if type(input_string) is not str:
-            from scripts.ai_renderer_sentences.error import SulfurError
-            raise SulfurError(message=f"Input_string must be a *string*!")
-        file_path_input_api_server = call.api_server_python_cache_input()
-        with open(file_path_input_api_server, "a", encoding="utf-8",errors="ignore") as file_mod:
-            file_mod.write(input_string + "\n")
+        if input_string is None:
+            return self.jsonify({"error":"input_string is required"}), 400
+        if not isinstance(input_string, str):
+            return self.jsonify({"error":"input_string must be a string"}), 400
 
+        # create id, folder, enqueue (LIFO). Also append to legacy queue file so external tools see it.
+        task_id = self._make_new_id()
+        folder = self.os.path.join(self.cache_base, task_id)
+        try:
+            self.os.makedirs(folder, exist_ok=True)
+            with open(self.os.path.join(folder, "input.txt"), "w", encoding="utf-8", errors="ignore") as inf:
+                inf.write(input_string)
+            with open(self.os.path.join(folder, "status.json"), "w", encoding="utf-8", errors="ignore") as sf:
+                self.json.dump({"status":"queued","id":task_id,"queued_at":int(self.time.time())}, sf)
+        except Exception:
+            pass
 
+        # enqueue and append to legacy queue file for compatibility
+        self._enqueue(task_id, input_string, legacy_append=True)
 
-    @classmethod
-    def get_output_endpoint(self,input_string,extra_debug=True):
-        #############Gets a specific output from the local SulfurAI endpoint API server (SSS).
+        if self.has_request_context():
+            return self.jsonify({"status": "queued", "id": task_id}), 200
+        else:
+            return {"status": "queued", "id": task_id}, 200
 
+    def get_output_endpoint(self, input_string: str = None, id: str = None):
         """
-        Gets a specific output from the local SulfurAI endpoint API server (SSS).
-
-
-        -------------------------------
-
-        Main arguments:
-          ``input_string`` [str]
-        - Takes an input string and finds it inside the server, returning the API output
-
-        -------------------------------
-
-        Extra arguments:
-            ``extra_debug`` = True/False [DEFAULT: True]
-         - decides whether to print debug statements for this function.
-
-        -------------------------------
-
-        Returns:
-            - Returns a dictionary with the Sulfur API output.
-            To see what the API would return, see the documentation of `SulfurAI.run_locally()`.
-
-
-
-
-        -------------------------------
-        """
-
-        import ast,re
-        if extra_debug: print(f"💻 Attempting to find {str(input_string)} in the local endpoint via SSS (SulfurAI Server System)...")
-        if type(input_string) is not str:
-
-            from scripts.ai_renderer_sentences.error import SulfurError
-            raise SulfurError(message=f"Input_string must be a *string*!")
-        current_dir = os.path.abspath(os.path.join(
-            os.path.dirname(__file__),
-        ))
-        base_path = os.path.join(current_dir, 'api', 'Python', 'SulfurServerSystem', 'cache')
-
-        for folder_name in os.listdir(base_path):
-            subfolder_path = os.path.join(base_path, folder_name)
-            if os.path.isdir(subfolder_path):
-
-                for file_name in os.listdir(subfolder_path):
-                    if file_name.endswith(".txt"):
-                        txt_file_path = os.path.join(subfolder_path, file_name)
-
-
-                        with open(txt_file_path, "r", encoding="utf-8", errors="ignore") as file: cached_file = file.read()
-
-                        def clean_wrappers(text):
-                            """Remove wrapper calls so ast.literal_eval can parse."""
-                            # np.str_('x')  -> 'x'
-                            text = re.sub(r"np\.str_\(\s*(['\"].*?['\"])\s*\)", r"\1", text, flags=re.DOTALL)
-
-                            # np.float64(1.23) -> 1.23
-                            text = re.sub(r"np\.float64\(\s*([0-9.+-eE]+)\s*\)", r"\1", text)
-
-                            # Counter({'A':1}) -> {'A':1}
-                            text = re.sub(r"Counter\(\s*(\{.*?\})\s*\)", r"\1", text, flags=re.DOTALL)
-
-                            return text
-
-                        cached_file = clean_wrappers(cached_file)
-                        data_dict = ast.literal_eval(cached_file)
-                        if data_dict["INPUT_TEXT"][0] == input_string:
-                            print(f"💻 Found {str(input_string)} in the local endpoint via SSS (SulfurAI Server System)...")
-                            return data_dict
-                        else: pass
-        print(f"⚠️ Could not find {str(input_string)} in the local endpoint via SSS (SulfurAI Server System).")
-        print(f"⚠️ Check if the input was added correctly, if the server is running or if the input has been cached (processed) yet.")
-
-    @classmethod
-    def wait_for_output_endpoint(self,input_string,timeout=3,max_timeout=20,extra_debug=True):
-        #############Waits until a specific output from the local SulfurAI endpoint API server (SSS) has been processed.
-        #############Basically a re-purposed function of `get_output_endpoint()` that allows that function to be used in the same script that added the input to the server.
-
-        """
-        Waits until a specific output from the local SulfurAI endpoint API server (SSS) has been processed.
-
-          ------------------------------
-
-        [! WARNING !]
-
-            Does not return anything, it just waits until the output is processed.
-            To get the output, use `SulfurAI.server.get_output_endpoint(input_string)`.
-
-
-
-        -------------------------------
-
-        -------------------------------
-
-        Main arguments:
-          input_string [str]
-        - Takes an input string and finds it inside the server, returning the API output
-
-        -------------------------------
-
-        Extra arguments:
-          ``timeout`` = [int] DEFAULT: 3
-         - Waits a maximum of `timeout` seconds and checks if the output has been processed.
-
-           ``max_timeout`` = [int] DEFAULT: 20
-         - Waits a maximum of `max_timeout` seconds and checks if the output has been found, if not - it exits the script.
-
-            ``extra_debug`` = True/False [DEFAULT: True]
-         - decides whether to print debug statements for this function.
-
-
-        -------------------------------
-        """
-
-        import ast,re
-        if extra_debug: print(
-            f"💻 Waiting to find {str(input_string)} in the local endpoint via SSS (SulfurAI Server System)...")
-        print(f"📖 Max timeout is {max_timeout} seconds, timeout is {timeout} seconds.")
-
-        if type(input_string) is not str:
-
-            from scripts.ai_renderer_sentences.error import SulfurError
-            raise SulfurError(message=f"Input_string must be a *string*!")
-        current_dir = os.path.abspath(os.path.join(
-            os.path.dirname(__file__),
-        ))
-        base_path = os.path.join(current_dir, 'api', 'Python', 'SulfurServerSystem', 'cache')
-
-        found = False
-        start_time = time.time()  # record when we start
-
-        while not found:
-            for folder_name in os.listdir(base_path):
-                subfolder_path = os.path.join(base_path, folder_name)
-                if os.path.isdir(subfolder_path):
-                    for file_name in os.listdir(subfolder_path):
-                        if file_name.endswith(".txt"):
-                            txt_file_path = os.path.join(subfolder_path, file_name)
-
-                            with open(txt_file_path, "r", encoding="utf-8", errors="ignore") as file:
-                                cached_file = file.read()
-
-                            def clean_wrappers(text):
-                                """Remove wrapper calls so ast.literal_eval can parse."""
-                                # np.str_('x')  -> 'x'
-                                text = re.sub(r"np\.str_\(\s*(['\"].*?['\"])\s*\)", r"\1", text, flags=re.DOTALL)
-
-                                # np.float64(1.23) -> 1.23
-                                text = re.sub(r"np\.float64\(\s*([0-9.+-eE]+)\s*\)", r"\1", text)
-
-                                # Counter({'A':1}) -> {'A':1}
-                                text = re.sub(r"Counter\(\s*(\{.*?\})\s*\)", r"\1", text, flags=re.DOTALL)
-
-                                return text
-
-                            cached_file = clean_wrappers(cached_file)
-                            data_dict = ast.literal_eval(cached_file)
-                            if data_dict["INPUT_TEXT"][0] == input_string:
-                                print(
-                                    f"💻 Found {str(input_string)} in the local endpoint via SSS (SulfurAI Server System)...")
-                                print(
-                                    f"📖 To return the API output, use `SulfurAI.server.get_output_endpoint(input_string)`.")
-                                found = True
-                                break
-                    if found:
-                        break
-
-            if not found:
-                elapsed = time.time() - start_time
-                if elapsed >= max_timeout:
-                    print(f"⚠️ Max timeout of {max_timeout} seconds reached without finding input.")
-                    break
-                time.sleep(timeout)
-
-    @classmethod
-    def clear_local_endpoint_cache(self,extra_debug=True):
-        ############Clears the local SulfurAI endpoint API server (SSS) cache.
-
-        """
-        Clears the local SulfurAI endpoint API server (SSS) cache.
-
-          ------------------------------
-
-        [! WARNING !]
-
-            SulfurAI.server.host_local_endpoint on default automatically clears the cache after the script is closed.
-            Change this to false with `SulfurAI.server.host_local_endpoint(delete_cache=False)` to keep the cache.
-
-
-
-        -------------------------------
-
-        Extra arguments:
-
-            ``extra_debug`` = True/False [DEFAULT: True]
-         - decides whether to print debug statements for this function.
-
-
-        -------------------------------
+        GET /output?id=... (preferred)
+        GET /output?input_string=... (fallback)
         """
 
-        if extra_debug: print(
-            f"💻 Deleting the local endpoint cache via SSS (SulfurAI Server System)...")
-        print("⚠️ Deleting cache..")
-        current_dir = os.path.abspath(os.path.join(
-            os.path.dirname(__file__),
-        ))
-        base_path = os.path.join(current_dir, 'api', 'Python', 'SulfurServerSystem', 'cache')
+        # When inside Flask request
+        if self.has_request_context():
+            id = self.request.args.get("id", None, type=str)
+            input_string = self.request.args.get("input_string", None, type=str)
+
+        # Lookup by id
+        if id:
+            folder = self.os.path.join(self.cache_base, id)
+
+            if self.os.path.isdir(folder):
+                out_json = self.os.path.join(folder, "output.json")
+                out_txt = self.os.path.join(folder, "output.txt")
+
+                # ---- output.json EXISTS ----
+                if self.os.path.exists(out_json):
+                    with open(out_json, "r", encoding="utf-8") as f:
+                        data = self.json.load(f)
+
+                    if self.has_request_context():
+                        return self.jsonify(data), 200
+                    else:
+                        return data
+
+                # ---- output.txt EXISTS ----
+                if self.os.path.exists(out_txt):
+                    with open(out_txt, "r", encoding="utf-8") as f:
+                        txt = f.read()
+
+                    # Try parse JSON
+                    try:
+                        data = self.json.loads(txt)
+                    except Exception:
+                        data = {"raw": txt}
+
+                    if self.has_request_context():
+                        return self.jsonify(data), 200
+                    else:
+                        return data
+
+            # No output found
+            if self.has_request_context():
+                return self.jsonify({"error": "Output not found", "id": id}), 404
+            else:
+                return {"error": "Output not found", "id": id}, 404
+
+    def wait_for_output_endpoint(self, input_string: str = None, id: str = None, timeout: float = None, max_timeout: float = None):
+        """
+        GET /wait_output?id=... OR /wait_output?input_string=...
+        Polls until output.txt/output.json exists or times out.
+        """
+        if self.has_request_context():
+            id = self.request.args.get("id", None, type=str)
+            input_string = self.request.args.get("input_string", None, type=str)
+            timeout = self.request.args.get("timeout", default=1.0, type=float)
+            max_timeout = self.request.args.get("max_timeout", default=20.0, type=float)
+        else:
+            timeout = float(timeout) if timeout is not None else 1.0
+            max_timeout = float(max_timeout) if max_timeout is not None else 20.0
+
+        start = self.time.time()
+        while True:
+            # by id
+            if id:
+                folder = self.os.path.join(self.cache_base, id)
+                if self.os.path.exists(self.os.path.join(folder, "output.json")) or self.os.path.exists(self.os.path.join(folder, "output.txt")):
+                    return self.jsonify({"status":"found","id":id}), 200
+            else:
+                if input_string:
+                    for folder_name in self.os.listdir(self.cache_base):
+                        subdir = self.os.path.join(self.cache_base, folder_name)
+                        if self.os.path.isdir(subdir):
+                            out_json = self.os.path.join(subdir, "output.json")
+                            if self.os.path.exists(out_json):
+                                try:
+                                    with open(out_json, "r", encoding="utf-8", errors="ignore") as f:
+                                        data = self.json.load(f)
+                                    if isinstance(data, dict) and data.get("INPUT_TEXT", [None])[0] == input_string:
+                                        return self.jsonify({"status":"found","id":folder_name}), 200
+                                except Exception:
+                                    pass
+                            # fallback input.txt match
+                            inp = self.os.path.join(subdir, "input.txt")
+                            if self.os.path.exists(inp):
+                                try:
+                                    with open(inp, "r", encoding="utf-8", errors="ignore") as f:
+                                        content = f.read()
+                                    if content == input_string and (self.os.path.exists(out_json) or self.os.path.exists(os.path.join(subdir, "output.txt"))):
+                                        return self.jsonify({"status":"found","id":folder_name}), 200
+                                except Exception:
+                                    pass
+            if self.has_request_context():
+                return self.jsonify({"status": "timeout"}), 202
+            else:
+                return {"status": "timeout"}, 202
+
+    def clear_local_endpoint_cache(self):
+        """
+        DELETE /cache - removes id_* folders and clears legacy queue file.
+        """
         import shutil
-
-        if not os.path.exists(base_path):
-            print("Base path doesn't exist.")
-            return
-
-        for folder in os.listdir(base_path):
-            folder_path = os.path.join(base_path, folder)
-            if os.path.isdir(folder_path) and folder.startswith("id_"):
+        for folder in self.os.listdir(self.cache_base):
+            folder_path = self.os.path.join(self.cache_base, folder)
+            if self.os.path.isdir(folder_path) and folder.startswith("id_"):
                 try:
                     shutil.rmtree(folder_path)
-                    print(f"Deleted: {folder_path}")
-                except Exception as e:
-                    print(f"Failed to delete {folder_path}. Reason: {e}")
-        file_path_input_api_server = call.api_server_python_cache_input()
-        with open(file_path_input_api_server, "w", encoding="utf-8", errors="ignore") as file_mod:
-            file_mod.writelines("")
-        print(f"Deleted input cache.")
+                except Exception:
+                    pass
+        # clear legacy queue file if exists
+        if self.legacy_queue_file and self.os.path.exists(self.legacy_queue_file):
+            try:
+                with open(self.legacy_queue_file, "w", encoding="utf-8", errors="ignore") as ff:
+                    ff.writelines("")
+            except Exception:
+                pass
+        return self.jsonify({"status":"cache cleared"}), 200
+
+    def host_local_endpoint(self, host=None, port=None, reload=False):
+        """
+        Start Flask server (blocking).
+        Use host/port args to override initialization ones.
+        """
+        h = host or self.host
+        p = port or self.port
+        # The app.run is blocking; call this in a thread if you want non-blocking.
+        self.app.run(host=h, port=p, debug=reload)
+
 
 #|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 #|                                                                                                                                                                        |

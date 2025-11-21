@@ -1,3 +1,4 @@
 import SulfurAI
 
-SulfurAI.server.host_local_endpoint(priority_processing=True)
+srv = SulfurAI.server.get()
+srv.host_local_endpoint()

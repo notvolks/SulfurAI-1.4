@@ -1,15 +1,15 @@
-Tokens:  ['test_endpoint'] 
-Frequency of keywords : {'test_endpoint': 1}
+Tokens:  ['test_endpoint_with_trace'] 
+Frequency of keywords : {'test_endpoint_with_trace': 1}
 Percent of Uppercase letters : 0.0%
-Average word length : 13.0 characters.
-Flesch Reading Ease : 36.62000000000003
-Flesch-Kincaid Grade : 8.400000000000002
-SMOG Index : 3.1291
-Gunning Fog : 0.4
+Average word length : 24.0 characters.
+Flesch Reading Ease : -132.57999999999996
+Flesch-Kincaid Grade : 32.0
+SMOG Index : 8.841846274778883
+Gunning Fog : 40.400000000000006
 Sentences: 1 | Words: 1
-Lemmas : ['test_endpoint']
+Lemmas : ['test_endpoint_with_trace']
 Position counts: : Counter({'NN': 1})
-List of bi-grams : 3.1291
+List of bi-grams : 8.841846274778883
 Gunning Fog : []
 Keyframes: []
 General sentiment : Neutral
@@ -17,14 +17,14 @@ General sentiment score : 0.0
 General toxicity flags : False
 General toxicity score : 0.0
 (Count) words : 1 
-(Count) characters : 13 
+(Count) characters : 24 
 (Count) exclamations : 0 
 (Count) questions : 0 
 (Count) periods : 0 
-(Count) current sessions : 398 
+(Count) current sessions : 438 
 (String Count) hashtags : [] 
 (String Count) emojis : [] 
 (String Count) casing : all lowercase 
 (String Count) matched_keywords : [] 
-Recent user actions : ['event_APIRetrieveActiveModelHistory', 'event_RanSulfurViaMain', 'event_RanSulfurViaMain']
-Percentage of user actions to sulfur runs: 33.33333333333333%
+Recent user actions : ['event_RanSulfurViaMain', 'event_RanSulfurViaMain']
+Percentage of user actions to sulfur runs: 0.0%

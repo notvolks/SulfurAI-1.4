@@ -51,6 +51,9 @@ def _rest_of_the_script(tag_trainer,return_statements,start_time,output_file_pat
     # Write output
 
     import os
+    import importlib, traceback, sys
+
+
     from scripts.ai_renderer_sentences import Mean_device_s
     from scripts.ai_renderer_sentences import preferences_basic_compare_s
     from scripts.ai_renderer_2 import sentence_detectAndInfer_s
@@ -62,6 +65,7 @@ def _rest_of_the_script(tag_trainer,return_statements,start_time,output_file_pat
     from extra_models.Sulfur.RenderScript.Build import ui_add_output_data
     from extra_models.Sulfur.RenderScript.Build import call_ai
     from extra_models.Sulfur.Models.base_sulfur_drl_build.filter import filter_text
+
 
 
     #----------------Declare Globals
@@ -85,6 +89,7 @@ def _rest_of_the_script(tag_trainer,return_statements,start_time,output_file_pat
     Check_device_s = call_ai._call_ai_class("CD", is_main=is_main)
     instance = Check_device_s["Ai"]()
     Check_device_s["is_grandcaller_main"](is_main)
+
     ai_process_cd_instance = Check_device_s["ai_process_cd"]()
     Device_Result, Device_Accuracy = ai_process_cd_instance.process_script(add_to_training_data)
     try:
@@ -102,13 +107,12 @@ def _rest_of_the_script(tag_trainer,return_statements,start_time,output_file_pat
         file_name_attributes = "Attributes.txt"
         file_name_output = "Output.txt"
 
+
         file_path_input = os.path.join(folder_path_input, file_name_input)
         file_path_attributes = os.path.join(folder_path_input, file_name_attributes)
 
         if output_file_path == "[]":    file_path_output = os.path.join(folder_path_input, file_name_output)
         else:   file_path_output = output_file_path
-
-
 
 
         pass
@@ -120,7 +124,7 @@ def _rest_of_the_script(tag_trainer,return_statements,start_time,output_file_pat
             input_data, adjective_describe_user, adjective_describe_global, mood_user, mood_global,
             mood_accuracy_user, mood_accuracy_global, average_mood_accuracy
         ) = instance_preferences.get_process(3)
-        #print("1") #debug
+
 
 
 
@@ -875,7 +879,8 @@ def _rest_of_the_script(tag_trainer,return_statements,start_time,output_file_pat
 
 
     except Exception as e:
-        print(f"Unhandled exception during script run: {e}")
+        from scripts.ai_renderer_sentences.error import SulfurError
+        raise SulfurError(message=f"Unhandled exception during general render: {e}")
 
 
 
