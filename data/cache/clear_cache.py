@@ -44,6 +44,7 @@ cache_logs = {
     "LocalEventsHost": call.cache_LocalEventsHost(),
     "LocalDataProfileSulfurCount": call.cache_LocalDataProfileSulfurCount(),
     "LocalActiveModelHistory": call.cache_LocalActiveModelHistory(),
+    "AppSecretsFound_appid_developerconsole": call.cache_AppSecretsFound_appid_developerconsole(),
 
 }
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

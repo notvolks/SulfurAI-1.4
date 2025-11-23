@@ -89,6 +89,7 @@ border-top: 1px solid #eee;
 <li><a href="#model-info">Model Info</a></li>
 <li><a href="#best-practices">Best Practices</a></li>
 <li><a href="#directory-guide">Directory Guide</a></li>
+<li><a href="#apps">Apps</a></li>
 <li><a href="#bias-notice">Bias Notice</a></li>
 <li><a href="#license">License</a></li>
 </ul>
@@ -99,7 +100,7 @@ border-top: 1px solid #eee;
 <header>
 <h1>SulfurAI Developer Kit</h1>
 <p>Everything you need to integrate, modify and extend SulfurAI</p>
-<p>Last updated: 21 Nov 2025, accurate as of: [Build 10399d-patch9]</p>
+<p>Last updated: 21 Nov 2025, accurate as of: [Build 10399d-patch10]</p>
 </header>
 
 
@@ -220,7 +221,7 @@ border-top: 1px solid #eee;
     <section id="model-info">
       <h2>Model Info + Creating / Identifying models.</h2>
       <p>SulfurAI uses multiple pre-trained transformer/classification models optimized for conversational tasks. Default model: <code>sulfur_drl_[build]</code>.</p>
-        <p>Creating models isn't supported in build 10399d-patch9, but you can find current ones with the SulfurAI API.</p>
+        <p>Creating models isn't supported in build 10399d-patch10, but you can find current ones with the SulfurAI API.</p>
         <br>
            <p>(Assuming you imported SulfurAI as SulfurAI)</p>
              <pre><code class="language-python">print(SulfurAI.retrieve_current_models())</code></pre>
@@ -280,6 +281,35 @@ border-top: 1px solid #eee;
 
     </section>
 
+
+
+    <section id="apps">
+      <h2>Apps</h2>
+      <p>SulfurAI has support for external apps.</p>
+
+        <p>View current apps in the "apps" folder, and install new ones in the "installer" folder.</p>
+        <p>You can import apps from other projects.</p>
+        <pre>&gt; &quot;⚠️ Only install apps from *trusted* sources. Malicious code can be ran in apps. We do not take responsibility for your installed apps.&quot;</pre>
+
+        <p>Default apps:</p>
+
+        <pre><code class="language-python">
+       Developer-Console:
+           An app that helps developers debug SulfurAI and package it for personal use.
+      </code></pre>
+
+         <pre><code class="language-python">
+       SulfurAI-Dashboard-Assets:
+           Assets for the SulfurAI dashboard.
+           Find the dashboard in the root folder.
+      </code></pre>
+
+           <pre><code class="language-python">
+       SulfurAI-Settings:
+           Settings for SulfurAI & the renderer.
+           Find the settings in the root folder.
+      </code></pre>
+    </section>
 
 
     <section id="bias-notice">

@@ -67,7 +67,7 @@ Option 2: Use the instructions provided when running SulfurAI.py or the INSTALLE
 > [!IMPORTANT]  
 > Work in Progress
 
-- Active developer release: **Build 10399d-patch9**  
+- Active developer release: **Build 10399d-patch10**  
 - Report non-security issues via GitHub Issues  
 
 <br>

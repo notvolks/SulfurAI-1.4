@@ -2,9 +2,12 @@
 
 
 
-* Added custom traceback for API scripts \& all renderers.
-* Patched PIP dependency installer critical bugs and added requirements.txt support.
-* Completely revamped the Sulfur Server System to use HTML and flask.
+* Updated the Terms of Service
+* Updated PIP installer to use #colour-tags with commands
+* Added a developer console app for packaging
+* Revamped the developers notebook
+
+
 
 
 

@@ -4,10 +4,8 @@
 
 |---------------INPUT---------------
 |                                   
-|    Input (text) : ['Lets grow a business my dudes.']   
+|    Input (text) : ['A test prompt for rendering.']   
 |                                   
-|   Certain unaccepted parts of the input may be removed.   
-|   This could affect output.                               
 |----------------------------------
 
 ------------------------------------------------
@@ -21,11 +19,11 @@
 |                                   
 |  Predicted Device : Desktop   
 |                                   
-|  Predicted Device Accuracy : 78.94736842105263%  
+|  Predicted Device Accuracy : 80.41958041958043%  
 |                                   
 |  Main/Mean Devices : MOBILE(OTHER)  
 |                                   
-|  Average/Mean Accuracy: 68.26686046511628%  
+|  Average/Mean Accuracy: 69.58391771856007%  
 |                                   
 |----------------------------------
 
@@ -39,7 +37,7 @@
 |   Basic version limit: 3 preferred words!     
 *|  Predicted using Hard Values.*               
 |                                   
-|  User(s) preferred words : grow,business,a [Not Summarised] 
+|  User(s) preferred words : test,prompt,for [Not Summarised] 
 |                                   
 |  Average preferred words : hows test basic [Not Summarised]    
 |                                   
@@ -48,7 +46,7 @@
 |                                   
 |          Nouns          
 |                                   
-|  User(s): grow [To an extent of noun]  
+|  User(s): None_Found [To an extent of noun]  
 |  Average: hows [To an extent of noun]   
 |                                   
 |----------------------------------
@@ -64,7 +62,7 @@
 |                                   
 |          Adjectives          
 |                                   
-|  User(s): None_Found [To an extent of adjective]  
+|  User(s): test [To an extent of adjective]  
 |  Average: basic [To an extent of adjective]   
 |                                   
 |----------------------------------
@@ -78,16 +76,16 @@
 |----------------------------------
 |----------------------------------------------------------------------------------------------------
 |                                                                                                   
-|      Predicted Mood Accuracy : 99.9% (user), 71.8% (global)    
-|      Average <User : Mean> Accuracy : 85.85%                                   
+|      Predicted Mood Accuracy : 99.9% (user), 74.2% (global)    
+|      Average <User : Mean> Accuracy : 87.05%                                   
 |       Predicted using a Neural Network.*                                                          
 |                                                                                                   
-|      Sentence Type : command (30.000001192092896%)                                       
-|      Sentence Intent : informing (30.000001192092896%)                                 
+|      Sentence Type : exclamation (89.81900215148926%)                                       
+|      Sentence Intent : expressing (92.08144545555115%)                                 
 |                                                                                                   
-|      Global Type : command (1.7605633802816902%)                                   
-|      Global Intent : informing (1.056338028169014%)                             
-|      Overall Accuracy : 1.1150234741784038%                                             
+|      Global Type : exclamation (93.3636955107352%)                                   
+|      Global Intent : expressing (26.154847104749514%)                             
+|      Overall Accuracy : 72.41379310344827%                                             
 |                                                                                                   
 |----------------------------------------------------------------------------------------------------
 
@@ -100,18 +98,19 @@
 |--------------------------------------------|
 |              Day Changes             |
 |  Changes to your userbase over the past 5 days:
-  Changes from 2025-08-09 to 2025-08-15:
+  Changes from 2025-11-05 to 2025-11-15:
   Type Changes: exclamation: 0.00%
-  Intent Changes: commanding: 0.00%
+  Intent Changes: expressing: 0.00%
 |  Average Changes over the past 5 days:
   
 
 
  Average Type Change:
-  exclamation: -7.69%
+  exclamation: -5.49%
 
  Average Intent Change:
   commanding: 0.00%
+  expressing: 0.00%
 |   *Only includes changes at least 5 days apart.
 |--------------------------------------------|
 
@@ -119,22 +118,22 @@
 |--------------------------------------------|
 |              Week Changes             |
 |  Changes to your userbase over the past 5 weeks:
-  Changes from 2025-08-18 to 2025-08-25:
-  Type Changes: exclamation: -37.97%, statement: -11.22%, command: +44.59%, question: +4.59%
-  Intent Changes: commanding: -52.57%, informing: +11.89%, comparing: +1.49%, expressing: +39.59%, asking: -0.41%
+  Changes from 2025-11-10 to 2025-11-17:
+  Type Changes: exclamation: 0.00%
+  Intent Changes: expressing: 0.00%
 |  Average Changes over the past 5 weeks:
   
 
 
  Average Type Change:
-  question: -2.55%
-  exclamation: -1.16%
-  command: +2.66%
-  statement: -0.82%
+  question: -1.79%
+  exclamation: +1.76%
+  command: -0.38%
+  statement: -0.64%
 
  Average Intent Change:
-  commanding: -5.67%
-  expressing: +2.57%
+  commanding: -3.70%
+  expressing: +3.46%
 ...and 3 more lines. Removed due to limit cap.
 |   *Only includes changes at least 5 weeks apart.
 |--------------------------------------------|
@@ -143,22 +142,23 @@
 |--------------------------------------------|
 |              Month Changes             |
 |  Changes to your userbase over the past 5 months:
-  Changes from 2025-07-01 to 2025-08-01:
-  Type Changes: exclamation: -3.74%
-  Intent Changes: commanding: -4.72%
+  Changes from 2025-10-01 to 2025-11-01:
+  Type Changes: exclamation: 0.00%
+  Intent Changes: expressing: 0.00%
 |  Average Changes over the past 5 months:
   
 
 
  Average Type Change:
-  question: -10.71%
-  exclamation: +10.97%
-  command: -1.19%
-  statement: -0.07%
+  question: -6.22%
+  exclamation: +6.80%
+  command: -0.95%
+  statement: -0.28%
 
  Average Intent Change:
-  commanding: -1.18%
-  expressing: -0.07%
+  commanding: -14.29%
+  expressing: +12.06%
+...and 3 more lines. Removed due to limit cap.
 |   *Only includes changes at least 5 months apart.
 |--------------------------------------------|
 
@@ -181,10 +181,10 @@
 |   [!] Description: Predicts the user's location with a medium intelligence model.
 |
 |  User(s) predicted location : England 
-|  User(s) predicted location accuracy : 87.36937764956117%
+|  User(s) predicted location accuracy : 54.5761763594139%
 |
 |  Average predicted location : England 
-|  Average predicted location accuracy : 84.83205759610557%
+|  Average predicted location accuracy : 86.39373492290211%
 |
 |----------------------------------------------------|
 
@@ -199,16 +199,16 @@
 |   📈 Trend Direction: flat
 |   🔍 Top Related Searches:
 |      test speed (100)
-|      driving test (62)
-|      blood test (54)
-|      theory test (35)
-|      internet test (30)
+|      driving test (66)
+|      blood test (53)
+|      theory test (36)
+|      internet test (31)
 |   🚀 Rising Related Searches:
-|      ind vs eng test (250)
-|      most test runs (200)
-|      test match score (190)
-|      test match (120)
-|      test cricket (90)
+|      ind vs eng test (200)
+|      dvsa change driving test (110)
+|      book driving test uk (110)
+|      change driving test date (80)
+|      dvla book driving test (60)
 |--------------------------------------------------------------|
 |   🌍 Country: United States (US)
 |--------------------------------------------------------------|
@@ -216,15 +216,14 @@
 |   📈 Trend Direction: flat
 |   🔍 Top Related Searches:
 |      test speed (100)
-|      speed (97)
-|      internet test (33)
-|      test internet speed (31)
+|      internet test (35)
+|      test internet speed (32)
 |      pregnancy test (31)
+|      permit test (16)
 |   🚀 Rising Related Searches:
-|      presidential fitness test (350)
-|      ind vs eng test (180)
-|      chipotle iq test (90)
-|      flu test (40)
+|      presidential fitness test (400)
+|      ind vs eng test (130)
+|      chipotle iq test (80)
 |--------------------------------------------------------------|
 |   🌍 Country: United Kingdom (GB)
 |--------------------------------------------------------------|
@@ -232,16 +231,16 @@
 |   📈 Trend Direction: flat
 |   🔍 Top Related Searches:
 |      test speed (100)
-|      driving test (62)
-|      blood test (54)
-|      theory test (35)
-|      internet test (30)
+|      driving test (66)
+|      blood test (53)
+|      theory test (36)
+|      internet test (31)
 |   🚀 Rising Related Searches:
-|      ind vs eng test (250)
-|      most test runs (200)
-|      test match score (190)
-|      test match (120)
-|      test cricket (90)
+|      ind vs eng test (200)
+|      dvsa change driving test (110)
+|      book driving test uk (110)
+|      change driving test date (80)
+|      dvla book driving test (60)
 
 |                                                               |
 
@@ -254,8 +253,8 @@
 |
 |   [!] Description: Predicts the users opportunities (intent / business class).
 |
-|  User(s) Main opportunity: NonBusiness, Subsidiary opportunity: Entertainment
-|  User(s) opportunities accuracy : 31.999999284744263% 
+|  User(s) Main opportunity: Business, Subsidiary opportunity: Consulting
+|  User(s) opportunities accuracy : 92.9864227771759% 
 |
 |----------------------------------------------------|
 
@@ -266,41 +265,41 @@
 |   [!] Description: Uses quick and efficient inference models to make advanced predictions of already existing output.
 |   [!] It's recommended to use this debug with the already existing output on a 80:20 ratio for better accuracy.
 |
-|  Tokens:  ['Lets', 'grow', 'a', 'business', 'my', 'dudes.'] 
-|  Frequency of keywords : {'Lets': 1, 'grow': 1, 'a': 1, 'business': 1, 'my': 1, 'dudes.': 1}
-|  Percent of Uppercase letters : 0.0%
-|  Average word length : 5.0 characters.
+|  Tokens:  ['A', 'test', 'prompt', 'for', 'rendering.'] 
+|  Frequency of keywords : {'A': 1, 'test': 1, 'prompt': 1, 'for': 1, 'rendering.': 1}
+|  Percent of Uppercase letters : 0.2%
+|  Average word length : 5.6 characters.
 |
-|  Flesch Reading Ease : 102.045
-|  Flesch-Kincaid Grade : 0.5166666666666693
-|  SMOG Index : 3.1291
-|  Gunning Fog : 2.4000000000000004
-|  Sentences: 1 | Words: 6
+|  Flesch Reading Ease : 83.32000000000004
+|  Flesch-Kincaid Grade : 2.879999999999999
+|  SMOG Index : 8.841846274778883
+|  Gunning Fog : 10.0
+|  Sentences: 1 | Words: 5
 |
-|  Lemmas : ['Lets', 'grow', 'a', 'business', 'my', 'dude', '.']
-|  Position counts: : Counter({'NNS': 2, 'VBP': 1, 'DT': 1, 'NN': 1, 'PRP$': 1, '.': 1})
-|  List of bi-grams : 3.1291
-|  Gunning Fog : [('Lets', 'grow'), ('grow', 'a'), ('a', 'business'), ('business', 'my'), ('my', 'dude'), ('dude', '.')]
-|  Keyframes: []
+|  Lemmas : ['A', 'test', 'prompt', 'for', 'render', '.']
+|  Position counts: : Counter({'NN': 2, 'DT': 1, 'IN': 1, 'VBG': 1, '.': 1})
+|  List of bi-grams : 8.841846274778883
+|  Gunning Fog : [('A', 'test'), ('test', 'prompt'), ('prompt', 'for'), ('for', 'render'), ('render', '.')]
+|  Keyframes: ['test prompt']
 |
 |  General sentiment : Neutral
 |  General sentiment score : 0.0
 |  General toxicity flags : False
 |  General toxicity score : 0.0
 |
-|  (Count) words : 6 
-|  (Count) characters : 30 
+|  (Count) words : 5 
+|  (Count) characters : 28 
 |  (Count) exclamations : 0 
 |  (Count) questions : 0 
 |  (Count) periods : 1 
 |  (String Count) hashtags : [] 
 |  (String Count) emojis : [] 
 |  (String Count) casing : Sentence case 
-|  (String Count) matched_keywords : ['grow', 'business'] 
+|  (String Count) matched_keywords : [] 
 |
-|  (Count) current sessions : 47 
+|  (Count) current sessions : 439 
 |
-|  Recent user actions : ['event_RanSulfurViaMain']
+|  Recent user actions : ['event_RanSulfurViaAPI']
 |
 | Percentage of user actions to sulfur runs: 0.0%
 |
@@ -321,9 +320,9 @@
 |  Advanced tense:  Present 
 |  Advanced sentence types:  Declarative 
 |  Advanced clause counts:  1 
-|  Advanced token count:  ['Lets', 'grow', 'a', 'business', 'my', 'dudes.'] 
-|  Advanced formality:  Informal 
-|  Advanced formality [positive] : informality [negative] score:  -1 
+|  Advanced token count:  ['A', 'test', 'prompt', 'for', 'rendering.'] 
+|  Advanced formality:  Neutral 
+|  Advanced formality [positive] : informality [negative] score:  0 
 |  * If the number is positive, it is a formal score. Opposites apply. 
 |  Advanced slang that was found:  None 
 |  User's tone:  ['neutral'] 
@@ -331,30 +330,16 @@
 |  User's audience:  General 
 |  User's polarity:  Neutral 
 |
-|  Final anomaly score:  68.0 
-|  Final mood score:  90.0 
-|  Final change score:  46.0 
+|  Final anomaly score:  0.0 
+|  Final mood score:  0.0 
+|  Final change score:  0.0 
 |
-|  Final detected anomalies:  ["⚠️ Sentiment shift: User mood 'Neutral' vs Avg mood 'Negative'", '😐 ML Sentiment Stable (0.00)', "✅ Day: Type 'exclamation' stable (0.0% vs avg -7.69%, Δ 7.69%)", "✅ Day: Intent 'commanding' stable (0.0% vs avg 0.0%, Δ 0.00%)", "📊 Week: Type 'exclamation' change -36.13% vs avg -1.04% (Δ 35.09%)", "✅ Week: Type 'statement' stable (-10.95% vs avg -0.8%, Δ 10.15%)", "📊 Week: Type 'command' change 41.96% vs avg 2.48% (Δ 39.48%)", "✅ Week: Type 'question' stable (5.12% vs avg -2.52%, Δ 7.64%)", "📊 Week: Intent 'commanding' change -51.78% vs avg -5.61% (Δ 46.17%)", "[DEBUG] Week: No average for intent 'informing'", "[DEBUG] Week: No average for intent 'comparing'", "📊 Week: Intent 'expressing' change 41.96% vs avg 2.73% (Δ 39.23%)", "[DEBUG] Week: No average for intent 'asking'", "✅ Month: Type 'exclamation' stable (-3.58% vs avg 11.01%, Δ 14.59%)", "✅ Month: Intent 'commanding' stable (-4.56% vs avg -1.14%, Δ 3.42%)"] 
+|  Final detected anomalies:  ['[DEBUG] Could not extract anomalies, defaulting to 0%.'] 
 |
-|  Final detected anomalies (block) :   🔎 Final Anomaly Confidence Score: 68.0%
-    - Mood Score Contribution: 90.0%
-    - Change Score Contribution: 46.0%
-| ⚠️ Sentiment shift: User mood 'Neutral' vs Avg mood 'Negative' |
-| 😐 ML Sentiment Stable (0.00) |
-| ✅ Day: Type 'exclamation' stable (0.0% vs avg -7.69%, Δ 7.69%) |
-| ✅ Day: Intent 'commanding' stable (0.0% vs avg 0.0%, Δ 0.00%) |
-| 📊 Week: Type 'exclamation' change -36.13% vs avg -1.04% (Δ 35.09%) |
-| ✅ Week: Type 'statement' stable (-10.95% vs avg -0.8%, Δ 10.15%) |
-| 📊 Week: Type 'command' change 41.96% vs avg 2.48% (Δ 39.48%) |
-| ✅ Week: Type 'question' stable (5.12% vs avg -2.52%, Δ 7.64%) |
-| 📊 Week: Intent 'commanding' change -51.78% vs avg -5.61% (Δ 46.17%) |
-| [DEBUG] Week: No average for intent 'informing' |
-| [DEBUG] Week: No average for intent 'comparing' |
-| 📊 Week: Intent 'expressing' change 41.96% vs avg 2.73% (Δ 39.23%) |
-| [DEBUG] Week: No average for intent 'asking' |
-| ✅ Month: Type 'exclamation' stable (-3.58% vs avg 11.01%, Δ 14.59%) |
-| ✅ Month: Intent 'commanding' stable (-4.56% vs avg -1.14%, Δ 3.42%) |
+|  Final detected anomalies (block) :   🔎 Final Anomaly Confidence Score: 0.0%
+    - Mood Score Contribution: 0.0%
+    - Change Score Contribution: 0.0%
+| [DEBUG] Could not extract anomalies, defaulting to 0%. |
  
 |
 |----------------------------------------------------|
@@ -365,19 +350,10 @@
 |
 |   [!] Description: Provides a general output score the data profile renderer.
 |
-|  Overall_score: 32
-|  Per_key_scores: {'INPUT_TEXT': 18, 'INPUT_TOO_LONG': 20, 'INPUT_HAD_UNACCEPTED_PARTS': 80, 'PREDICTED_USER_DEVICE': 3, 'PREDICTED_USER_DEVICE_ACCURACY': 79, 'DATABASE_AVERAGE_DEVICE': 5, 'DATABASE_AVERAGE_DEVICE_ACCURACY': 68, 'USER_MOOD_PREDICTED': 3, 'GLOBAL_MOOD_PREDICTED': 4, 'USER_MOOD_PREDICTED_ACCURACY': 100, 'GLOBAL_MOOD_PREDICTED_ACCURACY': 72, 'MOOD_AVERAGE_ACCURACY_ALL': 86, 'USER_SENTENCE_TYPE': 3, 'USER_SENTENCE_INTENT': 4, 'USER_SENTENCE_TYPE_ACCURACY': 30, 'USER_SENTENCE_INTENT_ACCURACY': 30, 'GLOBAL_SENTENCE_TYPE': 3, 'GLOBAL_SENTENCE_INTENT': 4, 'GLOBAL_SENTENCE_TYPE_ACCURACY': 2, 'GLOBAL_SENTENCE_INTENT_ACCURACY': 1, 'GLOBAL_OVERALL_ACCURACY': 1, 'PREDICTED_USER_LOCATION_COUNTRY': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE': 87, 'PREDICTED_USER_LOCATION_COUNTRY_GLOBAL': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL': 85, 'USER_MAIN_OPPORTUNITY': 4, 'USER_SUBSIDIARY_OPPORTUNITY': 5, 'USER_OPPORTUNITY_ACCURACY': 32, 'RESPONSE_TOTAL_TIME': 43, 'MODEL': 5, 'ADVANCED_MODEL_DEBUG': 43, 'MODEL_DEBUG': 37}
-|  Ranked: [('USER_MOOD_PREDICTED_ACCURACY', 100), ('PREDICTED_USER_LOCATION_CONFIDENCE', 87), ('MOOD_AVERAGE_ACCURACY_ALL', 86), ('PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL', 85), ('INPUT_HAD_UNACCEPTED_PARTS', 80), ('PREDICTED_USER_DEVICE_ACCURACY', 79), ('GLOBAL_MOOD_PREDICTED_ACCURACY', 72), ('DATABASE_AVERAGE_DEVICE_ACCURACY', 68), ('RESPONSE_TOTAL_TIME', 43), ('ADVANCED_MODEL_DEBUG', 43), ('MODEL_DEBUG', 37), ('USER_OPPORTUNITY_ACCURACY', 32), ('USER_SENTENCE_TYPE_ACCURACY', 30), ('USER_SENTENCE_INTENT_ACCURACY', 30), ('INPUT_TOO_LONG', 20), ('INPUT_TEXT', 18), ('DATABASE_AVERAGE_DEVICE', 5), ('USER_SUBSIDIARY_OPPORTUNITY', 5), ('MODEL', 5), ('GLOBAL_MOOD_PREDICTED', 4), ('USER_SENTENCE_INTENT', 4), ('GLOBAL_SENTENCE_INTENT', 4), ('USER_MAIN_OPPORTUNITY', 4), ('PREDICTED_USER_DEVICE', 3), ('USER_MOOD_PREDICTED', 3), ('USER_SENTENCE_TYPE', 3), ('GLOBAL_SENTENCE_TYPE', 3), ('PREDICTED_USER_LOCATION_COUNTRY', 3), ('PREDICTED_USER_LOCATION_COUNTRY_GLOBAL', 3), ('GLOBAL_SENTENCE_TYPE_ACCURACY', 2), ('GLOBAL_SENTENCE_INTENT_ACCURACY', 1), ('GLOBAL_OVERALL_ACCURACY', 1)]
+|  Overall_score: 36
+|  Per_key_scores: {'INPUT_TEXT': 16, 'INPUT_TOO_LONG': 20, 'INPUT_HAD_UNACCEPTED_PARTS': 20, 'PREDICTED_USER_DEVICE': 3, 'PREDICTED_USER_DEVICE_ACCURACY': 80, 'DATABASE_AVERAGE_DEVICE': 5, 'DATABASE_AVERAGE_DEVICE_ACCURACY': 70, 'USER_MOOD_PREDICTED': 3, 'GLOBAL_MOOD_PREDICTED': 4, 'USER_MOOD_PREDICTED_ACCURACY': 100, 'GLOBAL_MOOD_PREDICTED_ACCURACY': 74, 'MOOD_AVERAGE_ACCURACY_ALL': 87, 'USER_SENTENCE_TYPE': 4, 'USER_SENTENCE_INTENT': 4, 'USER_SENTENCE_TYPE_ACCURACY': 90, 'USER_SENTENCE_INTENT_ACCURACY': 92, 'GLOBAL_SENTENCE_TYPE': 4, 'GLOBAL_SENTENCE_INTENT': 4, 'GLOBAL_SENTENCE_TYPE_ACCURACY': 93, 'GLOBAL_SENTENCE_INTENT_ACCURACY': 26, 'GLOBAL_OVERALL_ACCURACY': 72, 'PREDICTED_USER_LOCATION_COUNTRY': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE': 55, 'PREDICTED_USER_LOCATION_COUNTRY_GLOBAL': 3, 'PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL': 86, 'USER_MAIN_OPPORTUNITY': 4, 'USER_SUBSIDIARY_OPPORTUNITY': 4, 'USER_OPPORTUNITY_ACCURACY': 93, 'RESPONSE_TOTAL_TIME': 4, 'MODEL': 1, 'ADVANCED_MODEL_DEBUG': 29, 'MODEL_DEBUG': 35}
+|  Ranked: [('USER_MOOD_PREDICTED_ACCURACY', 100), ('GLOBAL_SENTENCE_TYPE_ACCURACY', 93), ('USER_OPPORTUNITY_ACCURACY', 93), ('USER_SENTENCE_INTENT_ACCURACY', 92), ('USER_SENTENCE_TYPE_ACCURACY', 90), ('MOOD_AVERAGE_ACCURACY_ALL', 87), ('PREDICTED_USER_LOCATION_CONFIDENCE_GLOBAL', 86), ('PREDICTED_USER_DEVICE_ACCURACY', 80), ('GLOBAL_MOOD_PREDICTED_ACCURACY', 74), ('GLOBAL_OVERALL_ACCURACY', 72), ('DATABASE_AVERAGE_DEVICE_ACCURACY', 70), ('PREDICTED_USER_LOCATION_CONFIDENCE', 55), ('MODEL_DEBUG', 35), ('ADVANCED_MODEL_DEBUG', 29), ('GLOBAL_SENTENCE_INTENT_ACCURACY', 26), ('INPUT_TOO_LONG', 20), ('INPUT_HAD_UNACCEPTED_PARTS', 20), ('INPUT_TEXT', 16), ('DATABASE_AVERAGE_DEVICE', 5), ('GLOBAL_MOOD_PREDICTED', 4), ('USER_SENTENCE_TYPE', 4), ('USER_SENTENCE_INTENT', 4), ('GLOBAL_SENTENCE_TYPE', 4), ('GLOBAL_SENTENCE_INTENT', 4), ('USER_MAIN_OPPORTUNITY', 4), ('USER_SUBSIDIARY_OPPORTUNITY', 4), ('RESPONSE_TOTAL_TIME', 4), ('PREDICTED_USER_DEVICE', 3), ('USER_MOOD_PREDICTED', 3), ('PREDICTED_USER_LOCATION_COUNTRY', 3), ('PREDICTED_USER_LOCATION_COUNTRY_GLOBAL', 3), ('MODEL', 1)]
 |
 |----------------------------------------------------|
 
 
-------------------------------------------------
-|                   RESPONSE                   |
-------------------------------------------------
-|
-|  Response Time : 0h 0m 55s, 873ms
-|  Generated on: 2025-08-30 21:17:54  
-|   General debugging only.
-|   *Settings can be changed. SulfurAI may make mistakes.*
-|---------------------------------------|

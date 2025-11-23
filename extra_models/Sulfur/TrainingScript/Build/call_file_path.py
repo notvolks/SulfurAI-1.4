@@ -508,6 +508,11 @@ class Call():
         file_path = os.path.join(folder_path_OuputData_average_device_accuracy, folder_path)
         return file_path
 
+    def api_server_python_cache(self):
+        folder = os.path.join(current_dir, 'api', 'Python', 'SulfurServerSystem',
+                                                                     'cache')
+        return folder
+
     def settings_save_training_data(self):
         folder_path_settings = os.path.join(current_dir, 'settings')
         folder_path = "trainingdata_add.txt"
@@ -589,6 +594,17 @@ class Call():
                                                             folder_path)
         return file_path
 
+    def profile_default_cache(self):
+        folder_path_settings = os.path.join(current_dir, 'returns', 'dataprofiles', 'profiles', 'default', 'cache')
+        folder_path = "cache.txt"
+        file_path = os.path.join(folder_path_settings,
+                                 folder_path)
+        return file_path
+
+    def profile_default_log_cache(self):
+        folder_path = os.path.join(current_dir, 'returns', 'dataprofiles', 'profiles', 'default', 'output_logs')
+        return folder_path
+
     def profile_default(self):
         """
         Could be deprecated in future versions.
@@ -623,6 +639,46 @@ class Call():
         folder_path_i = "Check_device_s.py"
         file_path = os.path.join(folder_path, folder_path_i)
         return file_path
+
+    def sulfur_root(self):
+        folder_path = os.path.join(current_dir)
+        return folder_path
+
+    def cache_AppSecretsFound_appid_developerconsole(self):
+        folder_path = os.path.join(current_dir, 'data', 'cache')
+        folder_path_i = "AppSecretsFound_appid_developerconsole.json"
+        file_path = os.path.join(folder_path, folder_path_i)
+        return file_path
+
+    def EXTERNALAPP_deepsecretsignore_appid_developerconsole(self):
+        folder_path = os.path.join(current_dir, 'apps', 'DeveloperConsole-1.1')
+        folder_path_i = ".deepsecretsignore.json"
+        file_path = os.path.join(folder_path, folder_path_i)
+        return file_path
+
+    def LOCALAPP_paths_appid_settings(self):
+        paths = {
+            "extra": (call.settings_extra_debug(), "no"),
+            "backup": (call.settings_backup(), "yes"),
+            "input": (call.input_limit(), "50"),
+            "input_bypass": (call.settings_input_process_limit(), "no"),
+            "days_ago": (call.settings_ui_days_ago(), "5"),
+            "days_apart": (call.settings_ui_days_apart(), "5"),
+            "weeks_ago": (call.settings_ui_weeks_ago(), "5"),
+            "weeks_apart": (call.settings_ui_weeks_apart(), "5"),
+            "months_ago": (call.settings_ui_months_ago(), "5"),
+            "months_apart": (call.settings_ui_months_apart(), "5"),
+            "years_ago": (call.settings_ui_years_ago(), "5"),
+            "years_apart": (call.settings_ui_years_apart(), "3"),
+            "autotrainer": (call.settings_auto_trainer_extra_debug(), "no"),
+            "auto_trainer_delay": (call.settings_auto_trainer_delay(), "1"),
+            "python_pip": (call.settings_pip_fallback_amount(), "3"),
+            "extra_output": (call.settings_ui_write_to_seperate_output(), "yes"),
+            "training_data": (call.settings_save_training_data(), "yes"),
+            "auto_render_dp": (call.settings_auto_render_dp(), "yes"),
+            "debug_dp": (call.settings_debug_dp(), "no"),
+        }
+        return paths
 
 
 

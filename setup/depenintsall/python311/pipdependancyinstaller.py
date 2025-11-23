@@ -17,7 +17,8 @@ import importlib.util
 import importlib.metadata as importlib_metadata
 from pathlib import Path
 from typing import Iterable, Optional, Set, Tuple, Dict, Any
-
+YELLOW = "\033[93m"
+RESET = "\033[0m"
 # -----------------------------
 # Debug / config read helpers (kept simple)
 # -----------------------------
@@ -1106,6 +1107,8 @@ class run:
 
             # Security / crypto
             "cryptography": {"package": "cryptography", "imports": ["cryptography"], "extras": []},
+            "deepsecrets": {"package": "deepsecrets", "imports": ["deepsecrets"], "extras": []},
+
 
             # Server Hosting
             "flask": {"package": "flask", "imports": ["flask"], "extras": []},
@@ -1389,16 +1392,16 @@ class run:
         print("OPTION 1 — Install using requirements.txt (recommended)")
         print("--------------------------------------------------------")
         print("  Windows (PowerShell):")
-        print(f"      .\\{VENV_DIR.name}\\Scripts\\Activate.ps1")
-        print("      pip install -r requirements.txt\n")
+        print(f"{YELLOW}      .\\{VENV_DIR.name}\\Scripts\\Activate.ps1{RESET}")
+        print(f"{YELLOW}      pip install -r requirements.txt{RESET}\n")
 
         print("  Windows (CMD):")
-        print(f"      .\\{VENV_DIR.name}\\Scripts\\activate.bat")
-        print("      pip install -r requirements.txt\n")
+        print(f"{YELLOW}      .\\{VENV_DIR.name}\\Scripts\\activate.bat{RESET}")
+        print(f"{YELLOW}      pip install -r requirements.txt{RESET}\n")
 
         print("  Linux / macOS (Bash / Zsh):")
-        print(f"      source ./{VENV_DIR.name}/bin/activate")
-        print("      pip install -r requirements.txt\n")
+        print(f"{YELLOW}      source ./{VENV_DIR.name}/bin/activate{RESET}")
+        print(f"{YELLOW}      pip install -r requirements.txt{RESET}\n")
 
         # ------------------------------------------------------------------------------------
         # OPTION 2 — Direct pip installation of only the required fixes
@@ -1406,13 +1409,13 @@ class run:
         print("OPTION 2 — Install only the required packages")
         print("--------------------------------------------------------")
         print("  Windows (CMD):")
-        print(f"    {cmd_cmd}\n")
+        print(f"{YELLOW}    {cmd_cmd}{RESET}\n")
 
         print("  Windows (PowerShell):")
-        print(f"    {powershell_cmd}\n")
+        print(f"{YELLOW}    {powershell_cmd}{RESET}\n")
 
         print("  Linux / macOS (Bash / Zsh):")
-        print(f"    {bash_cmd}\n")
+        print(f"{YELLOW}    {bash_cmd}{RESET}\n")
 
         # ------------------------------------------------------------------------------------
         # NOTES

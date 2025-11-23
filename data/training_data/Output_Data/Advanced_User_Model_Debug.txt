@@ -6,7 +6,7 @@ Advanced mood II (further processed with a different model):  Neutral
 Advanced tense:  Present 
 Advanced sentence types:  Declarative 
 Advanced clause counts:  1 
-Advanced token count:  ['test_endpoint_with_trace'] 
+Advanced token count:  ['A', 'test', 'prompt', 'for', 'rendering.'] 
 Advanced formality:  Neutral 
 Advanced formality [positive] : informality [negative] score:  0 
 Advanced slang that was found:  None 

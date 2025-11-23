@@ -77,7 +77,61 @@
 |   *Only includes changes at least 3 years apart.
 |--------------------------------------------|
 
-|-----------------------|
-|ERROR_TOO_MANY_REQUESTS|
-|-----------------------|
+|--------------------------------------------------------------|
+|                                                               |
+|   Top Countries Trends Based on Userbase: ['England', 'United States', 'United Kingdom']    |
+|                                                               |
+|--------------------------------------------------------------|
+|   🌍 Country: England (GB)
+|--------------------------------------------------------------|
+|                                                               |
+|   📈 Trend Direction: flat
+|   🔍 Top Related Searches:
+|      test speed (100)
+|      driving test (66)
+|      blood test (53)
+|      theory test (36)
+|      internet test (31)
+|   🚀 Rising Related Searches:
+|      ind vs eng test (200)
+|      dvsa change driving test (110)
+|      book driving test uk (110)
+|      change driving test date (80)
+|      dvla book driving test (60)
+|--------------------------------------------------------------|
+|   🌍 Country: United States (US)
+|--------------------------------------------------------------|
+|                                                               |
+|   📈 Trend Direction: flat
+|   🔍 Top Related Searches:
+|      test speed (100)
+|      internet test (35)
+|      test internet speed (32)
+|      pregnancy test (31)
+|      permit test (16)
+|   🚀 Rising Related Searches:
+|      presidential fitness test (400)
+|      ind vs eng test (130)
+|      chipotle iq test (80)
+|--------------------------------------------------------------|
+|   🌍 Country: United Kingdom (GB)
+|--------------------------------------------------------------|
+|                                                               |
+|   📈 Trend Direction: flat
+|   🔍 Top Related Searches:
+|      test speed (100)
+|      driving test (66)
+|      blood test (53)
+|      theory test (36)
+|      internet test (31)
+|   🚀 Rising Related Searches:
+|      ind vs eng test (200)
+|      dvsa change driving test (110)
+|      book driving test uk (110)
+|      change driving test date (80)
+|      dvla book driving test (60)
+
+|                                                               |
+
+|--------------------------------------------------------------|
 

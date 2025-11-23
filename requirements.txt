@@ -37,3 +37,4 @@ emoji
 google-genai
 flask
 uvicorn
+deepsecrets

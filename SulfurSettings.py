@@ -46,27 +46,7 @@ except Exception:
 call = call_file_path.Call()
 
 # ── Settings paths & defaults ──
-paths = {
-    "extra":      (call.settings_extra_debug(),     "no"),
-    "backup":     (call.settings_backup(),          "yes"),
-    "input":      (call.input_limit(),              "50"),
-    "input_bypass": (call.settings_input_process_limit(), "yes"),
-    "days_ago":   (call.settings_ui_days_ago(),     "5"),
-    "days_apart": (call.settings_ui_days_apart(),   "5"),
-    "weeks_ago":   (call.settings_ui_weeks_ago(),   "5"),
-    "weeks_apart": (call.settings_ui_weeks_apart(), "5"),
-    "months_ago":   (call.settings_ui_months_ago(),   "5"),
-    "months_apart": (call.settings_ui_months_apart(), "5"),
-    "years_ago":   (call.settings_ui_years_ago(),   "5"),
-    "years_apart": (call.settings_ui_years_apart(), "1"),
-    "autotrainer": (call.settings_auto_trainer_extra_debug(),     "yes"),
-    "auto_trainer_delay": (call.settings_auto_trainer_delay(), "0"),
-    "python_pip": (call.settings_pip_fallback_amount(),     "3"),
-    "extra_output": (call.settings_ui_write_to_seperate_output(),     "yes"),
-    "training_data": (call.settings_save_training_data(),     "yes"),
-    "auto_render_dp": (call.settings_auto_render_dp(),     "yes"),
-    "debug_dp": (call.settings_debug_dp(),     "yes"),
-}
+paths = call.LOCALAPP_paths_appid_settings()
 
 def ensure(fp, default):
     if not os.path.isfile(fp) or os.path.getsize(fp) == 0:

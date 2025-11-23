@@ -1,5 +1,5 @@
 VolksHub & SulfurAI – Terms of Service
-Effective Date: 13 August 2025
+Effective Date: 22 November 2025
 
 These Terms of Service ("TOS") govern your use of all services, software, platforms, codebases, assets, and tools provided by VolksHub and its AI division SulfurAI (collectively, “Services”). By installing, accessing, or using any part of the Services, you agree to the terms set forth herein **and** to the separate VolksHub TOS located at:
 
@@ -41,6 +41,7 @@ A VolksHub production/The VolksHub TOS
    a. SulfurAI open-source SDK and DevKit programs permit integration into External Applications only under their specific TOS.
    b. External Applications must preserve provided folder structures (e.g., "data") and comply with SDK/DevKit terms.
    c. VolksHub reserves the right to disable non-compliant External Applications in marketplaces or installations.
+   d. VolksHub, SulfurAI, and their respective affiliates and partners shall bear no responsibility or liability for any third-party applications, platforms, or services through which malicious code may be executed. You acknowledge and agree that the use of such external applications is undertaken at your sole risk and that you are solely responsible for any resulting damages, breaches, or security vulnerabilities.
 
 7. Account Registration & Security
    a. Certain SulfurAI features require registration and an API key. You must provide accurate information and safeguard credentials.
