@@ -1,0 +1,29 @@
+Developer Release 1-4 is compatible with:
+
+-Developer Release 1-4 or 10400d // with a compatibility score of [10/10]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+
+**Compatibility Score Guide**  
+- 0: Not tested
+- 1–3: Not recommended (manual fixes required)  
+- 4–6: Moderate setup required  
+- 7–8: Mostly smooth, minor setup  
+- 9–10: Plug-and-play  

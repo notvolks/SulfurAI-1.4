@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SulfurAI Developer Kit</title>
+<style>
+body {
+font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+color: #333;
+background: #fafafa;
+display: flex;
+}
+/* Sidebar */
+.sidebar {
+position: fixed;
+top: 0;
+left: 0;
+width: 220px;
+height: 100vh;
+background: #fff;
+border-right: 1px solid #ddd;
+padding: 1rem;
+overflow-y: auto;
+}
+.sidebar h2 {
+font-size: 1.1rem;
+margin-bottom: 1rem;
+}
+.sidebar ul {
+list-style: none;
+padding: 0;
+}
+.sidebar li {
+margin-bottom: 0.7rem;
+}
+.sidebar a {
+text-decoration: none;
+color: #007acc;
+}
+/* Main content */
+.container {
+max-width: 800px;
+margin-left: 900px;
+padding: 2rem 1rem;
+}
+header {
+text-align: center;
+margin-bottom: 2rem;
+}
+h2 {
+border-bottom: 1px solid #ddd;
+padding-bottom: 0.3rem;
+margin-top: 2rem;
+}
+pre {
+background: #f4f4f4;
+padding: 1rem;
+overflow-x: auto;
+}
+code {
+font-family: Consolas, "Courier New", monospace;
+background: #f4f4f4;
+padding: 0.2rem 0.4rem;
+border-radius: 3px;
+}
+footer {
+text-align: center;
+font-size: 0.9rem;
+color: #666;
+margin-top: 3rem;
+padding-top: 1rem;
+border-top: 1px solid #eee;
+}
+</style>
+</head>
+<body>
+
+
+<nav class="sidebar">
+<h2>Sections</h2>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#api">API Reference</a></li>
+<li><a href="#server">Sulfur Server System</a></li>
+<li><a href="#model-info">Model Info</a></li>
+<li><a href="#best-practices">Best Practices</a></li>
+<li><a href="#directory-guide">Directory Guide</a></li>
+<li><a href="#apps">Apps</a></li>
+<li><a href="#bias-notice">Bias Notice</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+</nav>
+
+
+<div class="container">
+<header>
+<h1>SulfurAI Developer Kit</h1>
+<p>Everything you need to integrate, modify and extend SulfurAI</p>
+<p>Last updated: 1 Jan 2026, accurate as of: [Build 10400d]</p>
+</header>
+
+
+
+    <section id="installation">
+      <h2>Installation</h2>
+      <p>Install SulfurAI via the INSTALLER folder:</p>
+      <pre><code>INSTALLER/INSTALL SULFURAI</code></pre>
+      <p>Or run the automatic installer:</p>
+      <pre><code>SulfurAI.py</code></pre>
+    </section>
+
+    <section id="api">
+      <h2>API Reference</h2>
+      <br>
+      <p>|      Python              |</p>
+      <br>
+      <p>To verify that your script has been added to sys.path (if you installed without PIP), run SulfurAI.py once.</p>
+       <p>Then import Sulfur into your script via:</p>
+       <pre><code class="language-python">import SulfurAI</code></pre>
+        <br>
+      <p>Every API script will have documentation inside the IDE, so here is a list of every api function:</p>
+      <p>(Assuming you imported SulfurAI as SulfurAI)</p>
+       <p>|--------SulfurAI Client------|</p>
+        <p>This is a general class of functions:</p>
+      <pre><code class="language-python">
+      SulfurAI.run_locally
+      SulfurAI.get_output_data
+      SulfurAI.get_output_data_ui
+      SulfurAI.retrieve_current_models
+      SulfurAI.retrieve_active_model
+      SulfurAI.retrieve_active_model_history
+
+
+      </code></pre>
+
+        <br>
+
+
+        <p>|--------SulfurAI DataProfiles------|</p>
+        <p>SulfurAI DataProfiles produce a comprehensive user profile:</p>
+      <pre><code class="language-python">
+      SulfurAI.render_dataprofile
+      SulfurAI.return_dataprofiles
+      SulfurAI.return_offline_dataprofiles (Does not work with online models, check documentation)
+      SulfurAI.return_annotations_dataprofiles (Does not work with online models, check documentation)
+
+
+
+      </code></pre>
+
+      <br>
+        <p>|--------SulfurAI Console------|</p>
+        <p>The console controls terminal level operations related to SulfurAI:</p>
+         <p>Importing the console + setting it up:</p>
+       <pre><code class="language-python">
+      import SulfurConsole
+      sulfur_console = SulfurConsole.console()
+      </code></pre>
+      <p>(Assuming you imported Console as sulfur_console)</p>
+          <pre><code class="language-python">
+      sulfur_console.set_api_debug_print
+      sulfur_console.check_api_debug_print
+      </code></pre>
+
+      </section>
+
+        <section id="server">
+      <h2>Additional API reference - Sulfur Server System</h2>
+            <br>
+       <p>The Sulfur Server System is a custom API host that lets you create local—and soon online—servers and input APIs.</p>
+        <pre>&gt; &quot;Note: The SSS does not support deepthinking aka profile rendering.&quot;</pre>
+
+
+      <p>|--------SulfurAI Local-Servers ------|</p>
+            <br>
+
+        <p>Functions:</p>
+       <pre><code class="language-python">
+       srv = SulfurAI.server.get
+       srv.host_local_endpoint
+       srv.add_input_endpoint
+       srv.get_output_endpoint
+       srv.wait_for_output_endpoint
+      </code></pre>
+
+
+        <p>Using the API:</p>
+
+       <pre><code class="language-python">
+       Hosting a local server in python:
+           import SulfurAI
+           srv = SulfurAI.server.get()
+           srv.host_local_endpoint()
+      </code></pre>
+
+         <pre><code class="language-python">
+       Adding an input:
+           import SulfurAI
+           srv = SulfurAI.server.get()
+           srv.add_input_endpoint(input_string="Your input")
+      </code></pre>
+
+           <pre><code class="language-python">
+       Waiting for output and retrieving it:
+           import SulfurAI
+           srv = SulfurAI.server.get()
+           srv.add_input_endpoint(input_string="Your input") # returns the id to call the output (as a dict)
+           srv.wait_for_output_endpoint(id="Your ID",input_string="Your input (optional as a fallback)") # returns a status
+           srv.srv.get_output_endpoint(id="Your ID",input_string="Your input (optional as a fallback)") # returns the output as a dict
+      </code></pre>
+
+
+        </section>
+
+
+
+    <section id="model-info">
+      <h2>Model Info + Creating / Identifying models.</h2>
+      <p>SulfurAI uses multiple pre-trained transformer/classification models optimized for conversational tasks. Default model: <code>sulfur_drl_[build]</code>.</p>
+        <p>Creating models isn't supported in build 10400d, but you can find current ones with the SulfurAI API.</p>
+        <br>
+           <p>(Assuming you imported SulfurAI as SulfurAI)</p>
+             <pre><code class="language-python">print(SulfurAI.retrieve_current_models())</code></pre>
+             <pre><code class="language-python">print(SulfurAI.retrieve_active_model())</code></pre>
+             <pre><code class="language-python">print(SulfurAI.retrieve_active_model_history())</code></pre>
+
+    </section>
+
+
+      <section id="best-practices">
+          <br>
+          <h2>Best practices when writing API code:</h2>
+      <pre><code>
+
+          <p>1. Use the SulfurAI import (don't abbrievate 'as')</p>
+          <p>2. Use custom SulfurAI tracebacks: [from scripts.ai_renderer_sentences.error import SulfurError] and [raise SulfurError(message=f"")]</p>
+          <p>3. Use the HollyFormat to structure your code [documentation/HollyFormat]</p>
+      </code></pre>
+          </section>
+
+    <section id="directory-guide">
+      <h2>Directory Guide</h2>
+      <p>Here is a brief overview of the SulfurAI directory (folders) structure:</p>
+       <pre><code>
+     api - Hosts the API code and server cache.
+    </code></pre>
+       <pre><code>
+     apps - contains appdata for external apps.
+    </code></pre>
+       <pre><code>
+     data - contains data for the renderer & cache.
+    </code></pre>
+          <pre><code>
+     documentation - the revamped developer SDK.
+    </code></pre>
+        <pre><code>
+     extra_models - contains all ai models & related scripts used in Sulfur.
+    </code></pre>
+        <pre><code>
+     installer - contains installer scripts for [apps].
+    </code></pre>
+        <pre><code>
+     model_info - contains information about all models in Sulfur, see [extra_models].
+    </code></pre>
+         <pre><code>
+     returns - the renders of all models, see [extra_models].
+    </code></pre>
+       <pre><code>
+     scripts - contains ai render scripts which assist [extra_models].
+    </code></pre>
+         <pre><code>
+     settings - contains sulfur settings.
+    </code></pre>
+        <pre><code>
+     setup - contains files used in the startup or installation of Sulfur.
+    </code></pre>
+
+    </section>
+
+
+
+    <section id="apps">
+      <h2>Apps</h2>
+      <p>SulfurAI has support for external apps.</p>
+
+        <p>View current apps in the "apps" folder, and install new ones in the "installer" folder.</p>
+        <p>You can import apps from other projects.</p>
+        <pre>&gt; &quot;⚠️ Only install apps from *trusted* sources. Malicious code can be ran in apps. We do not take responsibility for your installed apps.&quot;</pre>
+
+        <p>Default apps:</p>
+
+        <pre><code class="language-python">
+       Developer-Console:
+           An app that helps developers debug SulfurAI and package it for personal use.
+      </code></pre>
+
+         <pre><code class="language-python">
+       SulfurAI-Dashboard-Assets:
+           Assets for the SulfurAI dashboard.
+           Find the dashboard in the root folder.
+      </code></pre>
+
+           <pre><code class="language-python">
+       SulfurAI-Settings:
+           Settings for SulfurAI & the renderer.
+           Find the settings in the root folder.
+      </code></pre>
+    </section>
+
+
+    <section id="bias-notice">
+      <h2>Bias Notice</h2>
+      <p>⚠️ SulfurAI uses pre-trained data and may reflect biases present in the original dataset. Exercise caution for sensitive tasks and consider using custom models.</p>
+    </section>
+
+    <section id="license">
+      <h2>License</h2>
+      <p>MIT License, 2025 VolksHub (Verified author on behalf of VolksHub: notvolks). See <code>LICENSE</code> file for details.</p>
+    </section>
+
+    <footer>
+      <p>Send developer related questions to: nb.volkshub.inquiries@gmail.com</p>
+    </footer>
+  </div>
+</body>
+</html>

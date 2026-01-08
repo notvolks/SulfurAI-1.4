@@ -1,0 +1,1 @@
+The General Developer's notebook is in this same directory to help you. Old, outdated guides may be in the folders included.

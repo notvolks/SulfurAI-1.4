@@ -1,0 +1,65 @@
+Please report errors you have found to VolksHub with the Error code.
+
+
+Error codes ():
+1: 
+There was an error processing the input data. Restore with a new version.
+
+2:
+No input.txt file was found. Restore with a new version.
+
+3:
+No attributes.txt file was found. Restore with a new version.
+
+4:
+No output.txt file was found. Restore with a new version.
+
+5:
+No backup training data available for SK model. Restore backup data or install new version.
+
+6:
+Value Error backup training data found for SK model. Install new version.
+
+7:
+External exception while running backup training data. Re-start sulfur. If issue persists, change input or switch to a newer version (possible fix).
+
+8:
+Critical Training Data Error. A minimum of 3 parameters is needed. File path DATA/ai_renderer/training_data_sk/data.txt AND backup data could not be satisfied with use.
+Re-start sulfur. If issue persists, change input or switch to a newer version (possible fix).
+
+9:
+Accuracy is divided by 0 in Mean_device_s.py resulting in zeroDivisionError. Check Training Data or Re-instate it OR switch to a newer version.
+
+10:
+Uncaught Value error in Mean_device_s.py. Check Training Data or Re-instate it OR switch to a newer version.
+
+11:
+Error processing script preferences_basic_comapre_s.py
+
+12:
+There was an error verifying the input path [SECURITY BREACH]. To fix:
+-Contact volkshub support with the error log and your sulfur version (remove training data)
+-Install a new version unless support has told you otherwise.
+
+**This error could mean your version has either been intentionally modified by you or modified by another for malicious intent**
+
+13:
+There was an error writing the output_data for sentence_detectAndInfer_s.py
+-Fix by changing input and reporting to VolksHub, or upgrade to a newer version for a possible fix.
+
+14:
+There was an error getting permissions to write/process sentence_detectAndInfer_s.py
+-Fix by running sulfur as administrator or upgrading to a new version.
+
+15:
+There was a general error concerning sentence_detectAndInfer_s.py
+-Fix by upgrading to a newer version or reading the in-console error message.
+
+16:
+There was an error accessing training data for sentence_detectAndInfer_s.py
+-Fix by running sulfur as administrator or upgrading to a new version.
+
+
+
+
+

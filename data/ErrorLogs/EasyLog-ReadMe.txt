@@ -1,0 +1,1 @@
+The file "EasyLog.txt" is the general error log.
