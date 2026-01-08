@@ -1,0 +1,13 @@
+A list of every events_hoster event (not in order):
+
+event_ClearedCache
+event_OpenedSettings
+event_OpenedDashboard
+event_RanSulfurViaMain
+event_SetupAPILocal
+event_RanSulfurViaAPI
+event_SetupServerAPI
+event_APIRetrieveCurrentModels
+
+
+=====Does not include events from external apps=====

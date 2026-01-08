@@ -1,0 +1,76 @@
+
+VolksHub - Privacy Policy
+Effective Date: 2 August 2025
+
+VolksHub is committed to protecting your privacy and handling your data with transparency, security, and care. This Privacy Policy explains how we collect, use, store, and protect your data, and outlines your rights in relation to it.
+
+1. Contributor Anonymity
+Unless explicit written consent is provided, no contributors, developers, testers, or collaborators will be named, credited, or disclosed publicly.
+
+You may choose to be acknowledged in documentation, changelogs, or credits by opting in.
+
+Requests for recognition can be sent to our team through the official communication channel or project contact email.
+
+If you do not opt in, you will remain fully anonymous in all public-facing materials.
+
+2. Data We Collect
+VolksHub minimizes data collection and only gathers the following where necessary:
+
+Basic technical metadata (e.g., error logs, crash reports – anonymized)
+
+Contact details (if you provide them for support, collaboration, or recognition)
+
+Analytics data (collected in aggregate, with no personally identifying information)
+
+We do not collect:
+
+Your personal files
+
+Any biometric, financial, or sensitive personal data
+
+Persistent identifying information without consent
+
+3. How We Use Your Data
+Data collected may be used for the following purposes:
+
+To improve performance, stability, and usability of VolksHub products
+
+To respond to inquiries, bug reports, or feature suggestions
+
+To ensure legal compliance and protect against abuse or misuse of the platform
+
+We do not sell, rent, or share your personal data with third parties unless required by law or with your consent.
+
+4. Data Storage and Security
+We store data securely using encrypted services and best-practice infrastructure. VolksHub employs the following to protect your data:
+
+Secure storage and access controls
+
+Limited data retention (data is deleted when no longer needed)
+
+Regular auditing and monitoring of access and activity
+
+5. Your Rights (GDPR & Global Compliance)
+Depending on your jurisdiction, you may have the right to:
+
+Access the data we hold about you
+
+Request correction or deletion of your data
+
+Withdraw consent at any time
+
+Object to data processing or request a data export
+
+To exercise your rights, contact us via the official email or contact method provided in the software or documentation.
+
+6. Third-Party Services
+VolksHub may integrate optional third-party tools (such as analytics, error reporting, or platform integrations). These services will be clearly disclosed, and their use will always comply with this Privacy Policy and applicable data protection laws.
+
+7. Children’s Privacy
+VolksHub does not knowingly collect or process data from children under the age of 13 (or higher age if required by local law). If we become aware of such data, we will delete it immediately.
+
+8. Changes to This Policy
+We may update this Privacy Policy to reflect improvements or legal changes. If significant changes are made, we will notify users through appropriate channels. The latest version will always be available in the root folder of your downloaded files and on our official site.
+
+If you have any concerns, data requests, or opt-in acknowledgments, please contact us at:
+📧 nb.volkshub.inquiries@gmail.com

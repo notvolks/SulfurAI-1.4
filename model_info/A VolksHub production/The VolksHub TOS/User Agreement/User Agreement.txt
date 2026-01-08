@@ -1,0 +1,91 @@
+VolksHub - User Agreement
+Effective Date: 2 August 2025
+
+This User Agreement ("Agreement") is a legal contract between you ("User") and VolksHub, governing your use of any VolksHub software, services, files, platforms, or content (collectively, the “Services”). By installing, accessing, or using any part of the Services, you agree to be bound by this Agreement.
+
+1. Acceptance of Terms
+By using VolksHub Services, you acknowledge that you have read, understood, and agreed to:
+
+This User Agreement
+
+The accompanying Terms of Service
+
+The Privacy Policy
+
+Any additional license files, notices, or conditions included in a specific project
+
+If you do not agree to these terms, you are not authorized to use the Services.
+
+2. User Rights and License
+VolksHub grants you a limited, non-exclusive, non-transferable, revocable license to use the Services for personal, educational, or non-commercial purposes, unless otherwise permitted in writing.
+
+You may:
+
+Use the software in accordance with included instructions
+
+Create backups for personal use
+
+Submit feedback or suggestions voluntarily (we may use them without obligation)
+
+You may not:
+
+Distribute, sublicense, or resell the Services without written permission
+
+Reverse engineer, decompile, or modify core components unless allowed by license
+
+Use the Services for illegal, harmful, or abusive purposes
+
+Misrepresent affiliation with VolksHub or its contributors
+
+3. Content Ownership and Attribution
+All intellectual property (IP) rights related to VolksHub, including code, assets, documentation, and branding, remain the property of VolksHub or its respective contributors (where applicable).
+
+Contributors remain anonymous by default unless they explicitly request attribution.
+
+You may not falsely claim ownership or authorship of any VolksHub material.
+
+4. User Responsibilities
+You agree to:
+
+Use the Services responsibly and ethically
+
+Respect licensing terms of third-party components, if applicable
+
+Protect your systems from potential risks when modifying or importing files
+
+Regularly back up your own data if integrating VolksHub tools into larger projects
+
+5. Disclaimer of Warranties
+VolksHub provides all Services “AS IS” and “AS AVAILABLE”. We do not guarantee that the Services will be uninterrupted, error-free, or suitable for any specific purpose.
+
+6. Limitation of Liability
+To the fullest extent permitted by law, VolksHub shall not be held liable for:
+
+Any indirect, incidental, or consequential damages
+
+Loss of data, business interruption, or system failure
+
+Security vulnerabilities introduced by third-party modifications or misuse
+
+Your use of the Services is at your own risk.
+
+7. Termination
+VolksHub reserves the right to suspend or terminate your access to the Services:
+
+If you breach this Agreement or related policies
+
+For unlawful or abusive use
+
+At our sole discretion, with or without notice
+
+Upon termination, your right to use the Services will end immediately.
+
+8. Governing Law
+This Agreement shall be governed by and interpreted under the laws of the jurisdiction where VolksHub is registered. Any disputes shall be resolved in that jurisdiction's courts.
+
+9. Modifications
+VolksHub may update this Agreement at any time. Continued use of the Services after changes are made constitutes your acceptance of the revised terms.
+
+10. Contact
+For questions, requests, or permissions, contact:
+📧 nb.volkshub.inquiries@gmail.com

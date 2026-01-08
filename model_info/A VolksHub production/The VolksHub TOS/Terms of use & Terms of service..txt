@@ -1,0 +1,58 @@
+VolksHub - Terms of Service
+Effective Date: 2 August 2025
+
+By accessing or using any services, software, or files provided by VolksHub, you agree to the following Terms of Service ("TOS"). Please read them carefully.
+
+1. No Waiver of Rights
+Failure by VolksHub to enforce any part of these Terms shall not be considered a waiver of any rights. We reserve all rights not expressly granted.
+
+2. Use of Modified Files & Disclaimer
+VolksHub is not responsible for any issues, damages, or liabilities that arise from the use, modification, or distribution of our files, software, or game code.
+
+VolksHub does NOT authorize the sharing or redistribution of modified versions of our files without explicit written permission.
+
+Any modifications made to the original project or code are done at your own risk, and you are solely responsible for any consequences.
+
+Only obtain files from verified sources or the official VolksHub website. Downloading from third parties may lead to corrupted or unsafe data.
+
+3. Project-Specific Terms
+Each VolksHub project may include its own TOS file, typically named "Terms of service.txt" located in the project's root directory. These terms are legally binding and supplement this general TOS. You are responsible for reviewing them before using any part of the project.
+
+4. Service Availability
+VolksHub services, tools, and software are provided on an "AS-IS" and "AS-AVAILABLE" basis. We do not guarantee uninterrupted service or the absence of errors, bugs, or vulnerabilities.
+
+5. Termination of Access
+We reserve the right to suspend or terminate your access to any VolksHub service, platform, or resource at our sole discretion, at any time, and without prior notice, for any reason, including suspected violation of this TOS or applicable law.
+
+6. Company Independence and Structure
+VolksHub is an independent entity, which may be operated under or in association with other corporate bodies. Regardless of ownership or structure, all associated policies, licenses, and terms contained within folders or distribution packages are considered legally binding and must be accepted to use any services.
+
+7. User Conduct
+You agree to use VolksHub services only for lawful purposes. You agree not to:
+
+Reverse engineer, decompile, or tamper with any VolksHub software.
+
+Use the software or services for any unlawful, malicious, or unauthorized purpose.
+
+Attempt to gain unauthorized access to any server, system, or data associated with VolksHub.
+
+8. Intellectual Property
+Unless explicitly stated otherwise, all content, code, branding, and software remain the intellectual property of VolksHub. You may not copy, modify, distribute, or reuse any part of our content without prior written permission.
+
+9. Limitation of Liability
+Under no circumstances will VolksHub or its affiliates be liable for any indirect, incidental, special, or consequential damages resulting from your use of our services, including but not limited to:
+
+Data loss
+
+Software failure
+
+Security vulnerabilities introduced by third-party tools or modifications
+
+10. Jurisdiction
+These Terms are governed by and construed in accordance with the laws of the jurisdiction in which VolksHub is registered. Any legal disputes shall be handled in the courts of that jurisdiction.
+
+11. Modifications to Terms
+VolksHub reserves the right to update or modify this TOS at any time. Continued use of our services after changes are published constitutes acceptance of the revised Terms.
+
+If you do not agree to these terms, do not use, copy, modify, or distribute any VolksHub products or services.
+

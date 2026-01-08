@@ -1,0 +1,8 @@
+default====False
+name====gemini-2.5-flash
+main_model====nan
+data====nan
+architechture====MoE
+server_support_local====False
+server_support_online====True
+encrypted_secure====False

@@ -1,0 +1,8 @@
+default====False
+name====stabilityai/stablelm-zephyr-3b
+main_model====nan
+data====nan
+architechture====StableLM-3B
+server_support_local====True
+server_support_online====True
+encrypted_secure====False
