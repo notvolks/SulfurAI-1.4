@@ -1,0 +1,4 @@
+App Version: 0.1.3
+Renderer Version: v-1-4-00 Public Release
+Console Version: 0.1
+Release date: 8 January 2026
