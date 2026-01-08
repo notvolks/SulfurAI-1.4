@@ -15,7 +15,7 @@
 
 **See your statistics in one place**
 
-Dig deeper with statistics we know you care about.
+Dig deeper with just the statistics we know you care about.
 
 <br clear="right"/>
 
@@ -103,6 +103,7 @@ See the developer guide <a href="https://htmlpreview.github.io/?https://github.c
 </a>
 
 <br>
+
 
 
 
