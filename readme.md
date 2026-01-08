@@ -75,7 +75,7 @@ Gemini has the full scope of your needs.
 ----
 
 
-## Contributing & Developor's guide.
+## Contributing & Developer's guide.
 
 See our [Code of Conduct](https://github.com/notvolks/SulfurAI-1.3/blob/main/CODE_OF_CONDUCT.md) before submitting PRs.  
 See the developer guide <a href="https://htmlpreview.github.io/?https://github.com/notvolks/SulfurAI-1.3/blob/decals/GeneralDeveloper'sNotebook.html"><strong>here</strong></a> 
@@ -103,5 +103,6 @@ See the developer guide <a href="https://htmlpreview.github.io/?https://github.c
 </a>
 
 <br>
+
 
 
