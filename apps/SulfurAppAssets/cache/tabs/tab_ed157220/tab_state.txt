@@ -1,0 +1,366 @@
+{
+  "page": "ChannelPage",
+  "signed_in": true,
+  "user_id": null,
+  "keyring_name": "auth_BFInRcvH",
+  "token_expiry": 1767908246.973893,
+  "refresh_keyring_name": "auth_BFInRcvH_refresh",
+  "google_api_key_name": "sulfur-google-api-key-tab_ed157220",
+  "title": "User's Channel",
+  "search_index": {
+    "names": [
+      "dashboard",
+      "videos",
+      "chatbot",
+      "info"
+    ],
+    "pages": {
+      "Videos": [
+        {
+          "path": "Videos/Column",
+          "title": "column"
+        },
+        {
+          "path": "Videos/Column/Videos",
+          "title": "videos"
+        },
+        {
+          "path": "Videos/Column/Predict the Growth of your Videos",
+          "title": "predict the growth of your videos"
+        },
+        {
+          "path": "Videos/Column/Container",
+          "title": "container"
+        },
+        {
+          "path": "Videos/Column/Stack",
+          "title": "stack"
+        },
+        {
+          "path": "Videos/Column/Stack/Column",
+          "title": "column"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column",
+          "title": "column"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack",
+          "title": "stack"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container",
+          "title": "container"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row",
+          "title": "row"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column",
+          "title": "column"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container",
+          "title": "container"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Row",
+          "title": "row"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Row/Container",
+          "title": "container"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Row/Container/Container",
+          "title": "container"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Row/Container/Container/Row",
+          "title": "row"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Row/Container/Container/Row/Predicted Growth",
+          "title": "predicted growth"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Row/Container/Container/Row/Container",
+          "title": "container"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Row/Container/Container/LineChart",
+          "title": "linechart"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Row/Container/Container/Container",
+          "title": "container"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Row/Container/Container",
+          "title": "container"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Row/Container",
+          "title": "container"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Container",
+          "title": "container"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Container/AI Explanation",
+          "title": "ai explanation"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Container/Column",
+          "title": "column"
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container/Row/Column/Container/Container/Column/Select a video to see AI analysis.",
+          "title": "select a video to see ai analysis."
+        },
+        {
+          "path": "Videos/Column/Stack/Column/Column/Stack/Container",
+          "title": "container"
+        }
+      ],
+      "Dashboard": [
+        {
+          "path": "Dashboard/Column",
+          "title": "column"
+        },
+        {
+          "path": "Dashboard/Column/Dashboard",
+          "title": "dashboard"
+        },
+        {
+          "path": "Dashboard/Column/Overview: Predict Subscriber Growth & Revenue",
+          "title": "overview: predict subscriber growth & revenue"
+        },
+        {
+          "path": "Dashboard/Column/Container",
+          "title": "container"
+        },
+        {
+          "path": "Dashboard/Column/Stack",
+          "title": "stack"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column",
+          "title": "column"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row",
+          "title": "row"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container",
+          "title": "container"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container/Container",
+          "title": "container"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container/Container/Row",
+          "title": "row"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container/Container/Row/Subscriber Growth",
+          "title": "subscriber growth"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container/Container/Row/Container",
+          "title": "container"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container/Container/LineChart",
+          "title": "linechart"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container/Container/Container",
+          "title": "container"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container/Container",
+          "title": "container"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Container",
+          "title": "container"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row",
+          "title": "row"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container",
+          "title": "container"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container/Revenue Data",
+          "title": "revenue data"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container/Container",
+          "title": "container"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container/Not Available",
+          "title": "not available"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container/Container",
+          "title": "container"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Column/Row/Container/Channel may not be monetized",
+          "title": "channel may not be monetized"
+        },
+        {
+          "path": "Dashboard/Column/Stack/Container",
+          "title": "container"
+        }
+      ],
+      "Chatbot": [
+        {
+          "path": "Chatbot/Column",
+          "title": "column"
+        },
+        {
+          "path": "Chatbot/Column/Chatbot",
+          "title": "chatbot"
+        },
+        {
+          "path": "Chatbot/Column/Ask questions about how to grow your channel",
+          "title": "ask questions about how to grow your channel"
+        },
+        {
+          "path": "Chatbot/Column/Container",
+          "title": "container"
+        },
+        {
+          "path": "Chatbot/Column/Container",
+          "title": "container"
+        }
+      ],
+      "Info": [
+        {
+          "path": "Info/Column",
+          "title": "column"
+        },
+        {
+          "path": "Info/Column/Info",
+          "title": "info"
+        },
+        {
+          "path": "Info/Column/System and model information",
+          "title": "system and model information"
+        },
+        {
+          "path": "Info/Column/Container",
+          "title": "container"
+        },
+        {
+          "path": "Info/Column/Stack",
+          "title": "stack"
+        },
+        {
+          "path": "Info/Column/Stack/Column",
+          "title": "column"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row",
+          "title": "row"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Row",
+          "title": "row"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Row/Container",
+          "title": "container"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Row/Container/General Info",
+          "title": "general info"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Row/Container/Container",
+          "title": "container"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Row/Container/Container/App Version: 0.1.3",
+          "title": "app version: 0.1.3"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Row/Container/Container/Renderer Version: v-1-4-00 Public Release",
+          "title": "renderer version: v-1-4-00 public release"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Row/Container/Container/Console Version: 0.1",
+          "title": "console version: 0.1"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Row/Container/Container/Release date: 8 January 2026",
+          "title": "release date: 8 january 2026"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Container",
+          "title": "container"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row",
+          "title": "row"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Container",
+          "title": "container"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Container/All models Used",
+          "title": "all models used"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Container/Container",
+          "title": "container"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Container/Container/facebook/bart-large-cnn",
+          "title": "facebook/bart-large-cnn"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Container/Container/SulfurAI",
+          "title": "sulfurai"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Container/Container/distilbart-cnn-6-6",
+          "title": "distilbart-cnn-6-6"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Container/Container/sshleifer/distilbart-cnn-6-6",
+          "title": "sshleifer/distilbart-cnn-6-6"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Container/Container/gemini-2.5-flash",
+          "title": "gemini-2.5-flash"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Container/Container/stabilityai/stablelm-2-zephyr-1_6b",
+          "title": "stabilityai/stablelm-2-zephyr-1_6b"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Container/Container/stabilityai/stablelm-zephyr-3b",
+          "title": "stabilityai/stablelm-zephyr-3b"
+        },
+        {
+          "path": "Info/Column/Stack/Column/Row/Container/Container/HuggingFaceH4/zephyr-7b-beta",
+          "title": "huggingfaceh4/zephyr-7b-beta"
+        }
+      ]
+    }
+  },
+  "inner_tab": "Dashboard",
+  "inner_data": {}
+}

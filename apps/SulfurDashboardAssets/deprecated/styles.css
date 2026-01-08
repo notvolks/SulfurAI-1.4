@@ -1,0 +1,13 @@
+body {
+  cursor: crosshair;
+}
+
+.glint-tracking {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 102, 0, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.7);
+  pointer-events: none;
+}

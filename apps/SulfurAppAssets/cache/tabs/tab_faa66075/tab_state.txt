@@ -1,0 +1,7 @@
+{
+  "page": "SetupPage",
+  "signed_in": false,
+  "user_id": null,
+  "keyring_name": null,
+  "title": "Setup"
+}
