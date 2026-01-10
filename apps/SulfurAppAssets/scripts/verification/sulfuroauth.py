@@ -139,14 +139,36 @@ def _load_refresh_token(refresh_keyname: str):
 
 def refresh_access_token(refresh_keyname: str, access_keyname: str):
     """
-    Use refresh token to get a new access token and update the keyring.
+    Use Supabase refresh token to refresh the session.
+    Also manually refreshes Google provider token using provider_refresh_token.
+    For Desktop app OAuth clients, only client_id is needed (no client_secret).
     Returns (True, new_expiry_timestamp) on success or (False, error_string) on failure.
     """
+    print(f"[DEBUG] Starting token refresh for access_keyname: {access_keyname}, refresh_keyname: {refresh_keyname}")
+
     refresh_token = _load_refresh_token(refresh_keyname)
     if not refresh_token:
+        print("[DEBUG] ERROR: No refresh token found")
         return False, "No refresh token found"
 
+    print(f"[DEBUG] Loaded refresh token (first 20 chars): {refresh_token[:20]}...")
+
     try:
+        # Load existing token data to get provider_refresh_token
+        existing_data = {}
+        try:
+            print(f"[DEBUG] Attempting to load existing token data from keyring: {access_keyname}")
+            existing_json = keyring.get_password(KEYRING_SERVICE, access_keyname)
+            if existing_json:
+                existing_data = json.loads(existing_json)
+                print(f"[DEBUG] Loaded existing token data. Keys present: {list(existing_data.keys())}")
+            else:
+                print("[DEBUG] No existing token data found in keyring")
+        except Exception as e:
+            print(f"[DEBUG] Error loading existing token data: {e}")
+
+        # Step 1: Refresh Supabase session
+        print("[DEBUG] STEP 1: Refreshing Supabase session")
         token_url = f"{supabase_auth_base}/token?grant_type=refresh_token"
         headers = {
             "Content-Type": "application/json",
@@ -155,30 +177,107 @@ def refresh_access_token(refresh_keyname: str, access_keyname: str):
         }
         body = {"refresh_token": refresh_token}
 
+        print(f"[DEBUG] Supabase token URL: {token_url}")
+        print(f"[DEBUG] Sending Supabase refresh request...")
         response = requests.post(token_url, json=body, headers=headers)
 
+        print(f"[DEBUG] Supabase response status: {response.status_code}")
         if response.status_code != 200:
+            print(f"[DEBUG] ERROR: Supabase token refresh failed: {response.text}")
             return False, f"Token refresh failed: {response.status_code} {response.text}"
 
         new_token_data = response.json()
+        print(f"[DEBUG] Supabase refresh successful. New token data keys: {list(new_token_data.keys())}")
 
-        # Update the access token in keyring
+        # Step 2: Refresh Google provider token manually (Supabase doesn't do this)
+        provider_refresh_token = existing_data.get("provider_refresh_token")
+        if provider_refresh_token:
+            print("[DEBUG] STEP 2: Refreshing Google provider token via Supabase Edge Function")
+            try:
+                # Call Supabase Edge Function to refresh provider token securely
+                # The client secret is stored on Supabase backend, not in your local code
+                edge_function_url = f"{supabase_url}/functions/v1/refresh-provider-token"
+                edge_function_headers = {
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {supabase_anon_key}",
+                }
+                edge_function_body = {
+                    "provider_refresh_token": provider_refresh_token
+                }
+
+                print(f"[DEBUG] Calling Supabase Edge Function: {edge_function_url}")
+                edge_response = requests.post(edge_function_url, json=edge_function_body, headers=edge_function_headers)
+
+                print(f"[DEBUG] Edge Function response status: {edge_response.status_code}")
+                if edge_response.status_code == 200:
+                    edge_data = edge_response.json()
+                    print(f"[DEBUG] ✓ Provider token refreshed via Edge Function!")
+                    new_provider_token = edge_data.get("provider_token")
+                    if new_provider_token:
+                        print(f"[DEBUG] New provider_token received (first 20 chars): {new_provider_token[:20]}...")
+                        new_token_data["provider_token"] = new_provider_token
+                        new_token_data["provider_refresh_token"] = provider_refresh_token
+                        print("[DEBUG] Provider tokens updated in new_token_data")
+                    else:
+                        print("[DEBUG] WARNING: No provider_token in Edge Function response")
+                        new_token_data["provider_token"] = existing_data.get("provider_token")
+                        new_token_data["provider_refresh_token"] = provider_refresh_token
+                else:
+                    print(f"[DEBUG] ERROR: Edge Function failed: {edge_response.text}")
+                    print("[DEBUG] This may mean:")
+                    print("[DEBUG]   → The Edge Function is not deployed")
+                    print("[DEBUG]   → The GOOGLE_CLIENT_SECRET is not set in Supabase")
+                    print("[DEBUG]   → The provider_refresh_token is invalid")
+                    # Fallback to old tokens
+                    new_token_data["provider_token"] = existing_data.get("provider_token")
+                    new_token_data["provider_refresh_token"] = provider_refresh_token
+                    print("[DEBUG] Falling back to old provider tokens")
+            except Exception as e:
+                print(f"[DEBUG] ERROR: Exception calling Edge Function: {type(e).__name__}: {e}")
+                new_token_data["provider_token"] = existing_data.get("provider_token")
+                new_token_data["provider_refresh_token"] = provider_refresh_token
+                print("[DEBUG] Falling back to old provider tokens due to exception")
+        else:
+            print("[DEBUG] STEP 2 SKIPPED: No provider_refresh_token found in existing data")
+            # Preserve old provider tokens if they exist
+            if "provider_token" in existing_data:
+                new_token_data["provider_token"] = existing_data.get("provider_token")
+                print("[DEBUG] Preserving old provider_token from existing data")
+            if "provider_refresh_token" in existing_data:
+                new_token_data["provider_refresh_token"] = existing_data.get("provider_refresh_token")
+                print("[DEBUG] Preserving old provider_refresh_token from existing data")
+
+        # Step 3: Save refreshed token data
+        print(f"[DEBUG] STEP 3: Saving refreshed token data to keyring: {access_keyname}")
+        print(f"[DEBUG] Token data keys being saved: {list(new_token_data.keys())}")
         ok, note = _save_tokens_safely(access_keyname, new_token_data)
         if not ok:
+            print(f"[DEBUG] ERROR: Failed to save tokens: {note}")
             return False, f"Failed to save refreshed token: {note}"
+        print(f"[DEBUG] Tokens saved successfully. Note: {note}")
 
         # Calculate new expiry time (expires_in is in seconds)
         expires_in = new_token_data.get("expires_in", 3600)
         expiry_timestamp = datetime.datetime.utcnow().timestamp() + expires_in
+        print(f"[DEBUG] Calculated new expiry timestamp: {expiry_timestamp} (expires_in: {expires_in}s)")
 
-        # Update refresh token if a new one was provided
-        new_refresh = new_token_data.get("provider_refresh_token")
+        # Update Supabase refresh token if a new one was provided (token rotation)
+        new_refresh = new_token_data.get("refresh_token")
         if new_refresh:
+            print(f"[DEBUG] New Supabase refresh_token received (first 20 chars): {new_refresh[:20]}...")
+            print(f"[DEBUG] Saving new refresh token to: {refresh_keyname}")
             _save_refresh_token(refresh_keyname, new_refresh)
+            print("[DEBUG] New refresh token saved")
+        else:
+            print("[DEBUG] No new refresh_token in response (token rotation not performed)")
 
+        print(f"[DEBUG] ✓ Token refresh completed successfully. New expiry: {expiry_timestamp}")
         return True, expiry_timestamp
 
     except Exception as e:
+        print(f"[DEBUG] ERROR: Token refresh failed with exception: {type(e).__name__}: {e}")
+        import traceback
+        print(f"[DEBUG] Traceback: {traceback.format_exc()}")
         return False, f"Token refresh error: {e}"
 
 

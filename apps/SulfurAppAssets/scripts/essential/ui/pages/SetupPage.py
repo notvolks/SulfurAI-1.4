@@ -190,12 +190,13 @@ class SetupPage(PageBase):
                 # if keyring storage fails, fall back to None but do not leak the key
                 api_key_name = None
 
-            # Extract and store refresh token separately
-            refresh_token = token_data.get("provider_refresh_token")
+            # Extract and store Supabase refresh token separately
+            refresh_token = token_data.get("refresh_token")
             refresh_keyname = None
             if refresh_token:
                 refresh_keyname = f"{key_name}_refresh"
                 sulfuroauth._save_refresh_token(refresh_keyname, refresh_token)
+                print(refresh_token)
 
             # Calculate access token expiry timestamp
             expires_in = token_data.get("expires_in", 3600)  # default 1 hour

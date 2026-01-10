@@ -1,4 +1,12 @@
-App Version: 0.1.3
+// GENERAL INFO
+Release date: 10 January 2026
+General Release: 0.1.4.1 SulfurAI
+
+// TECHNICALS 
+App Version: 0.1.4
 Renderer Version: v-1-4-00 Public Release
 Console Version: 0.1
-Release date: 8 January 2026
+Backend build: b14_10_1_2026UK-T::=v1.4.1 (Build 14, 10/01/2026 UK TIME, v1.4.1)
+
+
+

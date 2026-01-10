@@ -6,7 +6,7 @@ PUBLIC RELEASE:
 
 
 
-* New Flet app \& exe.
+* Fixed longevity of sign-in errors (permanent refresh use).
 
 
 
