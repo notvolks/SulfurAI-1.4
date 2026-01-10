@@ -1,0 +1,17 @@
+#Script for GLOBAL variables used across the app
+
+
+def global_var():
+    BG = "#121212"
+    FG = "#FFFFFF"
+    ORANGE = "#FFA64D"
+    UI_BASE_WIDTH = 1400.0
+    UI_BASE_HEIGHT = 900.0
+    UI_LOCK_MIN_WIDTH = 1000
+    UI_LOCK_MIN_HEIGHT = 700
+    UI_MIN_SCALE = 0.6
+    UI_MAX_SCALE = 2.5
+    UI_WIDTH = 1280
+    UI_HEIGHT = 720
+
+    return BG, FG, ORANGE, UI_BASE_WIDTH, UI_BASE_HEIGHT, UI_LOCK_MIN_WIDTH, UI_LOCK_MIN_HEIGHT, UI_MIN_SCALE, UI_MAX_SCALE, UI_WIDTH, UI_HEIGHT

@@ -1,0 +1,25 @@
+{
+  "names": [
+    "setup"
+  ],
+  "pages": {
+    "Setup": [
+      {
+        "path": "Setup/0",
+        "title": "select your platform"
+      },
+      {
+        "path": "Setup/1",
+        "title": "sign in"
+      },
+      {
+        "path": "Setup/2",
+        "title": "connect with google"
+      },
+      {
+        "path": "Setup/3",
+        "title": "not connected"
+      }
+    ]
+  }
+}
